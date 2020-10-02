@@ -1,0 +1,21 @@
+strict digraph "G" {
+a;
+b;
+c;
+d;
+e;
+W0;
+W1;
+W2;
+W3;
+a -> W1;
+a -> W0;
+b -> W2;
+c -> W2;
+d -> W3;
+W0 -> b;
+W0 -> c;
+W1 -> d;
+W2 -> e;
+W3 -> e;
+}
