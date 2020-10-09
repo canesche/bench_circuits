@@ -1,0 +1,39 @@
+# Benchmark "top" written by ABC on Thu Oct  8 20:19:04 2020
+.model top
+.inputs clock in clk
+.outputs viol sample
+
+.latch        n41        ny4  2
+.latch        n44        ny6  2
+.latch        n47        nx1  2
+.latch        n50        nx2  2
+
+.names nx1 nx2 new_new_n17__
+11 1
+.names nx1 nx2 new_new_n18__
+00 1
+.names new_new_n17__ new_new_n18__ new_new_n19__
+00 1
+.names in nx1 new_new_n20_1__
+11 1
+.names in nx1 new_new_n21__
+00 1
+.names new_new_n20_1__ new_new_n21__ new_new_n22__
+00 1
+.names new_new_n19__ new_new_n22__ viol
+00 1
+.names viol ny4 n41
+01 0
+.names ny4 new_new_n19__ new_new_n25__
+01 1
+.names ny4 ny6 new_new_n26__
+11 1
+.names new_new_n25__ new_new_n26__ n44
+00 0
+.names ny6 sample
+1 1
+.names in n47
+1 1
+.names nx1 n50
+1 1
+.end

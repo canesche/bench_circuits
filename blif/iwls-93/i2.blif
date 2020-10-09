@@ -1,0 +1,494 @@
+# Benchmark "top" written by ABC on Thu Oct  8 20:19:06 2020
+.model top
+.inputs pv144_18_ pv126_20_ pv126_31_ pv94_30_ pv126_9_ pv129_0_ pv94_31_ \
+ pv144_19_ pv94_10_ pv94_21_ pv126_7_ pv126_10_ pv144_27_ pv176_31_ \
+ pv190_0_ pv94_11_ pv94_20_ pv126_8_ pv144_28_ pv176_30_ pv30_18_ pv30_29_ \
+ pv126_5_ pv144_29_ pv30_19_ pv30_28_ pv126_6_ pv128_0_ pv190_1_ pv30_9_ \
+ pv62_2_ pv64_0_ pv126_14_ pv126_27_ pv176_8_ pv176_22_ pv188_23_ pv30_8_ \
+ pv62_3_ pv126_13_ pv126_28_ pv176_7_ pv176_23_ pv178_1_ pv188_24_ pv30_7_ \
+ pv62_0_ pv126_12_ pv126_25_ pv176_6_ pv176_20_ pv178_0_ pv188_25_ pv30_6_ \
+ pv62_1_ pv63_0_ pv126_11_ pv126_26_ pv176_5_ pv176_21_ pv188_26_ pv30_5_ \
+ pv62_6_ pv94_7_ pv126_18_ pv126_23_ pv176_13_ pv188_27_ pv30_4_ pv62_7_ \
+ pv94_6_ pv126_17_ pv126_24_ pv176_12_ pv188_28_ pv30_3_ pv62_4_ pv94_9_ \
+ pv126_16_ pv126_21_ pv126_30_ pv130_0_ pv176_11_ pv188_29_ pv30_2_ pv62_5_ \
+ pv94_8_ pv126_15_ pv126_22_ pv176_9_ pv176_10_ pv30_30_ pv62_15_ pv62_26_ \
+ pv94_3_ pv176_0_ pv176_17_ pv30_31_ pv62_16_ pv62_25_ pv94_2_ pv176_16_ \
+ pv201_0_ pv62_8_ pv62_17_ pv62_28_ pv94_5_ pv176_15_ pv176_28_ pv201_1_ \
+ pv62_9_ pv62_18_ pv62_27_ pv94_4_ pv126_19_ pv176_14_ pv176_29_ pv191_31_ \
+ pv201_2_ pv62_19_ pv176_4_ pv176_26_ pv62_29_ pv176_3_ pv176_27_ pv188_31_ \
+ pv126_29_ pv176_2_ pv176_19_ pv176_24_ pv188_30_ pv176_1_ pv176_18_ \
+ pv176_25_ pv188_22_ pv30_16_ pv30_27_ pv94_14_ pv94_25_ pv126_3_ pv127_0_ \
+ pv144_23_ pv201_7_ pv30_17_ pv30_26_ pv62_30_ pv94_15_ pv94_24_ pv126_4_ \
+ pv144_24_ pv30_14_ pv30_25_ pv62_20_ pv94_12_ pv94_23_ pv126_1_ pv144_25_ \
+ pv30_15_ pv30_24_ pv62_10_ pv94_13_ pv94_22_ pv126_2_ pv144_26_ pv30_12_ \
+ pv30_23_ pv62_11_ pv62_22_ pv94_18_ pv94_29_ pv201_3_ pv30_13_ pv30_22_ \
+ pv62_12_ pv62_21_ pv94_19_ pv94_28_ pv126_0_ pv144_20_ pv144_31_ pv201_4_ \
+ pv30_10_ pv30_21_ pv62_13_ pv62_24_ pv62_31_ pv94_16_ pv94_27_ pv144_21_ \
+ pv144_30_ pv193_1_ pv201_5_ pv30_11_ pv30_20_ pv62_14_ pv62_23_ pv94_17_ \
+ pv94_26_ pv144_22_ pv193_0_ pv201_6_
+.outputs pv202_0_
+.names pv190_1_ pv188_30_ new_new_n203__
+00 1
+.names pv190_0_ pv188_31_ new_new_n204__
+00 1
+.names new_new_n203__ new_new_n204__ new_new_n205__
+11 1
+.names new_new_n205__ pv201_4_ new_new_n206__
+01 1
+.names pv201_5_ new_new_n206__ new_new_n207__
+11 1
+.names pv193_1_ pv201_6_ new_new_n208__
+11 1
+.names pv201_7_ new_new_n208__ new_new_n209__
+11 1
+.names pv191_31_ pv201_6_ new_new_n210__
+11 1
+.names pv201_7_ new_new_n210__ new_new_n211__
+11 1
+.names pv176_3_ pv176_2_ new_new_n212__
+00 1
+.names pv176_6_ pv176_4_ new_new_n213__
+00 1
+.names new_new_n212__ new_new_n213__ new_new_n214__
+11 1
+.names pv176_5_ pv176_9_ new_new_n215__
+00 1
+.names pv176_7_ pv176_17_ new_new_n216__
+00 1
+.names new_new_n215__ new_new_n216__ new_new_n217__
+11 1
+.names new_new_n214__ new_new_n217__ new_new_n218__
+11 1
+.names pv176_13_ pv176_15_ new_new_n219__
+00 1
+.names pv176_11_ pv176_16_ new_new_n220__
+00 1
+.names new_new_n219__ new_new_n220__ new_new_n221__
+11 1
+.names pv176_8_ pv176_10_ new_new_n222__
+00 1
+.names pv176_12_ pv176_14_ new_new_n223__
+00 1
+.names new_new_n222__ new_new_n223__ new_new_n224__
+11 1
+.names new_new_n221__ new_new_n224__ new_new_n225__
+11 1
+.names new_new_n218__ new_new_n225__ new_new_n226__
+11 1
+.names new_new_n226__ pv201_2_ new_new_n227__
+01 1
+.names pv176_19_ pv176_18_ new_new_n228__
+00 1
+.names pv176_22_ pv176_20_ new_new_n229__
+00 1
+.names new_new_n228__ new_new_n229__ new_new_n230__
+11 1
+.names pv176_21_ pv176_25_ new_new_n231__
+00 1
+.names pv176_23_ pv178_1_ new_new_n232__
+00 1
+.names new_new_n231__ new_new_n232__ new_new_n233__
+11 1
+.names new_new_n230__ new_new_n233__ new_new_n234__
+11 1
+.names pv176_31_ pv176_29_ new_new_n235__
+00 1
+.names pv178_0_ pv176_27_ new_new_n236__
+00 1
+.names new_new_n235__ new_new_n236__ new_new_n237__
+11 1
+.names pv176_26_ pv176_24_ new_new_n238__
+00 1
+.names pv176_30_ pv176_28_ new_new_n239__
+00 1
+.names new_new_n238__ new_new_n239__ new_new_n240__
+11 1
+.names new_new_n237__ new_new_n240__ new_new_n241__
+11 1
+.names new_new_n234__ new_new_n241__ new_new_n242__
+11 1
+.names new_new_n242__ pv201_3_ new_new_n243__
+01 1
+.names pv188_26_ pv188_29_ new_new_n244__
+00 1
+.names pv188_27_ pv188_28_ new_new_n245__
+00 1
+.names new_new_n244__ new_new_n245__ new_new_n246__
+11 1
+.names new_new_n246__ pv201_4_ new_new_n247__
+01 1
+.names pv201_5_ new_new_n247__ new_new_n248__
+11 1
+.names pv201_7_ pv193_1_ new_new_n249__
+11 1
+.names pv30_22_ pv30_20_ new_new_n250__
+00 1
+.names pv30_18_ pv30_16_ new_new_n251__
+00 1
+.names new_new_n250__ new_new_n251__ new_new_n252__
+11 1
+.names pv30_14_ pv30_10_ new_new_n253__
+00 1
+.names pv30_12_ pv30_11_ new_new_n254__
+00 1
+.names new_new_n253__ new_new_n254__ new_new_n255__
+11 1
+.names new_new_n252__ new_new_n255__ new_new_n256__
+11 1
+.names pv62_1_ pv30_13_ new_new_n257__
+00 1
+.names pv30_2_ pv30_31_ new_new_n258__
+00 1
+.names new_new_n257__ new_new_n258__ new_new_n259__
+11 1
+.names pv30_19_ pv30_4_ new_new_n260__
+00 1
+.names pv30_6_ pv30_21_ new_new_n261__
+00 1
+.names new_new_n260__ new_new_n261__ new_new_n262__
+11 1
+.names new_new_n259__ new_new_n262__ new_new_n263__
+11 1
+.names new_new_n256__ new_new_n263__ new_new_n264__
+11 1
+.names pv30_9_ pv30_17_ new_new_n265__
+00 1
+.names pv30_8_ pv30_15_ new_new_n266__
+00 1
+.names new_new_n265__ new_new_n266__ new_new_n267__
+11 1
+.names pv30_7_ pv30_27_ new_new_n268__
+00 1
+.names pv30_29_ pv30_5_ new_new_n269__
+00 1
+.names new_new_n268__ new_new_n269__ new_new_n270__
+11 1
+.names new_new_n267__ new_new_n270__ new_new_n271__
+11 1
+.names pv30_3_ pv30_23_ new_new_n272__
+00 1
+.names pv62_0_ pv30_25_ new_new_n273__
+00 1
+.names new_new_n272__ new_new_n273__ new_new_n274__
+11 1
+.names pv30_26_ pv30_24_ new_new_n275__
+00 1
+.names pv30_28_ pv30_30_ new_new_n276__
+00 1
+.names new_new_n275__ new_new_n276__ new_new_n277__
+11 1
+.names new_new_n274__ new_new_n277__ new_new_n278__
+11 1
+.names new_new_n271__ new_new_n278__ new_new_n279__
+11 1
+.names new_new_n264__ new_new_n279__ new_new_n280__
+11 1
+.names pv201_0_ new_new_n280__ new_new_n281__
+00 1
+.names pv201_1_ new_new_n281__ new_new_n282__
+11 1
+.names pv193_0_ pv201_6_ new_new_n283__
+11 1
+.names pv130_0_ pv201_0_ new_new_n284__
+11 1
+.names pv126_20_ pv126_22_ new_new_n285__
+00 1
+.names pv126_18_ pv126_16_ new_new_n286__
+00 1
+.names new_new_n285__ new_new_n286__ new_new_n287__
+11 1
+.names pv126_10_ pv126_14_ new_new_n288__
+00 1
+.names pv126_12_ pv126_11_ new_new_n289__
+00 1
+.names new_new_n288__ new_new_n289__ new_new_n290__
+11 1
+.names new_new_n287__ new_new_n290__ new_new_n291__
+11 1
+.names pv128_0_ pv126_13_ new_new_n292__
+00 1
+.names pv126_31_ pv126_2_ new_new_n293__
+00 1
+.names new_new_n292__ new_new_n293__ new_new_n294__
+11 1
+.names pv126_19_ pv126_4_ new_new_n295__
+00 1
+.names pv126_6_ pv126_21_ new_new_n296__
+00 1
+.names new_new_n295__ new_new_n296__ new_new_n297__
+11 1
+.names new_new_n294__ new_new_n297__ new_new_n298__
+11 1
+.names new_new_n291__ new_new_n298__ new_new_n299__
+11 1
+.names pv126_9_ pv126_17_ new_new_n300__
+00 1
+.names pv126_8_ pv126_15_ new_new_n301__
+00 1
+.names new_new_n300__ new_new_n301__ new_new_n302__
+11 1
+.names pv126_7_ pv126_27_ new_new_n303__
+00 1
+.names pv126_5_ pv126_29_ new_new_n304__
+00 1
+.names new_new_n303__ new_new_n304__ new_new_n305__
+11 1
+.names new_new_n302__ new_new_n305__ new_new_n306__
+11 1
+.names pv126_23_ pv126_3_ new_new_n307__
+00 1
+.names pv126_25_ pv127_0_ new_new_n308__
+00 1
+.names new_new_n307__ new_new_n308__ new_new_n309__
+11 1
+.names pv126_26_ pv126_24_ new_new_n310__
+00 1
+.names pv126_28_ pv126_30_ new_new_n311__
+00 1
+.names new_new_n310__ new_new_n311__ new_new_n312__
+11 1
+.names new_new_n309__ new_new_n312__ new_new_n313__
+11 1
+.names new_new_n306__ new_new_n313__ new_new_n314__
+11 1
+.names new_new_n299__ new_new_n314__ new_new_n315__
+11 1
+.names new_new_n315__ pv201_0_ new_new_n316__
+01 1
+.names pv201_1_ new_new_n316__ new_new_n317__
+11 1
+.names pv201_3_ new_new_n227__ new_new_n318__
+11 1
+.names pv201_7_ new_new_n283__ new_new_n319__
+11 1
+.names pv62_20_ pv62_22_ new_new_n320__
+00 1
+.names pv62_16_ pv62_18_ new_new_n321__
+00 1
+.names new_new_n320__ new_new_n321__ new_new_n322__
+11 1
+.names pv62_10_ pv62_14_ new_new_n323__
+00 1
+.names pv62_11_ pv62_12_ new_new_n324__
+00 1
+.names new_new_n323__ new_new_n324__ new_new_n325__
+11 1
+.names new_new_n322__ new_new_n325__ new_new_n326__
+11 1
+.names pv64_0_ pv62_13_ new_new_n327__
+00 1
+.names pv62_2_ pv62_31_ new_new_n328__
+00 1
+.names new_new_n327__ new_new_n328__ new_new_n329__
+11 1
+.names pv62_4_ pv62_19_ new_new_n330__
+00 1
+.names pv62_6_ pv62_21_ new_new_n331__
+00 1
+.names new_new_n330__ new_new_n331__ new_new_n332__
+11 1
+.names new_new_n329__ new_new_n332__ new_new_n333__
+11 1
+.names new_new_n326__ new_new_n333__ new_new_n334__
+11 1
+.names pv62_17_ pv62_9_ new_new_n335__
+00 1
+.names pv62_15_ pv62_8_ new_new_n336__
+00 1
+.names new_new_n335__ new_new_n336__ new_new_n337__
+11 1
+.names pv62_7_ pv62_27_ new_new_n338__
+00 1
+.names pv62_5_ pv62_29_ new_new_n339__
+00 1
+.names new_new_n338__ new_new_n339__ new_new_n340__
+11 1
+.names new_new_n337__ new_new_n340__ new_new_n341__
+11 1
+.names pv62_3_ pv62_23_ new_new_n342__
+00 1
+.names pv63_0_ pv62_25_ new_new_n343__
+00 1
+.names new_new_n342__ new_new_n343__ new_new_n344__
+11 1
+.names pv62_26_ pv62_24_ new_new_n345__
+00 1
+.names pv62_28_ pv62_30_ new_new_n346__
+00 1
+.names new_new_n345__ new_new_n346__ new_new_n347__
+11 1
+.names new_new_n344__ new_new_n347__ new_new_n348__
+11 1
+.names new_new_n341__ new_new_n348__ new_new_n349__
+11 1
+.names new_new_n334__ new_new_n349__ new_new_n350__
+11 1
+.names pv201_0_ new_new_n350__ new_new_n351__
+00 1
+.names pv201_1_ new_new_n351__ new_new_n352__
+11 1
+.names new_new_n205__ pv201_5_ new_new_n353__
+01 1
+.names pv201_0_ pv129_0_ new_new_n354__
+01 1
+.names pv94_20_ pv94_22_ new_new_n355__
+00 1
+.names pv94_18_ pv94_16_ new_new_n356__
+00 1
+.names new_new_n355__ new_new_n356__ new_new_n357__
+11 1
+.names pv94_10_ pv94_14_ new_new_n358__
+00 1
+.names pv94_11_ pv94_12_ new_new_n359__
+00 1
+.names new_new_n358__ new_new_n359__ new_new_n360__
+11 1
+.names new_new_n357__ new_new_n360__ new_new_n361__
+11 1
+.names pv126_1_ pv94_13_ new_new_n362__
+00 1
+.names pv94_31_ pv94_2_ new_new_n363__
+00 1
+.names new_new_n362__ new_new_n363__ new_new_n364__
+11 1
+.names pv94_4_ pv94_19_ new_new_n365__
+00 1
+.names pv94_21_ pv94_6_ new_new_n366__
+00 1
+.names new_new_n365__ new_new_n366__ new_new_n367__
+11 1
+.names new_new_n364__ new_new_n367__ new_new_n368__
+11 1
+.names new_new_n361__ new_new_n368__ new_new_n369__
+11 1
+.names pv94_9_ pv94_17_ new_new_n370__
+00 1
+.names pv94_8_ pv94_15_ new_new_n371__
+00 1
+.names new_new_n370__ new_new_n371__ new_new_n372__
+11 1
+.names pv94_7_ pv94_27_ new_new_n373__
+00 1
+.names pv94_5_ pv94_29_ new_new_n374__
+00 1
+.names new_new_n373__ new_new_n374__ new_new_n375__
+11 1
+.names new_new_n372__ new_new_n375__ new_new_n376__
+11 1
+.names pv94_3_ pv94_23_ new_new_n377__
+00 1
+.names pv94_25_ pv126_0_ new_new_n378__
+00 1
+.names new_new_n377__ new_new_n378__ new_new_n379__
+11 1
+.names pv94_24_ pv94_26_ new_new_n380__
+00 1
+.names pv94_30_ pv94_28_ new_new_n381__
+00 1
+.names new_new_n380__ new_new_n381__ new_new_n382__
+11 1
+.names new_new_n379__ new_new_n382__ new_new_n383__
+11 1
+.names new_new_n376__ new_new_n383__ new_new_n384__
+11 1
+.names new_new_n369__ new_new_n384__ new_new_n385__
+11 1
+.names new_new_n385__ pv201_0_ new_new_n386__
+01 1
+.names pv201_1_ new_new_n386__ new_new_n387__
+11 1
+.names new_new_n242__ pv201_2_ new_new_n388__
+01 1
+.names pv201_3_ new_new_n388__ new_new_n389__
+11 1
+.names pv144_18_ pv144_19_ new_new_n390__
+00 1
+.names pv144_20_ pv144_22_ new_new_n391__
+00 1
+.names new_new_n390__ new_new_n391__ new_new_n392__
+11 1
+.names pv144_25_ pv144_21_ new_new_n393__
+00 1
+.names pv176_1_ pv144_23_ new_new_n394__
+00 1
+.names new_new_n393__ new_new_n394__ new_new_n395__
+11 1
+.names new_new_n392__ new_new_n395__ new_new_n396__
+11 1
+.names pv144_29_ pv144_31_ new_new_n397__
+00 1
+.names pv144_27_ pv176_0_ new_new_n398__
+00 1
+.names new_new_n397__ new_new_n398__ new_new_n399__
+11 1
+.names pv144_24_ pv144_26_ new_new_n400__
+00 1
+.names pv144_28_ pv144_30_ new_new_n401__
+00 1
+.names new_new_n400__ new_new_n401__ new_new_n402__
+11 1
+.names new_new_n399__ new_new_n402__ new_new_n403__
+11 1
+.names new_new_n396__ new_new_n403__ new_new_n404__
+11 1
+.names new_new_n404__ pv201_2_ new_new_n405__
+01 1
+.names pv201_3_ new_new_n405__ new_new_n406__
+11 1
+.names pv188_25_ pv188_22_ new_new_n407__
+00 1
+.names pv188_23_ pv188_24_ new_new_n408__
+00 1
+.names new_new_n407__ new_new_n408__ new_new_n409__
+11 1
+.names new_new_n409__ pv201_4_ new_new_n410__
+01 1
+.names pv201_5_ new_new_n410__ new_new_n411__
+11 1
+.names new_new_n406__ new_new_n411__ new_new_n412__
+00 1
+.names new_new_n388__ new_new_n412__ new_new_n413__
+01 1
+.names new_new_n354__ new_new_n387__ new_new_n414__
+00 1
+.names new_new_n389__ new_new_n414__ new_new_n415__
+01 1
+.names new_new_n413__ new_new_n415__ new_new_n416__
+11 1
+.names new_new_n319__ new_new_n352__ new_new_n417__
+00 1
+.names new_new_n353__ new_new_n417__ new_new_n418__
+01 1
+.names new_new_n284__ new_new_n317__ new_new_n419__
+00 1
+.names new_new_n318__ new_new_n419__ new_new_n420__
+01 1
+.names new_new_n418__ new_new_n420__ new_new_n421__
+11 1
+.names new_new_n416__ new_new_n421__ new_new_n422__
+11 1
+.names new_new_n249__ new_new_n282__ new_new_n423__
+00 1
+.names new_new_n283__ new_new_n423__ new_new_n424__
+01 1
+.names new_new_n243__ new_new_n248__ new_new_n425__
+00 1
+.names new_new_n247__ new_new_n425__ new_new_n426__
+01 1
+.names new_new_n424__ new_new_n426__ new_new_n427__
+11 1
+.names new_new_n208__ new_new_n211__ new_new_n428__
+00 1
+.names new_new_n227__ new_new_n428__ new_new_n429__
+01 1
+.names new_new_n206__ new_new_n207__ new_new_n430__
+00 1
+.names new_new_n209__ new_new_n430__ new_new_n431__
+01 1
+.names new_new_n429__ new_new_n431__ new_new_n432__
+11 1
+.names new_new_n427__ new_new_n432__ new_new_n433__
+11 1
+.names new_new_n422__ new_new_n433__ pv202_0_
+11 0
+.end

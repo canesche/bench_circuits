@@ -1,0 +1,77 @@
+# Benchmark "CM163" written by ABC on Thu Oct  8 20:27:39 2020
+.model CM163
+.inputs a b c d e f g h i j k l m n o p
+.outputs q r s t u
+.names e f new_new_n22__
+01 1
+.names c d new_new_n23__
+11 1
+.names j new_new_n23__ new_new_n24__
+11 1
+.names j new_new_n23__ new_new_n25__
+00 1
+.names new_new_n24__ new_new_n25__ new_new_n26__
+00 1
+.names e f new_new_n27__
+11 1
+.names new_new_n26__ new_new_n27__ new_new_n28__
+01 1
+.names a new_new_n22__ new_new_n29__
+11 1
+.names new_new_n28__ new_new_n29__ q
+00 1
+.names j new_new_n23__ new_new_n31__
+01 1
+.names l new_new_n31__ new_new_n32__
+11 1
+.names l new_new_n31__ new_new_n33__
+00 1
+.names new_new_n32__ new_new_n33__ new_new_n34__
+00 1
+.names new_new_n34__ new_new_n27__ new_new_n35__
+01 1
+.names b new_new_n22__ new_new_n36__
+11 1
+.names new_new_n35__ new_new_n36__ r
+00 1
+.names l new_new_n31__ new_new_n38__
+01 1
+.names m new_new_n38__ new_new_n39__
+11 1
+.names m new_new_n38__ new_new_n40__
+00 1
+.names new_new_n39__ new_new_n40__ new_new_n41__
+00 1
+.names new_new_n41__ new_new_n27__ new_new_n42__
+01 1
+.names g new_new_n22__ new_new_n43__
+11 1
+.names new_new_n42__ new_new_n43__ s
+00 1
+.names m new_new_n23__ new_new_n45__
+01 1
+.names j new_new_n45__ new_new_n46__
+01 1
+.names l new_new_n46__ new_new_n47__
+01 1
+.names n new_new_n47__ new_new_n48__
+11 1
+.names n new_new_n47__ new_new_n49__
+00 1
+.names new_new_n48__ new_new_n49__ new_new_n50__
+00 1
+.names new_new_n50__ new_new_n27__ new_new_n51__
+01 1
+.names h new_new_n22__ new_new_n52__
+11 1
+.names new_new_n51__ new_new_n52__ t
+00 1
+.names i p new_new_n54__
+11 1
+.names k o new_new_n55__
+11 1
+.names new_new_n54__ new_new_n55__ new_new_n56__
+11 1
+.names d new_new_n56__ u
+11 1
+.end

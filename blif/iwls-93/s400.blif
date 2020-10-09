@@ -1,0 +1,332 @@
+# Benchmark "top" written by ABC on Thu Oct  8 20:19:12 2020
+.model top
+.inputs clock pclr pclk ptest pfm
+.outputs pgrn1 pred1 pred2 pgrn2 pylw1 pylw2
+
+.latch       n342     nc3_q3  2
+.latch       n345 nolatch_r1l  2
+.latch       n348 nolatch_g2l  2
+.latch       n351 nolatch_g1l  2
+.latch       n354 nolatch_fel  2
+.latch       n357       nfml  2
+.latch       n360 nolatch_y2l  2
+.latch       n363 nolatchvuc_6  2
+.latch       n366 nolatchvuc_5  2
+.latch       n369     ntestl  2
+.latch       n372     nc3_q2  2
+.latch       n375     nc3_q1  2
+.latch       n378     nuc_11  2
+.latch       n381     nc3_q0  2
+.latch       n384     nuc_16  2
+.latch       n387     nuc_17  2
+.latch       n390     nuc_18  2
+.latch       n393     nuc_19  2
+.latch       n396      nuc_8  2
+.latch       n399      nuc_9  2
+.latch       n402     nuc_10  2
+
+.names nuc_11 nuc_10 new_new_n74__
+00 1
+.names nuc_9 new_new_n74__ new_new_n75__
+01 1
+.names new_new_n75__ nuc_8 new_new_n76__
+01 1
+.names ntestl new_new_n76__ new_new_n77_1__
+00 1
+.names nuc_18 nuc_19 new_new_n78__
+00 1
+.names nuc_17 new_new_n78__ new_new_n79__
+01 1
+.names new_new_n77_1__ nuc_16 new_new_n80__
+01 1
+.names new_new_n79__ new_new_n80__ new_new_n81__
+01 1
+.names nc3_q2 nc3_q0 new_new_n82_1__
+11 1
+.names nc3_q1 new_new_n82_1__ new_new_n83__
+11 1
+.names new_new_n81__ new_new_n83__ new_new_n84__
+11 1
+.names nc3_q3 new_new_n84__ new_new_n85__
+11 1
+.names nc3_q3 new_new_n84__ new_new_n86__
+00 1
+.names new_new_n85__ new_new_n86__ new_new_n87_1__
+00 1
+.names nc3_q1 nc3_q0 new_new_n88__
+00 1
+.names nc3_q2 new_new_n88__ new_new_n89__
+01 1
+.names nc3_q3 new_new_n81__ new_new_n90__
+11 1
+.names new_new_n89__ new_new_n90__ new_new_n91__
+01 1
+.names new_new_n91__ new_new_n87_1__ new_new_n92_1__
+01 1
+.names pclr new_new_n92_1__ n342
+01 1
+.names nc3_q3 nolatch_fel new_new_n94__
+00 1
+.names nc3_q2 new_new_n94__ new_new_n95__
+01 1
+.names nolatch_fel nc3_q1 new_new_n96__
+00 1
+.names nc3_q2 nc3_q0 new_new_n97_1__
+01 1
+.names new_new_n96__ new_new_n97_1__ new_new_n98__
+11 1
+.names new_new_n95__ new_new_n98__ new_new_n99__
+00 1
+.names pclr new_new_n99__ n345
+01 0
+.names pclr nc3_q3 new_new_n101__
+01 1
+.names nc3_q0 new_new_n101__ new_new_n102_1__
+01 1
+.names pclr nc3_q2 new_new_n103__
+01 1
+.names pclr nc3_q1 new_new_n104__
+01 1
+.names nc3_q0 new_new_n104__ new_new_n105__
+11 1
+.names pclr nolatch_fel new_new_n106__
+01 1
+.names new_new_n102_1__ new_new_n103__ new_new_n107_1__
+00 1
+.names new_new_n105__ new_new_n107_1__ new_new_n108__
+01 1
+.names new_new_n106__ new_new_n108__ n348
+01 1
+.names nc3_q3 nc3_q0 new_new_n110__
+01 1
+.names nfml nc3_q1 new_new_n111__
+00 1
+.names new_new_n110__ new_new_n111__ new_new_n112_1__
+11 1
+.names new_new_n112_1__ nolatch_fel new_new_n113__
+01 1
+.names nc3_q1 nfml new_new_n114__
+01 1
+.names nc3_q0 new_new_n114__ new_new_n115__
+01 1
+.names nc3_q3 nfml new_new_n116__
+11 1
+.names new_new_n115__ nc3_q2 new_new_n117_1__
+01 1
+.names pclr new_new_n116__ new_new_n118__
+00 1
+.names new_new_n117_1__ new_new_n118__ new_new_n119__
+11 1
+.names new_new_n113__ new_new_n119__ n351
+01 1
+.names nc3_q2 new_new_n114__ new_new_n121__
+11 1
+.names pclr new_new_n121__ new_new_n122_1__
+01 1
+.names nc3_q0 new_new_n122_1__ new_new_n123__
+01 1
+.names nc3_q1 nc3_q0 new_new_n124__
+01 1
+.names nfml nc3_q2 new_new_n125__
+01 1
+.names nc3_q3 new_new_n124__ new_new_n126__
+01 1
+.names new_new_n125__ new_new_n126__ new_new_n127__
+11 1
+.names new_new_n127__ new_new_n106__ new_new_n128__
+01 1
+.names new_new_n123__ new_new_n128__ n354
+00 0
+.names pfm nfml new_new_n130__
+00 1
+.names pfm nfml new_new_n131__
+11 1
+.names new_new_n130__ new_new_n131__ new_new_n132__
+00 1
+.names pclr new_new_n132__ n357
+01 1
+.names nolatch_fel nc3_q1 new_new_n134__
+01 1
+.names pclr nc3_q2 new_new_n135__
+00 1
+.names new_new_n134__ new_new_n135__ new_new_n136__
+11 1
+.names nc3_q0 new_new_n136__ n360
+11 1
+.names pclr nc3_q3 new_new_n138__
+00 1
+.names nfml nc3_q2 new_new_n139__
+11 1
+.names new_new_n138__ new_new_n139__ new_new_n140__
+11 1
+.names nc3_q2 new_new_n101__ new_new_n141__
+01 1
+.names new_new_n140__ new_new_n141__ new_new_n142__
+00 1
+.names new_new_n142__ new_new_n88__ new_new_n143__
+01 1
+.names new_new_n128__ new_new_n143__ new_new_n144__
+00 1
+.names nuc_17 new_new_n144__ new_new_n145__
+00 1
+.names n354 new_new_n145__ new_new_n146__
+11 1
+.names n354 new_new_n144__ new_new_n147__
+00 1
+.names new_new_n146__ new_new_n147__ n363
+00 1
+.names pclr nc3_q1 new_new_n149__
+00 1
+.names nc3_q0 nc3_q3 new_new_n150__
+01 1
+.names new_new_n149__ new_new_n150__ new_new_n151__
+11 1
+.names new_new_n106__ new_new_n151__ new_new_n152__
+00 1
+.names new_new_n103__ new_new_n152__ new_new_n153__
+01 1
+.names nuc_17 new_new_n153__ new_new_n154__
+00 1
+.names n354 new_new_n154__ new_new_n155__
+11 1
+.names n354 new_new_n153__ new_new_n156__
+00 1
+.names new_new_n155__ new_new_n156__ n366
+00 1
+.names ptest ntestl new_new_n158__
+00 1
+.names ptest ntestl new_new_n159__
+11 1
+.names new_new_n158__ new_new_n159__ new_new_n160__
+00 1
+.names pclr new_new_n160__ n369
+01 1
+.names nc3_q1 nc3_q0 new_new_n162__
+11 1
+.names new_new_n81__ new_new_n162__ new_new_n163__
+11 1
+.names nc3_q2 new_new_n163__ new_new_n164__
+11 1
+.names nc3_q2 new_new_n163__ new_new_n165__
+00 1
+.names new_new_n164__ new_new_n165__ new_new_n166__
+00 1
+.names new_new_n91__ new_new_n166__ new_new_n167__
+01 1
+.names pclr new_new_n167__ n372
+01 1
+.names nc3_q0 new_new_n81__ new_new_n169__
+11 1
+.names nc3_q1 new_new_n169__ new_new_n170__
+11 1
+.names nc3_q1 new_new_n169__ new_new_n171__
+00 1
+.names new_new_n170__ new_new_n171__ new_new_n172__
+00 1
+.names new_new_n91__ new_new_n172__ new_new_n173__
+01 1
+.names pclr new_new_n173__ n375
+01 1
+.names nuc_11 new_new_n76__ new_new_n175__
+00 1
+.names pclr new_new_n175__ n378
+01 1
+.names nc3_q0 new_new_n81__ new_new_n177__
+00 1
+.names new_new_n169__ new_new_n177__ new_new_n178__
+00 1
+.names new_new_n91__ new_new_n178__ new_new_n179__
+01 1
+.names pclr new_new_n179__ n381
+01 1
+.names nuc_17 nuc_19 new_new_n181__
+11 1
+.names nuc_18 new_new_n181__ new_new_n182__
+11 1
+.names new_new_n77_1__ new_new_n182__ new_new_n183__
+01 1
+.names nuc_16 new_new_n183__ new_new_n184__
+11 1
+.names nuc_16 new_new_n183__ new_new_n185__
+00 1
+.names new_new_n184__ new_new_n185__ new_new_n186__
+00 1
+.names new_new_n81__ new_new_n186__ new_new_n187__
+01 1
+.names pclr new_new_n187__ n384
+01 1
+.names nuc_18 nuc_19 new_new_n189__
+11 1
+.names new_new_n77_1__ new_new_n189__ new_new_n190__
+01 1
+.names nuc_17 new_new_n190__ new_new_n191__
+11 1
+.names nuc_17 new_new_n190__ new_new_n192__
+00 1
+.names new_new_n191__ new_new_n192__ new_new_n193__
+00 1
+.names new_new_n81__ new_new_n193__ new_new_n194__
+01 1
+.names pclr new_new_n194__ n387
+01 1
+.names new_new_n77_1__ nuc_19 new_new_n196__
+01 1
+.names nuc_18 new_new_n196__ new_new_n197__
+11 1
+.names nuc_18 new_new_n196__ new_new_n198__
+00 1
+.names new_new_n197__ new_new_n198__ new_new_n199__
+00 1
+.names new_new_n81__ new_new_n199__ new_new_n200__
+01 1
+.names pclr new_new_n200__ n390
+01 1
+.names nuc_19 new_new_n77_1__ new_new_n202__
+01 1
+.names new_new_n196__ new_new_n202__ new_new_n203__
+00 1
+.names new_new_n81__ new_new_n203__ new_new_n204__
+01 1
+.names pclr new_new_n204__ n393
+01 1
+.names nuc_11 nuc_10 new_new_n206__
+11 1
+.names nuc_9 new_new_n206__ new_new_n207__
+11 1
+.names nuc_8 new_new_n207__ new_new_n208__
+11 1
+.names nuc_8 new_new_n207__ new_new_n209__
+00 1
+.names new_new_n208__ new_new_n209__ new_new_n210__
+00 1
+.names new_new_n76__ new_new_n210__ new_new_n211__
+01 1
+.names pclr new_new_n211__ n396
+01 1
+.names nuc_9 new_new_n206__ new_new_n213__
+00 1
+.names new_new_n207__ new_new_n213__ new_new_n214__
+00 1
+.names new_new_n76__ new_new_n214__ new_new_n215__
+01 1
+.names pclr new_new_n215__ n399
+01 1
+.names new_new_n74__ new_new_n206__ new_new_n217__
+00 1
+.names new_new_n76__ new_new_n217__ new_new_n218__
+01 1
+.names pclr new_new_n218__ n402
+01 1
+.names nolatchvuc_5 pred2
+0 1
+.names nolatchvuc_6 pylw1
+0 1
+.names nolatch_g1l pgrn1
+1 1
+.names nolatch_r1l pred1
+1 1
+.names nolatch_g2l pgrn2
+1 1
+.names nolatch_y2l pylw2
+1 1
+.end

@@ -1,0 +1,41 @@
+# Benchmark "top" written by ABC on Thu Oct  8 20:19:03 2020
+.model top
+.inputs pa pb pc pd
+.outputs pe pf pg ph pi pj pk pl pm pn
+.names pc pd new_new_n15__
+00 1
+.names pb new_new_n15__ new_new_n16__
+01 1
+.names pa new_new_n16__ pe
+01 0
+.names pa new_new_n16__ pf
+11 0
+.names pb new_new_n15__ new_new_n19__
+11 1
+.names pa new_new_n19__ pg
+01 0
+.names pa new_new_n19__ ph
+11 0
+.names pd new_new_n15__ new_new_n22__
+00 1
+.names pb new_new_n22__ new_new_n23__
+01 1
+.names pa new_new_n23__ pi
+01 0
+.names pa new_new_n23__ pj
+11 0
+.names pb new_new_n22__ new_new_n26__
+11 1
+.names pa new_new_n26__ pk
+01 0
+.names pa new_new_n26__ pl
+11 0
+.names pc pd new_new_n29__
+01 1
+.names pb new_new_n29__ new_new_n30__
+01 1
+.names pa new_new_n30__ pm
+01 0
+.names pa new_new_n30__ pn
+11 0
+.end

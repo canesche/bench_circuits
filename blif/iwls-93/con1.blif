@@ -1,0 +1,45 @@
+# Benchmark "top" written by ABC on Thu Oct  8 20:19:04 2020
+.model top
+.inputs a b c d f g h
+.outputs f0 f1
+.names a b new_new_n10__
+11 1
+.names c d new_new_n11__
+01 1
+.names b new_new_n11__ new_new_n12__
+01 1
+.names c d new_new_n13__
+11 1
+.names f new_new_n13__ new_new_n14__
+11 1
+.names b h new_new_n15__
+11 1
+.names f new_new_n15__ new_new_n16__
+01 1
+.names new_new_n12__ new_new_n14__ new_new_n17__
+00 1
+.names new_new_n16__ new_new_n17__ new_new_n18__
+01 1
+.names new_new_n10__ new_new_n18__ f0
+01 0
+.names a b new_new_n20__
+00 1
+.names a f new_new_n21__
+01 1
+.names new_new_n20__ new_new_n21__ new_new_n22__
+00 1
+.names f new_new_n10__ new_new_n23__
+01 1
+.names f g new_new_n24__
+00 1
+.names b d new_new_n25__
+00 1
+.names f new_new_n25__ new_new_n26__
+11 1
+.names new_new_n23__ new_new_n24__ new_new_n27__
+00 1
+.names new_new_n26__ new_new_n27__ new_new_n28__
+01 1
+.names new_new_n22__ new_new_n28__ f1
+11 0
+.end

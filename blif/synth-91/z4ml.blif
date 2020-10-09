@@ -1,0 +1,99 @@
+# Benchmark "z4ml" written by ABC on Thu Oct  8 20:27:50 2020
+.model z4ml
+.inputs 1 2 3 4 5 6 7
+.outputs 24 25 26 27
+.names 4 7 new_new_n12__
+00 1
+.names new_new_n12__ 1 new_new_n13__
+01 1
+.names 4 7 new_new_n14__
+11 1
+.names new_new_n13__ new_new_n14__ new_new_n15__
+00 1
+.names 3 6 new_new_n16__
+00 1
+.names 2 5 new_new_n17__
+00 1
+.names new_new_n16__ new_new_n17__ new_new_n18__
+00 1
+.names new_new_n15__ new_new_n18__ new_new_n19__
+01 1
+.names 3 6 new_new_n20__
+11 1
+.names 5 new_new_n20__ new_new_n21__
+00 1
+.names new_new_n21__ 2 new_new_n22__
+01 1
+.names 5 6 new_new_n23__
+11 1
+.names 3 new_new_n23__ new_new_n24__
+11 1
+.names new_new_n22__ new_new_n24__ new_new_n25__
+00 1
+.names new_new_n19__ new_new_n25__ 24
+01 0
+.names 2 5 new_new_n27__
+11 1
+.names new_new_n17__ new_new_n27__ new_new_n28__
+00 1
+.names new_new_n16__ new_new_n28__ new_new_n29__
+00 1
+.names new_new_n15__ new_new_n29__ new_new_n30__
+01 1
+.names new_new_n28__ 6 new_new_n31__
+01 1
+.names 3 new_new_n31__ new_new_n32__
+11 1
+.names 1 new_new_n14__ new_new_n33__
+00 1
+.names new_new_n12__ new_new_n33__ new_new_n34__
+00 1
+.names 2 5 new_new_n35__
+01 1
+.names 5 2 new_new_n36__
+01 1
+.names new_new_n35__ new_new_n36__ new_new_n37__
+00 1
+.names new_new_n20__ new_new_n37__ new_new_n38__
+00 1
+.names new_new_n34__ new_new_n38__ new_new_n39__
+01 1
+.names 6 new_new_n37__ new_new_n40__
+00 1
+.names 3 new_new_n40__ new_new_n41__
+01 1
+.names new_new_n39__ new_new_n41__ new_new_n42__
+00 1
+.names new_new_n32__ new_new_n42__ new_new_n43__
+01 1
+.names new_new_n30__ new_new_n43__ 25
+01 0
+.names new_new_n16__ new_new_n20__ new_new_n45__
+00 1
+.names new_new_n15__ new_new_n45__ new_new_n46__
+00 1
+.names 3 6 new_new_n47__
+01 1
+.names 6 3 new_new_n48__
+01 1
+.names new_new_n47__ new_new_n48__ new_new_n49__
+00 1
+.names new_new_n34__ new_new_n49__ new_new_n50__
+00 1
+.names new_new_n46__ new_new_n50__ 26
+00 0
+.names new_new_n12__ new_new_n14__ new_new_n52__
+00 1
+.names new_new_n52__ 1 new_new_n53__
+01 1
+.names 4 7 new_new_n54__
+01 1
+.names 7 4 new_new_n55__
+01 1
+.names new_new_n54__ new_new_n55__ new_new_n56__
+00 1
+.names 1 new_new_n56__ new_new_n57__
+00 1
+.names new_new_n53__ new_new_n57__ 27
+00 0
+.end

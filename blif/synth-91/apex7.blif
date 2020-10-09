@@ -1,0 +1,456 @@
+# Benchmark "apex7" written by ABC on Thu Oct  8 20:27:37 2020
+.model apex7
+.inputs CAPSD CAT0 CAT1 CAT2 CAT3 CAT4 CAT5 VACC MMERR IBT0 IBT1 IBT2 ICLR \
+ LSD ACCRPY VERR_N RATR MARSSR VLENESR VSUMESR PLUTO0 PLUTO1 PLUTO2 PLUTO3 \
+ PLUTO4 PLUTO5 ORWD_N OWL_N PY END FBI WATCH OVACC KBG_N DEL1 COMPPAR VST0 \
+ VST1 STAR0 STAR1 STAR2 STAR3 BULL0 BULL1 BULL2 BULL3 BULL4 BULL5 BULL6
+.outputs SDO LSD_P ACCRPY_P VERR_F RATR_P MARSSR_P VLENESR_P VSUMESR_P \
+ PLUTO0_P PLUTO1_P PLUTO2_P PLUTO3_P PLUTO4_P PLUTO5_P ORWD_F OWL_F PY_P \
+ END_P FBI_P WATCH_P OVACC_P KBG_F DEL1_P COMPPAR_P VST0_P VST1_P STAR0_P \
+ STAR1_P STAR2_P STAR3_P BULL0_P BULL1_P BULL2_P BULL3_P BULL4_P BULL5_P \
+ BULL6_P
+.names STAR0 STAR1 new_new_n87__
+11 1
+.names STAR2 new_new_n87__ new_new_n88__
+01 1
+.names IBT2 IBT1 new_new_n89__
+01 1
+.names CAT1 IBT0 new_new_n90__
+01 1
+.names CAT0 IBT0 new_new_n91__
+00 1
+.names new_new_n90__ new_new_n91__ new_new_n92__
+00 1
+.names new_new_n92__ new_new_n89__ new_new_n93__
+01 1
+.names CAT5 IBT1 new_new_n94__
+01 1
+.names CAT3 IBT1 new_new_n95__
+00 1
+.names new_new_n94__ new_new_n95__ new_new_n96__
+00 1
+.names new_new_n96__ IBT0 new_new_n97__
+01 1
+.names CAT4 IBT1 new_new_n98__
+01 1
+.names CAT2 IBT1 new_new_n99__
+00 1
+.names new_new_n98__ new_new_n99__ new_new_n100__
+00 1
+.names IBT0 new_new_n100__ new_new_n101__
+00 1
+.names new_new_n97__ new_new_n101__ new_new_n102__
+00 1
+.names new_new_n102__ IBT2 new_new_n103__
+01 1
+.names new_new_n93__ new_new_n103__ new_new_n104__
+00 1
+.names OWL_N WATCH new_new_n105__
+11 1
+.names new_new_n104__ new_new_n105__ new_new_n106__
+01 1
+.names new_new_n88__ new_new_n106__ new_new_n107__
+11 1
+.names FBI new_new_n107__ new_new_n108__
+11 1
+.names LSD OWL_N new_new_n109__
+11 1
+.names new_new_n108__ new_new_n109__ new_new_n110__
+00 1
+.names STAR3 new_new_n110__ new_new_n111__
+00 1
+.names FBI new_new_n88__ new_new_n112__
+11 1
+.names new_new_n112__ OWL_N new_new_n113__
+01 1
+.names LSD new_new_n113__ new_new_n114__
+11 1
+.names new_new_n111__ new_new_n114__ LSD_P
+00 0
+.names new_new_n104__ WATCH ORWD_F
+01 0
+.names OWL_N FBI new_new_n117__
+11 1
+.names new_new_n88__ ORWD_F new_new_n118__
+11 1
+.names new_new_n118__ new_new_n117__ new_new_n119__
+01 1
+.names new_new_n119__ new_new_n117__ new_new_n120__
+01 1
+.names ACCRPY OWL_N new_new_n121__
+11 1
+.names new_new_n120__ new_new_n121__ ACCRPY_P
+00 0
+.names STAR3 new_new_n88__ new_new_n123__
+11 1
+.names CAT0 new_new_n89__ new_new_n124__
+01 1
+.names CAT1 WATCH new_new_n125__
+01 1
+.names new_new_n124__ new_new_n125__ new_new_n126__
+11 1
+.names new_new_n126__ ORWD_F new_new_n127__
+01 1
+.names new_new_n123__ new_new_n127__ new_new_n128__
+00 1
+.names BULL0 BULL3 new_new_n129__
+00 1
+.names BULL4 new_new_n129__ new_new_n130__
+11 1
+.names BULL5 new_new_n130__ new_new_n131__
+01 1
+.names BULL6 new_new_n131__ new_new_n132__
+11 1
+.names BULL1 new_new_n132__ new_new_n133__
+11 1
+.names BULL2 new_new_n133__ new_new_n134__
+01 1
+.names WATCH new_new_n134__ new_new_n135__
+11 1
+.names new_new_n119__ new_new_n135__ new_new_n136__
+00 1
+.names new_new_n134__ new_new_n128__ new_new_n137__
+01 1
+.names new_new_n136__ new_new_n137__ new_new_n138__
+00 1
+.names new_new_n138__ VERR_N new_new_n139__
+01 1
+.names OWL_N new_new_n117__ new_new_n140__
+00 1
+.names new_new_n139__ new_new_n140__ VERR_F
+00 0
+.names OWL_N END new_new_n142__
+11 1
+.names MMERR VST0 new_new_n143__
+00 1
+.names new_new_n142__ new_new_n143__ new_new_n144__
+11 1
+.names RATR OWL_N new_new_n145__
+11 1
+.names COMPPAR new_new_n142__ new_new_n146__
+01 1
+.names new_new_n145__ new_new_n146__ new_new_n147__
+00 1
+.names new_new_n144__ new_new_n147__ RATR_P
+01 0
+.names MARSSR OWL_N new_new_n149__
+11 1
+.names new_new_n105__ new_new_n134__ new_new_n150__
+11 1
+.names new_new_n149__ new_new_n150__ MARSSR_P
+00 0
+.names VLENESR KBG_N new_new_n152__
+01 1
+.names new_new_n152__ OWL_N VLENESR_P
+01 1
+.names VSUMESR OWL_N new_new_n154__
+11 1
+.names VST1 new_new_n142__ new_new_n155__
+11 1
+.names new_new_n154__ new_new_n155__ VSUMESR_P
+00 0
+.names VST1 COMPPAR new_new_n157__
+01 1
+.names new_new_n157__ new_new_n142__ new_new_n158__
+01 1
+.names KBG_N OWL_N new_new_n159__
+01 1
+.names new_new_n150__ new_new_n159__ new_new_n160__
+00 1
+.names new_new_n144__ new_new_n160__ new_new_n161__
+01 1
+.names new_new_n158__ new_new_n161__ new_new_n162__
+01 1
+.names PLUTO0 OWL_N new_new_n163__
+11 1
+.names new_new_n162__ new_new_n89__ new_new_n164__
+01 1
+.names IBT0 new_new_n164__ new_new_n165__
+01 1
+.names new_new_n163__ new_new_n165__ PLUTO0_P
+00 0
+.names PLUTO1 OWL_N new_new_n167__
+11 1
+.names IBT0 new_new_n164__ new_new_n168__
+11 1
+.names new_new_n167__ new_new_n168__ PLUTO1_P
+00 0
+.names PLUTO2 OWL_N new_new_n170__
+11 1
+.names new_new_n162__ IBT2 new_new_n171__
+01 1
+.names IBT0 IBT1 new_new_n172__
+00 1
+.names new_new_n171__ new_new_n172__ new_new_n173__
+11 1
+.names new_new_n170__ new_new_n173__ PLUTO2_P
+00 0
+.names PLUTO3 OWL_N new_new_n175__
+11 1
+.names IBT1 IBT0 new_new_n176__
+01 1
+.names new_new_n171__ new_new_n176__ new_new_n177__
+11 1
+.names new_new_n175__ new_new_n177__ PLUTO3_P
+00 0
+.names PLUTO4 OWL_N new_new_n179__
+11 1
+.names IBT0 IBT1 new_new_n180__
+01 1
+.names new_new_n171__ new_new_n180__ new_new_n181__
+11 1
+.names new_new_n179__ new_new_n181__ PLUTO4_P
+00 0
+.names PLUTO5 OWL_N new_new_n183__
+11 1
+.names IBT0 IBT1 new_new_n184__
+11 1
+.names new_new_n171__ new_new_n184__ new_new_n185__
+11 1
+.names new_new_n183__ new_new_n185__ PLUTO5_P
+00 0
+.names new_new_n135__ KBG_N new_new_n187__
+01 1
+.names END new_new_n187__ new_new_n188__
+01 1
+.names ICLR new_new_n188__ OWL_F
+01 1
+.names ICLR FBI new_new_n190__
+00 1
+.names ICLR FBI new_new_n191__
+01 1
+.names DEL1 new_new_n191__ new_new_n192__
+11 1
+.names PY new_new_n190__ new_new_n193__
+11 1
+.names new_new_n192__ new_new_n193__ PY_P
+00 0
+.names new_new_n120__ new_new_n142__ END_P
+00 0
+.names ORWD_N new_new_n106__ new_new_n196__
+01 1
+.names new_new_n117__ new_new_n196__ new_new_n197__
+00 1
+.names new_new_n87__ OWL_N new_new_n198__
+01 1
+.names ORWD_N new_new_n87__ new_new_n199__
+11 1
+.names new_new_n197__ new_new_n106__ new_new_n200__
+01 1
+.names new_new_n88__ new_new_n117__ new_new_n201__
+01 1
+.names new_new_n200__ new_new_n201__ new_new_n202__
+00 1
+.names new_new_n199__ new_new_n202__ new_new_n203__
+00 1
+.names STAR2 new_new_n198__ new_new_n204__
+11 1
+.names new_new_n117__ new_new_n204__ new_new_n205__
+00 1
+.names new_new_n205__ FBI new_new_n206__
+01 1
+.names new_new_n196__ new_new_n204__ new_new_n207__
+11 1
+.names new_new_n206__ new_new_n207__ new_new_n208__
+00 1
+.names new_new_n88__ new_new_n208__ new_new_n209__
+00 1
+.names FBI new_new_n106__ new_new_n210__
+11 1
+.names new_new_n209__ new_new_n210__ new_new_n211__
+00 1
+.names new_new_n203__ new_new_n211__ FBI_P
+01 0
+.names OWL_N OVACC new_new_n213__
+11 1
+.names VACC new_new_n213__ new_new_n214__
+01 1
+.names new_new_n105__ new_new_n214__ WATCH_P
+00 0
+.names ICLR VACC OVACC_P
+01 1
+.names new_new_n128__ new_new_n119__ new_new_n217__
+01 1
+.names new_new_n217__ KBG_N new_new_n218__
+01 1
+.names new_new_n140__ new_new_n218__ KBG_F
+00 0
+.names ICLR CAPSD DEL1_P
+01 1
+.names FBI DEL1 new_new_n221__
+11 1
+.names new_new_n221__ OWL_N new_new_n222__
+01 1
+.names COMPPAR new_new_n222__ new_new_n223__
+11 1
+.names COMPPAR new_new_n117__ new_new_n224__
+01 1
+.names DEL1 new_new_n224__ new_new_n225__
+11 1
+.names new_new_n223__ new_new_n225__ COMPPAR_P
+00 0
+.names VST1 new_new_n191__ new_new_n227__
+11 1
+.names VST0 new_new_n190__ new_new_n228__
+11 1
+.names new_new_n227__ new_new_n228__ VST0_P
+00 0
+.names VST1 new_new_n190__ new_new_n230__
+11 1
+.names PY new_new_n191__ new_new_n231__
+11 1
+.names new_new_n230__ new_new_n231__ VST1_P
+00 0
+.names ORWD_N ORWD_F new_new_n233__
+00 1
+.names new_new_n233__ OWL_N new_new_n234__
+01 1
+.names FBI new_new_n234__ new_new_n235__
+01 1
+.names STAR0 new_new_n235__ new_new_n236__
+11 1
+.names STAR0 new_new_n197__ new_new_n237__
+00 1
+.names new_new_n236__ new_new_n237__ STAR0_P
+00 0
+.names STAR1 new_new_n196__ new_new_n239__
+01 1
+.names new_new_n87__ new_new_n117__ new_new_n240__
+01 1
+.names new_new_n239__ new_new_n240__ new_new_n241__
+00 1
+.names new_new_n241__ STAR0 new_new_n242__
+01 1
+.names STAR0 new_new_n198__ new_new_n243__
+01 1
+.names new_new_n235__ new_new_n243__ new_new_n244__
+00 1
+.names new_new_n244__ STAR1 new_new_n245__
+01 1
+.names new_new_n242__ new_new_n245__ STAR1_P
+00 0
+.names new_new_n198__ new_new_n235__ new_new_n247__
+00 1
+.names new_new_n247__ STAR2 new_new_n248__
+01 1
+.names new_new_n88__ new_new_n196__ new_new_n249__
+11 1
+.names new_new_n87__ new_new_n117__ new_new_n250__
+11 1
+.names STAR2 new_new_n250__ new_new_n251__
+01 1
+.names new_new_n249__ new_new_n251__ new_new_n252__
+00 1
+.names new_new_n248__ new_new_n252__ STAR2_P
+01 0
+.names STAR2 OWL_N new_new_n254__
+01 1
+.names new_new_n254__ new_new_n247__ new_new_n255__
+01 1
+.names new_new_n255__ STAR3 new_new_n256__
+01 1
+.names STAR3 STAR2 new_new_n257__
+01 1
+.names new_new_n197__ new_new_n87__ new_new_n258__
+01 1
+.names new_new_n257__ new_new_n258__ new_new_n259__
+11 1
+.names new_new_n256__ new_new_n259__ STAR3_P
+00 0
+.names BULL0 new_new_n105__ new_new_n261__
+01 1
+.names WATCH OWL_N new_new_n262__
+01 1
+.names BULL0 new_new_n262__ new_new_n263__
+11 1
+.names new_new_n261__ new_new_n263__ BULL0_P
+00 0
+.names WATCH BULL1 new_new_n265__
+11 1
+.names BULL0 new_new_n265__ new_new_n266__
+11 1
+.names new_new_n266__ OWL_N new_new_n267__
+01 1
+.names BULL1 new_new_n267__ new_new_n268__
+11 1
+.names BULL0 new_new_n105__ new_new_n269__
+11 1
+.names BULL1 new_new_n269__ new_new_n270__
+01 1
+.names new_new_n268__ new_new_n270__ BULL1_P
+00 0
+.names BULL2 new_new_n267__ new_new_n272__
+11 1
+.names BULL2 BULL1 new_new_n273__
+01 1
+.names new_new_n269__ new_new_n273__ new_new_n274__
+11 1
+.names new_new_n272__ new_new_n274__ BULL2_P
+00 0
+.names WATCH BULL0 new_new_n276__
+11 1
+.names BULL1 BULL2 new_new_n277__
+11 1
+.names new_new_n276__ new_new_n277__ new_new_n278__
+11 1
+.names new_new_n278__ BULL3 new_new_n279__
+01 1
+.names BULL3 new_new_n278__ new_new_n280__
+01 1
+.names new_new_n279__ new_new_n280__ new_new_n281__
+00 1
+.names new_new_n281__ OWL_N BULL3_P
+01 1
+.names OWL_N BULL3 new_new_n283__
+11 1
+.names new_new_n278__ new_new_n283__ new_new_n284__
+11 1
+.names BULL4 new_new_n284__ new_new_n285__
+01 1
+.names BULL3 new_new_n278__ new_new_n286__
+11 1
+.names new_new_n286__ OWL_N new_new_n287__
+01 1
+.names BULL4 new_new_n287__ new_new_n288__
+11 1
+.names new_new_n285__ new_new_n288__ BULL4_P
+00 0
+.names new_new_n287__ BULL4_P new_new_n290__
+00 1
+.names new_new_n290__ BULL5 new_new_n291__
+01 1
+.names BULL4 new_new_n284__ new_new_n292__
+11 1
+.names BULL5 new_new_n292__ new_new_n293__
+01 1
+.names new_new_n291__ new_new_n293__ BULL5_P
+00 0
+.names BULL6 new_new_n284__ new_new_n295__
+01 1
+.names new_new_n267__ new_new_n278__ new_new_n296__
+11 1
+.names BULL3 new_new_n296__ new_new_n297__
+11 1
+.names new_new_n295__ new_new_n297__ new_new_n298__
+00 1
+.names new_new_n298__ BULL5 new_new_n299__
+01 1
+.names BULL4 new_new_n299__ new_new_n300__
+11 1
+.names BULL2 BULL3 new_new_n301__
+11 1
+.names BULL4 BULL5 new_new_n302__
+11 1
+.names new_new_n301__ new_new_n302__ new_new_n303__
+11 1
+.names new_new_n303__ OWL_N new_new_n304__
+01 1
+.names new_new_n267__ new_new_n304__ new_new_n305__
+00 1
+.names new_new_n305__ BULL6 new_new_n306__
+01 1
+.names new_new_n300__ new_new_n306__ BULL6_P
+00 0
+.names VST0 SDO
+1 1
+.end

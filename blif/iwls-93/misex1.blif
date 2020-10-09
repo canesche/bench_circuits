@@ -1,0 +1,119 @@
+# Benchmark "top" written by ABC on Thu Oct  8 20:19:08 2020
+.model top
+.inputs rmwb yskip page xskip dmpst0 dmpst1 dmpst2 dmpst3
+.outputs adctlp0b adctlp1b adctlp2b dmnst0b dmnst1b dmnst2b dmnst3b
+.names dmpst0 dmpst2 new_new_n16__
+11 1
+.names dmpst3 new_new_n16__ new_new_n17__
+01 1
+.names dmpst1 dmpst2 new_new_n18__
+00 1
+.names dmpst3 new_new_n18__ new_new_n19__
+11 1
+.names dmpst0 new_new_n19__ new_new_n20__
+11 1
+.names new_new_n17__ new_new_n20__ new_new_n21__
+00 1
+.names dmpst1 dmpst2 new_new_n22__
+01 1
+.names dmpst3 new_new_n22__ new_new_n23__
+01 1
+.names xskip new_new_n23__ new_new_n24__
+01 1
+.names dmpst2 dmpst1 new_new_n25__
+01 1
+.names dmpst3 new_new_n25__ new_new_n26__
+11 1
+.names dmpst0 new_new_n26__ new_new_n27__
+01 1
+.names dmpst0 dmpst1 new_new_n28__
+01 1
+.names dmpst2 new_new_n28__ new_new_n29__
+01 1
+.names yskip new_new_n29__ new_new_n30__
+01 1
+.names new_new_n24__ new_new_n27__ new_new_n31__
+00 1
+.names new_new_n30__ new_new_n31__ new_new_n32__
+01 1
+.names new_new_n21__ new_new_n32__ adctlp0b
+11 0
+.names dmpst0 dmpst1 new_new_n34__
+11 1
+.names dmpst3 new_new_n34__ new_new_n35__
+01 1
+.names new_new_n23__ new_new_n35__ new_new_n36__
+00 1
+.names new_new_n20__ new_new_n36__ new_new_n37__
+01 1
+.names dmpst3 new_new_n25__ new_new_n38__
+01 1
+.names yskip new_new_n38__ new_new_n39__
+11 1
+.names dmpst0 dmpst1 new_new_n40__
+00 1
+.names dmpst3 new_new_n40__ new_new_n41__
+01 1
+.names page new_new_n41__ new_new_n42__
+11 1
+.names new_new_n27__ new_new_n39__ new_new_n43__
+00 1
+.names new_new_n42__ new_new_n43__ new_new_n44__
+01 1
+.names new_new_n37__ new_new_n44__ adctlp1b
+11 0
+.names new_new_n29__ new_new_n41__ new_new_n46__
+00 1
+.names new_new_n20__ new_new_n46__ new_new_n47__
+01 1
+.names new_new_n36__ new_new_n47__ adctlp2b
+11 0
+.names rmwb new_new_n23__ new_new_n49__
+01 1
+.names xskip dmpst0 new_new_n50__
+00 1
+.names new_new_n23__ new_new_n50__ new_new_n51__
+11 1
+.names new_new_n30__ new_new_n49__ new_new_n52__
+00 1
+.names new_new_n51__ new_new_n52__ new_new_n53__
+01 1
+.names new_new_n27__ new_new_n53__ dmnst0b
+01 0
+.names yskip dmpst0 new_new_n55__
+00 1
+.names new_new_n38__ new_new_n55__ new_new_n56__
+11 1
+.names xskip new_new_n23__ new_new_n57__
+11 1
+.names page dmpst0 new_new_n58__
+00 1
+.names dmpst3 new_new_n18__ new_new_n59__
+01 1
+.names new_new_n58__ new_new_n59__ new_new_n60__
+11 1
+.names new_new_n56__ new_new_n57__ new_new_n61__
+00 1
+.names new_new_n60__ new_new_n61__ new_new_n62__
+01 1
+.names new_new_n21__ new_new_n62__ dmnst1b
+11 0
+.names dmpst0 new_new_n38__ new_new_n64__
+11 1
+.names new_new_n23__ new_new_n64__ new_new_n65__
+00 1
+.names new_new_n20__ new_new_n39__ new_new_n66__
+00 1
+.names new_new_n42__ new_new_n66__ new_new_n67__
+01 1
+.names new_new_n65__ new_new_n67__ dmnst2b
+11 0
+.names dmpst1 dmpst2 new_new_n69__
+11 1
+.names dmpst3 new_new_n69__ new_new_n70__
+01 1
+.names dmpst0 new_new_n70__ new_new_n71__
+11 1
+.names new_new_n27__ new_new_n71__ dmnst3b
+00 0
+.end

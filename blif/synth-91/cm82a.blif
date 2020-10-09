@@ -1,0 +1,45 @@
+# Benchmark "CM82" written by ABC on Thu Oct  8 20:27:39 2020
+.model CM82
+.inputs a b c d e
+.outputs f g h
+.names b c new_new_n9__
+01 1
+.names c b new_new_n10__
+01 1
+.names new_new_n9__ new_new_n10__ new_new_n11__
+00 1
+.names a new_new_n11__ new_new_n12__
+00 1
+.names a new_new_n11__ new_new_n13__
+11 1
+.names new_new_n12__ new_new_n13__ f
+00 0
+.names b c new_new_n15__
+00 1
+.names b c new_new_n16__
+11 1
+.names a new_new_n16__ new_new_n17__
+00 1
+.names new_new_n15__ new_new_n17__ new_new_n18__
+00 1
+.names d e new_new_n19__
+01 1
+.names e d new_new_n20__
+01 1
+.names new_new_n19__ new_new_n20__ new_new_n21__
+00 1
+.names new_new_n18__ new_new_n21__ new_new_n22__
+00 1
+.names new_new_n18__ new_new_n21__ new_new_n23__
+11 1
+.names new_new_n22__ new_new_n23__ g
+00 0
+.names d e new_new_n25__
+00 1
+.names new_new_n25__ new_new_n18__ new_new_n26__
+01 1
+.names d e new_new_n27__
+11 1
+.names new_new_n26__ new_new_n27__ h
+00 0
+.end

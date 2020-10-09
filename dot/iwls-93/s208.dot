@@ -31,7 +31,7 @@ edge [dir = back];
   title1 [shape=plaintext,
           fontsize=20,
           fontname = "Times-Roman",
-          label="Network structure visualized by ABC\nBenchmark \"top\". Time was Wed Sep 16 15:31:13 2020. "
+          label="Network structure visualized by ABC\nBenchmark \"top\". Time was Thu Oct  8 20:19:11 2020. "
          ];
 }
 

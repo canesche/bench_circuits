@@ -1,0 +1,82 @@
+# Benchmark "i1" written by ABC on Thu Oct  8 20:27:41 2020
+.model i1
+.inputs V27_0 V7_1 V7_2 V7_3 V7_4 V7_5 V7_6 V7_7 V8_0 V9_0 V10_0 V11_0 \
+ V12_0 V13_0 V14_0 V15_0 V16_0 V17_0 V18_0 V29_0 V27_3 V22_2 V22_3 V22_4 \
+ V22_5
+.outputs V27_1 V27_2 V27_4 V28_0 V30_0 V31_0 V32_0 V33_0 V34_0 V35_0 V36_0 \
+ V37_0 V38_0
+.names V7_5 V7_7 new_new_n42__
+00 1
+.names V7_3 new_new_n42__ new_new_n43__
+01 1
+.names V7_1 new_new_n43__ new_new_n44__
+01 1
+.names V7_2 new_new_n44__ new_new_n45__
+01 1
+.names V7_4 new_new_n45__ new_new_n46__
+01 1
+.names V7_6 new_new_n46__ new_new_n47__
+01 1
+.names V9_0 new_new_n47__ new_new_n48__
+11 1
+.names V29_0 new_new_n48__ new_new_n49__
+11 1
+.names V8_0 new_new_n49__ new_new_n50__
+11 1
+.names V27_0 V29_0 new_new_n51__
+01 1
+.names V8_0 V29_0 new_new_n52__
+01 1
+.names new_new_n47__ new_new_n52__ new_new_n53__
+11 1
+.names V9_0 new_new_n53__ new_new_n54__
+01 1
+.names new_new_n50__ new_new_n51__ new_new_n55__
+00 1
+.names new_new_n54__ new_new_n55__ V27_1
+01 0
+.names V9_0 new_new_n47__ new_new_n57__
+01 1
+.names V29_0 new_new_n57__ new_new_n58__
+11 1
+.names V8_0 new_new_n58__ new_new_n59__
+11 1
+.names new_new_n47__ V29_0 new_new_n60__
+01 1
+.names V27_0 new_new_n60__ new_new_n61__
+11 1
+.names new_new_n59__ new_new_n61__ V27_2
+00 0
+.names V27_3 V22_2 V27_4
+00 0
+.names V10_0 new_new_n53__ V28_0
+00 0
+.names V18_0 V22_5 V30_0
+11 1
+.names V11_0 V22_5 V32_0
+11 1
+.names V22_5 V11_0 new_new_n67__
+01 1
+.names V32_0 new_new_n67__ V31_0
+00 0
+.names V22_5 V14_0 new_new_n69__
+01 1
+.names V22_3 new_new_n69__ V33_0
+11 1
+.names V22_5 V17_0 new_new_n71__
+01 1
+.names V22_3 new_new_n71__ V34_0
+11 1
+.names V22_4 new_new_n69__ V35_0
+11 1
+.names V22_4 new_new_n71__ V36_0
+11 1
+.names V22_5 V16_0 V37_0
+01 1
+.names V13_0 V15_0 new_new_n76__
+00 1
+.names V12_0 new_new_n76__ new_new_n77__
+01 1
+.names V14_0 new_new_n77__ V38_0
+01 0
+.end

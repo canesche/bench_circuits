@@ -1,0 +1,101 @@
+# Benchmark "top" written by ABC on Thu Oct  8 20:19:15 2020
+.model top
+.inputs pp pq pr pa pb pc pd pe pf pg ph pi pk pl pm pn po
+.outputs pa0 pb0 pc0 ps pd0 pt pe0 pu pf0 pv pg0 pw ph0 px py pz
+.names pa pi new_new_n34__
+11 1
+.names pa pk new_new_n35__
+11 1
+.names pi pk new_new_n36__
+01 1
+.names new_new_n34__ new_new_n35__ new_new_n37__
+00 1
+.names new_new_n36__ new_new_n37__ pa0
+01 0
+.names pb pi new_new_n39__
+11 1
+.names pb pl new_new_n40__
+11 1
+.names pi pl new_new_n41__
+01 1
+.names new_new_n39__ new_new_n40__ new_new_n42__
+00 1
+.names new_new_n41__ new_new_n42__ pb0
+01 0
+.names pc pi new_new_n44__
+11 1
+.names pc pm new_new_n45__
+11 1
+.names pi pm new_new_n46__
+01 1
+.names new_new_n44__ new_new_n45__ new_new_n47__
+00 1
+.names new_new_n46__ new_new_n47__ pc0
+01 0
+.names pd pi new_new_n49__
+11 1
+.names pd pn new_new_n50__
+11 1
+.names pi pn new_new_n51__
+01 1
+.names new_new_n49__ new_new_n50__ new_new_n52__
+00 1
+.names new_new_n51__ new_new_n52__ pd0
+01 0
+.names pe pi new_new_n54__
+11 1
+.names pe po new_new_n55__
+11 1
+.names pi po new_new_n56__
+01 1
+.names new_new_n54__ new_new_n55__ new_new_n57__
+00 1
+.names new_new_n56__ new_new_n57__ pe0
+01 0
+.names pf pi new_new_n59__
+11 1
+.names pp pf new_new_n60__
+11 1
+.names pi pp new_new_n61__
+01 1
+.names new_new_n59__ new_new_n60__ new_new_n62__
+00 1
+.names new_new_n61__ new_new_n62__ pf0
+01 0
+.names pg pi new_new_n64__
+11 1
+.names pq pg new_new_n65__
+11 1
+.names pi pq new_new_n66__
+01 1
+.names new_new_n64__ new_new_n65__ new_new_n67__
+00 1
+.names new_new_n66__ new_new_n67__ pg0
+01 0
+.names ph pi new_new_n69__
+11 1
+.names pr ph new_new_n70__
+11 1
+.names pi pr new_new_n71__
+01 1
+.names new_new_n69__ new_new_n70__ new_new_n72__
+00 1
+.names new_new_n71__ new_new_n72__ ph0
+01 0
+.names pk ps
+1 1
+.names pl pt
+1 1
+.names pm pu
+1 1
+.names pn pv
+1 1
+.names po pw
+1 1
+.names pp px
+1 1
+.names pq py
+1 1
+.names pr pz
+1 1
+.end

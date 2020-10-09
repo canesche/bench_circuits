@@ -1,0 +1,429 @@
+# Benchmark "C432.iscas" written by ABC on Thu Oct  8 20:27:36 2020
+.model C432.iscas
+.inputs 1GAT(0) 4GAT(1) 8GAT(2) 11GAT(3) 14GAT(4) 17GAT(5) 21GAT(6) \
+ 24GAT(7) 27GAT(8) 30GAT(9) 34GAT(10) 37GAT(11) 40GAT(12) 43GAT(13) \
+ 47GAT(14) 50GAT(15) 53GAT(16) 56GAT(17) 60GAT(18) 63GAT(19) 66GAT(20) \
+ 69GAT(21) 73GAT(22) 76GAT(23) 79GAT(24) 82GAT(25) 86GAT(26) 89GAT(27) \
+ 92GAT(28) 95GAT(29) 99GAT(30) 102GAT(31) 105GAT(32) 108GAT(33) 112GAT(34) \
+ 115GAT(35)
+.outputs 223GAT(84) 329GAT(133) 370GAT(163) 421GAT(188) 430GAT(193) \
+ 431GAT(194) 432GAT(195)
+.names 1GAT(0) 4GAT(1) new_new_n44__
+01 1
+.names 11GAT(3) 17GAT(5) new_new_n45__
+01 1
+.names 24GAT(7) 30GAT(9) new_new_n46__
+01 1
+.names 37GAT(11) 43GAT(13) new_new_n47__
+01 1
+.names 50GAT(15) 56GAT(17) new_new_n48__
+01 1
+.names 63GAT(19) 69GAT(21) new_new_n49__
+01 1
+.names 76GAT(23) 82GAT(25) new_new_n50__
+01 1
+.names 89GAT(27) 95GAT(29) new_new_n51__
+01 1
+.names 102GAT(31) 108GAT(33) new_new_n52__
+01 1
+.names new_new_n44__ new_new_n45__ new_new_n53__
+00 1
+.names new_new_n46__ new_new_n53__ new_new_n54__
+01 1
+.names new_new_n47__ new_new_n54__ new_new_n55__
+01 1
+.names new_new_n48__ new_new_n55__ new_new_n56__
+01 1
+.names new_new_n49__ new_new_n56__ new_new_n57__
+01 1
+.names new_new_n50__ new_new_n57__ new_new_n58__
+01 1
+.names new_new_n51__ new_new_n58__ new_new_n59__
+01 1
+.names new_new_n52__ new_new_n59__ 223GAT(84)
+01 0
+.names new_new_n44__ 223GAT(84) new_new_n61__
+00 1
+.names new_new_n44__ 223GAT(84) new_new_n62__
+11 1
+.names new_new_n61__ new_new_n62__ new_new_n63__
+00 1
+.names 8GAT(2) 4GAT(1) new_new_n64__
+01 1
+.names new_new_n63__ new_new_n64__ new_new_n65__
+01 1
+.names new_new_n45__ 223GAT(84) new_new_n66__
+00 1
+.names new_new_n45__ 223GAT(84) new_new_n67__
+11 1
+.names new_new_n66__ new_new_n67__ new_new_n68__
+00 1
+.names 21GAT(6) 17GAT(5) new_new_n69__
+01 1
+.names new_new_n68__ new_new_n69__ new_new_n70__
+01 1
+.names new_new_n46__ 223GAT(84) new_new_n71__
+00 1
+.names new_new_n46__ 223GAT(84) new_new_n72__
+11 1
+.names new_new_n71__ new_new_n72__ new_new_n73__
+00 1
+.names 34GAT(10) 30GAT(9) new_new_n74__
+01 1
+.names new_new_n73__ new_new_n74__ new_new_n75__
+01 1
+.names new_new_n47__ 223GAT(84) new_new_n76__
+00 1
+.names new_new_n47__ 223GAT(84) new_new_n77__
+11 1
+.names new_new_n76__ new_new_n77__ new_new_n78__
+00 1
+.names 47GAT(14) 43GAT(13) new_new_n79__
+01 1
+.names new_new_n78__ new_new_n79__ new_new_n80__
+01 1
+.names new_new_n48__ 223GAT(84) new_new_n81__
+00 1
+.names new_new_n48__ 223GAT(84) new_new_n82__
+11 1
+.names new_new_n81__ new_new_n82__ new_new_n83__
+00 1
+.names 60GAT(18) 56GAT(17) new_new_n84__
+01 1
+.names new_new_n83__ new_new_n84__ new_new_n85__
+01 1
+.names new_new_n49__ 223GAT(84) new_new_n86__
+00 1
+.names new_new_n49__ 223GAT(84) new_new_n87__
+11 1
+.names new_new_n86__ new_new_n87__ new_new_n88__
+00 1
+.names 73GAT(22) 69GAT(21) new_new_n89__
+01 1
+.names new_new_n88__ new_new_n89__ new_new_n90__
+01 1
+.names new_new_n50__ 223GAT(84) new_new_n91__
+00 1
+.names new_new_n50__ 223GAT(84) new_new_n92__
+11 1
+.names new_new_n91__ new_new_n92__ new_new_n93__
+00 1
+.names 86GAT(26) 82GAT(25) new_new_n94__
+01 1
+.names new_new_n93__ new_new_n94__ new_new_n95__
+01 1
+.names new_new_n51__ 223GAT(84) new_new_n96__
+00 1
+.names new_new_n51__ 223GAT(84) new_new_n97__
+11 1
+.names new_new_n96__ new_new_n97__ new_new_n98__
+00 1
+.names 99GAT(30) 95GAT(29) new_new_n99__
+01 1
+.names new_new_n98__ new_new_n99__ new_new_n100__
+01 1
+.names new_new_n52__ 223GAT(84) new_new_n101__
+00 1
+.names new_new_n52__ 223GAT(84) new_new_n102__
+11 1
+.names new_new_n101__ new_new_n102__ new_new_n103__
+00 1
+.names 112GAT(34) 108GAT(33) new_new_n104__
+01 1
+.names new_new_n103__ new_new_n104__ new_new_n105__
+01 1
+.names new_new_n65__ new_new_n70__ new_new_n106__
+00 1
+.names new_new_n75__ new_new_n106__ new_new_n107__
+01 1
+.names new_new_n80__ new_new_n107__ new_new_n108__
+01 1
+.names new_new_n85__ new_new_n108__ new_new_n109__
+01 1
+.names new_new_n90__ new_new_n109__ new_new_n110__
+01 1
+.names new_new_n95__ new_new_n110__ new_new_n111__
+01 1
+.names new_new_n100__ new_new_n111__ new_new_n112__
+01 1
+.names new_new_n105__ new_new_n112__ 329GAT(133)
+01 0
+.names new_new_n65__ 329GAT(133) new_new_n114__
+00 1
+.names new_new_n65__ 329GAT(133) new_new_n115__
+11 1
+.names new_new_n114__ new_new_n115__ new_new_n116__
+00 1
+.names 14GAT(4) 4GAT(1) new_new_n117__
+01 1
+.names new_new_n63__ new_new_n117__ new_new_n118__
+01 1
+.names new_new_n116__ new_new_n118__ new_new_n119__
+01 1
+.names new_new_n70__ 329GAT(133) new_new_n120__
+00 1
+.names new_new_n70__ 329GAT(133) new_new_n121__
+11 1
+.names new_new_n120__ new_new_n121__ new_new_n122__
+00 1
+.names 27GAT(8) 17GAT(5) new_new_n123__
+01 1
+.names new_new_n68__ new_new_n123__ new_new_n124__
+01 1
+.names new_new_n122__ new_new_n124__ new_new_n125__
+01 1
+.names new_new_n75__ 329GAT(133) new_new_n126__
+00 1
+.names new_new_n75__ 329GAT(133) new_new_n127__
+11 1
+.names new_new_n126__ new_new_n127__ new_new_n128__
+00 1
+.names 40GAT(12) 30GAT(9) new_new_n129__
+01 1
+.names new_new_n73__ new_new_n129__ new_new_n130__
+01 1
+.names new_new_n128__ new_new_n130__ new_new_n131__
+01 1
+.names new_new_n80__ 329GAT(133) new_new_n132__
+00 1
+.names new_new_n80__ 329GAT(133) new_new_n133__
+11 1
+.names new_new_n132__ new_new_n133__ new_new_n134__
+00 1
+.names 53GAT(16) 43GAT(13) new_new_n135__
+01 1
+.names new_new_n78__ new_new_n135__ new_new_n136__
+01 1
+.names new_new_n134__ new_new_n136__ new_new_n137__
+01 1
+.names new_new_n85__ 329GAT(133) new_new_n138__
+00 1
+.names new_new_n85__ 329GAT(133) new_new_n139__
+11 1
+.names new_new_n138__ new_new_n139__ new_new_n140__
+00 1
+.names 66GAT(20) 56GAT(17) new_new_n141__
+01 1
+.names new_new_n83__ new_new_n141__ new_new_n142__
+01 1
+.names new_new_n140__ new_new_n142__ new_new_n143__
+01 1
+.names new_new_n90__ 329GAT(133) new_new_n144__
+00 1
+.names new_new_n90__ 329GAT(133) new_new_n145__
+11 1
+.names new_new_n144__ new_new_n145__ new_new_n146__
+00 1
+.names 79GAT(24) 69GAT(21) new_new_n147__
+01 1
+.names new_new_n88__ new_new_n147__ new_new_n148__
+01 1
+.names new_new_n146__ new_new_n148__ new_new_n149__
+01 1
+.names new_new_n95__ 329GAT(133) new_new_n150__
+00 1
+.names new_new_n95__ 329GAT(133) new_new_n151__
+11 1
+.names new_new_n150__ new_new_n151__ new_new_n152__
+00 1
+.names 92GAT(28) 82GAT(25) new_new_n153__
+01 1
+.names new_new_n93__ new_new_n153__ new_new_n154__
+01 1
+.names new_new_n152__ new_new_n154__ new_new_n155__
+01 1
+.names new_new_n100__ 329GAT(133) new_new_n156__
+00 1
+.names new_new_n100__ 329GAT(133) new_new_n157__
+11 1
+.names new_new_n156__ new_new_n157__ new_new_n158__
+00 1
+.names 105GAT(32) 95GAT(29) new_new_n159__
+01 1
+.names new_new_n98__ new_new_n159__ new_new_n160__
+01 1
+.names new_new_n158__ new_new_n160__ new_new_n161__
+01 1
+.names new_new_n105__ 329GAT(133) new_new_n162__
+00 1
+.names new_new_n105__ 329GAT(133) new_new_n163__
+11 1
+.names new_new_n162__ new_new_n163__ new_new_n164__
+00 1
+.names 115GAT(35) 108GAT(33) new_new_n165__
+01 1
+.names new_new_n103__ new_new_n165__ new_new_n166__
+01 1
+.names new_new_n164__ new_new_n166__ new_new_n167__
+01 1
+.names new_new_n119__ new_new_n125__ new_new_n168__
+00 1
+.names new_new_n131__ new_new_n168__ new_new_n169__
+01 1
+.names new_new_n137__ new_new_n169__ new_new_n170__
+01 1
+.names new_new_n143__ new_new_n170__ new_new_n171__
+01 1
+.names new_new_n149__ new_new_n171__ new_new_n172__
+01 1
+.names new_new_n155__ new_new_n172__ new_new_n173__
+01 1
+.names new_new_n161__ new_new_n173__ new_new_n174__
+01 1
+.names new_new_n167__ new_new_n174__ 370GAT(163)
+01 0
+.names 1GAT(0) 223GAT(84) new_new_n176__
+11 1
+.names 8GAT(2) 329GAT(133) new_new_n177__
+11 1
+.names 14GAT(4) 370GAT(163) new_new_n178__
+11 1
+.names new_new_n176__ 4GAT(1) new_new_n179__
+01 1
+.names new_new_n177__ new_new_n179__ new_new_n180__
+01 1
+.names new_new_n178__ new_new_n180__ new_new_n181__
+01 1
+.names 11GAT(3) 223GAT(84) new_new_n182__
+11 1
+.names 21GAT(6) 329GAT(133) new_new_n183__
+11 1
+.names 27GAT(8) 370GAT(163) new_new_n184__
+11 1
+.names new_new_n182__ new_new_n183__ new_new_n185__
+00 1
+.names new_new_n184__ new_new_n185__ new_new_n186__
+01 1
+.names 17GAT(5) new_new_n186__ new_new_n187__
+11 1
+.names 24GAT(7) 223GAT(84) new_new_n188__
+11 1
+.names 34GAT(10) 329GAT(133) new_new_n189__
+11 1
+.names 40GAT(12) 370GAT(163) new_new_n190__
+11 1
+.names new_new_n188__ new_new_n189__ new_new_n191__
+00 1
+.names new_new_n190__ new_new_n191__ new_new_n192__
+01 1
+.names 30GAT(9) new_new_n192__ new_new_n193__
+11 1
+.names 37GAT(11) 223GAT(84) new_new_n194__
+11 1
+.names 47GAT(14) 329GAT(133) new_new_n195__
+11 1
+.names 53GAT(16) 370GAT(163) new_new_n196__
+11 1
+.names new_new_n194__ new_new_n195__ new_new_n197__
+00 1
+.names new_new_n196__ new_new_n197__ new_new_n198__
+01 1
+.names 43GAT(13) new_new_n198__ new_new_n199__
+11 1
+.names 50GAT(15) 223GAT(84) new_new_n200__
+11 1
+.names 60GAT(18) 329GAT(133) new_new_n201__
+11 1
+.names 66GAT(20) 370GAT(163) new_new_n202__
+11 1
+.names new_new_n200__ new_new_n201__ new_new_n203__
+00 1
+.names new_new_n202__ new_new_n203__ new_new_n204__
+01 1
+.names 56GAT(17) new_new_n204__ new_new_n205__
+11 1
+.names 63GAT(19) 223GAT(84) new_new_n206__
+11 1
+.names 73GAT(22) 329GAT(133) new_new_n207__
+11 1
+.names 79GAT(24) 370GAT(163) new_new_n208__
+11 1
+.names new_new_n206__ new_new_n207__ new_new_n209__
+00 1
+.names new_new_n208__ new_new_n209__ new_new_n210__
+01 1
+.names 69GAT(21) new_new_n210__ new_new_n211__
+11 1
+.names 76GAT(23) 223GAT(84) new_new_n212__
+11 1
+.names 86GAT(26) 329GAT(133) new_new_n213__
+11 1
+.names 92GAT(28) 370GAT(163) new_new_n214__
+11 1
+.names new_new_n212__ new_new_n213__ new_new_n215__
+00 1
+.names new_new_n214__ new_new_n215__ new_new_n216__
+01 1
+.names 82GAT(25) new_new_n216__ new_new_n217__
+11 1
+.names 89GAT(27) 223GAT(84) new_new_n218__
+11 1
+.names 99GAT(30) 329GAT(133) new_new_n219__
+11 1
+.names 105GAT(32) 370GAT(163) new_new_n220__
+11 1
+.names new_new_n218__ new_new_n219__ new_new_n221__
+00 1
+.names new_new_n220__ new_new_n221__ new_new_n222__
+01 1
+.names 95GAT(29) new_new_n222__ new_new_n223__
+11 1
+.names 102GAT(31) 223GAT(84) new_new_n224__
+11 1
+.names 112GAT(34) 329GAT(133) new_new_n225__
+11 1
+.names 115GAT(35) 370GAT(163) new_new_n226__
+11 1
+.names new_new_n224__ new_new_n225__ new_new_n227__
+00 1
+.names new_new_n226__ new_new_n227__ new_new_n228__
+01 1
+.names 108GAT(33) new_new_n228__ new_new_n229__
+11 1
+.names new_new_n187__ new_new_n193__ new_new_n230__
+00 1
+.names new_new_n199__ new_new_n230__ new_new_n231__
+01 1
+.names new_new_n205__ new_new_n231__ new_new_n232__
+01 1
+.names new_new_n211__ new_new_n232__ new_new_n233__
+01 1
+.names new_new_n217__ new_new_n233__ new_new_n234__
+01 1
+.names new_new_n223__ new_new_n234__ new_new_n235__
+01 1
+.names new_new_n229__ new_new_n235__ new_new_n236__
+01 1
+.names new_new_n181__ new_new_n236__ 421GAT(188)
+00 1
+.names new_new_n193__ new_new_n199__ new_new_n238__
+01 1
+.names new_new_n238__ new_new_n230__ new_new_n239__
+01 1
+.names new_new_n205__ new_new_n239__ 430GAT(193)
+01 0
+.names new_new_n193__ new_new_n199__ new_new_n241__
+00 1
+.names new_new_n211__ new_new_n241__ new_new_n242__
+11 1
+.names new_new_n205__ new_new_n242__ new_new_n243__
+01 1
+.names new_new_n199__ new_new_n205__ new_new_n244__
+00 1
+.names new_new_n217__ new_new_n244__ new_new_n245__
+11 1
+.names new_new_n243__ new_new_n230__ new_new_n246__
+01 1
+.names new_new_n245__ new_new_n246__ 431GAT(194)
+01 0
+.names new_new_n217__ new_new_n241__ new_new_n248__
+01 1
+.names new_new_n223__ new_new_n248__ new_new_n249__
+11 1
+.names new_new_n187__ new_new_n238__ new_new_n250__
+00 1
+.names new_new_n243__ new_new_n250__ new_new_n251__
+01 1
+.names new_new_n249__ new_new_n251__ 432GAT(195)
+01 0
+.end

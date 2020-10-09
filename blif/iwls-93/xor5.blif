@@ -1,0 +1,99 @@
+# Benchmark "top" written by ABC on Thu Oct  8 20:19:16 2020
+.model top
+.inputs a b c d e
+.outputs xor5
+.names e a new_new_n7__
+01 1
+.names c b new_new_n8__
+01 1
+.names d new_new_n8__ new_new_n9__
+11 1
+.names new_new_n7__ new_new_n9__ new_new_n10__
+11 1
+.names b c new_new_n11__
+11 1
+.names d new_new_n11__ new_new_n12__
+01 1
+.names new_new_n7__ new_new_n12__ new_new_n13__
+11 1
+.names a e new_new_n14__
+11 1
+.names d new_new_n8__ new_new_n15__
+01 1
+.names new_new_n14__ new_new_n15__ new_new_n16__
+11 1
+.names new_new_n10__ new_new_n13__ new_new_n17__
+00 1
+.names new_new_n16__ new_new_n17__ new_new_n18__
+01 1
+.names d new_new_n11__ new_new_n19__
+11 1
+.names new_new_n14__ new_new_n19__ new_new_n20__
+11 1
+.names b c new_new_n21__
+01 1
+.names d new_new_n21__ new_new_n22__
+01 1
+.names new_new_n14__ new_new_n22__ new_new_n23__
+11 1
+.names d new_new_n21__ new_new_n24__
+11 1
+.names new_new_n7__ new_new_n24__ new_new_n25__
+11 1
+.names b c new_new_n26__
+00 1
+.names d new_new_n26__ new_new_n27__
+11 1
+.names new_new_n14__ new_new_n27__ new_new_n28__
+11 1
+.names new_new_n23__ new_new_n25__ new_new_n29__
+00 1
+.names new_new_n28__ new_new_n29__ new_new_n30__
+01 1
+.names new_new_n20__ new_new_n18__ new_new_n31__
+01 1
+.names new_new_n30__ new_new_n31__ new_new_n32__
+11 1
+.names a e new_new_n33__
+00 1
+.names new_new_n15__ new_new_n33__ new_new_n34__
+11 1
+.names a e new_new_n35__
+01 1
+.names new_new_n9__ new_new_n35__ new_new_n36__
+11 1
+.names new_new_n24__ new_new_n35__ new_new_n37__
+11 1
+.names new_new_n34__ new_new_n36__ new_new_n38__
+00 1
+.names new_new_n37__ new_new_n38__ new_new_n39__
+01 1
+.names new_new_n19__ new_new_n33__ new_new_n40__
+11 1
+.names d new_new_n26__ new_new_n41__
+01 1
+.names new_new_n7__ new_new_n41__ new_new_n42__
+11 1
+.names new_new_n12__ new_new_n35__ new_new_n43__
+11 1
+.names new_new_n40__ new_new_n42__ new_new_n44__
+00 1
+.names new_new_n43__ new_new_n44__ new_new_n45__
+01 1
+.names new_new_n27__ new_new_n33__ new_new_n46__
+11 1
+.names new_new_n22__ new_new_n33__ new_new_n47__
+11 1
+.names new_new_n35__ new_new_n41__ new_new_n48__
+11 1
+.names new_new_n46__ new_new_n47__ new_new_n49__
+00 1
+.names new_new_n48__ new_new_n49__ new_new_n50__
+01 1
+.names new_new_n39__ new_new_n45__ new_new_n51__
+11 1
+.names new_new_n50__ new_new_n51__ new_new_n52__
+11 1
+.names new_new_n32__ new_new_n52__ xor5
+11 0
+.end

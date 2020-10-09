@@ -1,0 +1,161 @@
+# Benchmark "top" written by ABC on Thu Oct  8 20:19:11 2020
+.model top
+.inputs clock pp_0 pclk pc_8 pc_7 pc_6 pc_5 pc_4 pc_3 pc_2 pc_1 pc_0
+.outputs pz
+
+.latch       n180      n_n40  2
+.latch       n183      n_n90  2
+.latch       n186      n_n91  2
+.latch       n189      n_n87  2
+.latch       n192      n_n88  2
+.latch       n195      n_n89  2
+.latch       n198      n_n39  2
+.latch       n201      n_n38  2
+
+.names n_n91 pp_0 new_new_n37__
+01 1
+.names n_n90 new_new_n37__ new_new_n38__
+01 1
+.names n_n39 new_new_n38__ new_new_n39__
+11 1
+.names n_n40 new_new_n39__ new_new_n40__
+01 1
+.names n_n88 n_n89 new_new_n41_1__
+00 1
+.names n_n87 new_new_n41_1__ new_new_n42__
+01 1
+.names n_n38 new_new_n42__ new_new_n43__
+01 1
+.names new_new_n40__ new_new_n43__ new_new_n44__
+11 1
+.names pc_8 new_new_n44__ new_new_n45__
+11 1
+.names n_n90 new_new_n37__ new_new_n46_1__
+11 1
+.names new_new_n43__ new_new_n46_1__ new_new_n47__
+11 1
+.names pc_6 new_new_n47__ new_new_n48__
+11 1
+.names n_n89 pp_0 new_new_n49__
+01 1
+.names n_n88 new_new_n49__ new_new_n50__
+01 1
+.names n_n38 new_new_n50__ new_new_n51_1__
+11 1
+.names n_n87 new_new_n51_1__ new_new_n52__
+01 1
+.names pc_4 new_new_n52__ new_new_n53__
+11 1
+.names pp_0 n_n91 new_new_n54__
+11 1
+.names new_new_n43__ new_new_n54__ new_new_n55__
+11 1
+.names pc_5 new_new_n55__ new_new_n56_1__
+11 1
+.names new_new_n53__ new_new_n56_1__ new_new_n57__
+00 1
+.names n_n40 new_new_n38__ new_new_n58__
+11 1
+.names new_new_n43__ new_new_n58__ new_new_n59__
+11 1
+.names pc_7 new_new_n59__ new_new_n60__
+11 1
+.names new_new_n48__ new_new_n57__ new_new_n61_1__
+01 1
+.names new_new_n60__ new_new_n61_1__ new_new_n62__
+01 1
+.names n_n88 new_new_n49__ new_new_n63__
+11 1
+.names pc_2 new_new_n63__ new_new_n64__
+11 1
+.names pp_0 pc_0 new_new_n65__
+11 1
+.names pp_0 n_n89 new_new_n66__
+11 1
+.names pc_1 new_new_n66__ new_new_n67__
+11 1
+.names new_new_n65__ new_new_n67__ new_new_n68__
+00 1
+.names n_n87 new_new_n50__ new_new_n69__
+11 1
+.names pc_3 new_new_n69__ new_new_n70__
+11 1
+.names new_new_n64__ new_new_n68__ new_new_n71__
+01 1
+.names new_new_n70__ new_new_n71__ new_new_n72__
+01 1
+.names new_new_n62__ new_new_n72__ new_new_n73__
+11 1
+.names new_new_n45__ new_new_n73__ pz
+01 0
+.names n_n88 n_n89 new_new_n75__
+11 1
+.names n_n87 n_n38 new_new_n76__
+11 1
+.names new_new_n75__ new_new_n76__ new_new_n77__
+11 1
+.names pp_0 new_new_n77__ new_new_n78__
+11 1
+.names n_n91 new_new_n78__ new_new_n79__
+11 1
+.names n_n90 new_new_n79__ new_new_n80__
+11 1
+.names new_new_n80__ n_n40 new_new_n81__
+01 1
+.names n_n40 new_new_n80__ new_new_n82__
+01 1
+.names new_new_n81__ new_new_n82__ n180
+00 0
+.names n_n90 new_new_n79__ new_new_n84__
+00 1
+.names new_new_n80__ new_new_n84__ n183
+00 1
+.names n_n91 new_new_n78__ new_new_n86__
+01 1
+.names new_new_n78__ n_n91 new_new_n87__
+01 1
+.names new_new_n86__ new_new_n87__ n186
+00 0
+.names pp_0 new_new_n75__ new_new_n89__
+11 1
+.names new_new_n89__ n_n87 new_new_n90__
+01 1
+.names n_n87 new_new_n89__ new_new_n91__
+01 1
+.names new_new_n90__ new_new_n91__ n189
+00 0
+.names n_n88 new_new_n66__ new_new_n93__
+11 1
+.names n_n88 new_new_n66__ new_new_n94__
+00 1
+.names new_new_n93__ new_new_n94__ n192
+00 1
+.names pp_0 n_n89 new_new_n96__
+01 1
+.names new_new_n49__ new_new_n96__ n195
+00 0
+.names n_n40 n_n90 new_new_n98__
+11 1
+.names new_new_n79__ new_new_n98__ new_new_n99__
+11 1
+.names new_new_n99__ n_n39 new_new_n100__
+01 1
+.names n_n39 n_n40 new_new_n101__
+01 1
+.names new_new_n80__ new_new_n101__ new_new_n102__
+11 1
+.names new_new_n100__ new_new_n102__ n198
+00 0
+.names pp_0 n_n87 new_new_n104__
+11 1
+.names new_new_n75__ new_new_n104__ new_new_n105__
+11 1
+.names new_new_n105__ n_n38 new_new_n106__
+01 1
+.names n_n38 n_n87 new_new_n107__
+01 1
+.names new_new_n89__ new_new_n107__ new_new_n108__
+11 1
+.names new_new_n106__ new_new_n108__ n201
+00 0
+.end

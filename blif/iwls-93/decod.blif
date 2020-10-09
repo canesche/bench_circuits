@@ -1,0 +1,65 @@
+# Benchmark "top" written by ABC on Thu Oct  8 20:19:05 2020
+.model top
+.inputs pa pb pc pd pe
+.outputs pp pq pr ps pt pu pf pg ph pi pj pk pl pm pn po
+.names pa pe new_new_n22__
+01 1
+.names pc new_new_n22__ new_new_n23__
+01 1
+.names pb new_new_n23__ new_new_n24__
+11 1
+.names pd new_new_n24__ pp
+11 1
+.names pd new_new_n24__ pq
+01 1
+.names pc new_new_n22__ new_new_n27__
+11 1
+.names pb new_new_n27__ new_new_n28__
+01 1
+.names pd new_new_n28__ pr
+11 1
+.names pd new_new_n28__ ps
+01 1
+.names pb new_new_n23__ new_new_n31__
+01 1
+.names pd new_new_n31__ pt
+11 1
+.names pd new_new_n31__ pu
+01 1
+.names pa pe new_new_n34__
+11 1
+.names pc new_new_n34__ new_new_n35__
+11 1
+.names pb new_new_n35__ new_new_n36__
+11 1
+.names pd new_new_n36__ pf
+11 1
+.names pd new_new_n36__ pg
+01 1
+.names pc new_new_n34__ new_new_n39__
+01 1
+.names pb new_new_n39__ new_new_n40__
+11 1
+.names pd new_new_n40__ ph
+11 1
+.names pd new_new_n40__ pi
+01 1
+.names pb new_new_n35__ new_new_n43__
+01 1
+.names pd new_new_n43__ pj
+11 1
+.names pd new_new_n43__ pk
+01 1
+.names pb new_new_n39__ new_new_n46__
+01 1
+.names pd new_new_n46__ pl
+11 1
+.names pd new_new_n46__ pm
+01 1
+.names pb new_new_n27__ new_new_n49__
+11 1
+.names pd new_new_n49__ pn
+11 1
+.names pd new_new_n49__ po
+01 1
+.end

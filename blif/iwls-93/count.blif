@@ -1,0 +1,260 @@
+# Benchmark "top" written by ABC on Thu Oct  8 20:19:04 2020
+.model top
+.inputs pp pa0 pq pb0 pr pc0 ps pd0 pe0 pu pf0 pv pg0 pw ph0 px pi0 py pj0 \
+ pz pa pb pc pd pe pf pg ph pi pj pk pl pm pn po
+.outputs pk0 pl0 pm0 pn0 po0 pp0 pq0 pr0 ps0 pt0 pu0 pv0 pw0 px0 py0 pz0
+.names pp pq new_new_n52__
+00 1
+.names pr pu new_new_n53__
+01 1
+.names pu pr new_new_n54__
+01 1
+.names new_new_n53__ new_new_n54__ new_new_n55__
+00 1
+.names pq new_new_n55__ new_new_n56__
+11 1
+.names new_new_n52__ new_new_n56__ new_new_n57__
+00 1
+.names ps new_new_n57__ pk0
+01 0
+.names pq po new_new_n59__
+00 1
+.names pr pu new_new_n60__
+00 1
+.names pv new_new_n60__ new_new_n61__
+00 1
+.names pv new_new_n60__ new_new_n62__
+11 1
+.names new_new_n61__ new_new_n62__ new_new_n63__
+00 1
+.names pq new_new_n63__ new_new_n64__
+11 1
+.names new_new_n59__ new_new_n64__ new_new_n65__
+00 1
+.names ps new_new_n65__ pl0
+01 0
+.names pq pn new_new_n67__
+00 1
+.names pv new_new_n60__ new_new_n68__
+01 1
+.names pw new_new_n68__ new_new_n69__
+11 1
+.names pw new_new_n68__ new_new_n70__
+00 1
+.names new_new_n69__ new_new_n70__ new_new_n71__
+00 1
+.names pq new_new_n71__ new_new_n72__
+11 1
+.names new_new_n67__ new_new_n72__ new_new_n73__
+00 1
+.names ps new_new_n73__ pm0
+01 0
+.names pq pm new_new_n75__
+00 1
+.names pw new_new_n68__ new_new_n76__
+01 1
+.names px new_new_n76__ new_new_n77__
+00 1
+.names px new_new_n76__ new_new_n78__
+11 1
+.names new_new_n77__ new_new_n78__ new_new_n79__
+00 1
+.names pq new_new_n79__ new_new_n80__
+11 1
+.names new_new_n75__ new_new_n80__ new_new_n81__
+00 1
+.names ps new_new_n81__ pn0
+01 0
+.names pq pl new_new_n83__
+00 1
+.names px new_new_n76__ new_new_n84__
+01 1
+.names py new_new_n84__ new_new_n85__
+11 1
+.names py new_new_n84__ new_new_n86__
+00 1
+.names new_new_n85__ new_new_n86__ new_new_n87__
+00 1
+.names pq new_new_n87__ new_new_n88__
+11 1
+.names new_new_n83__ new_new_n88__ new_new_n89__
+00 1
+.names ps new_new_n89__ po0
+01 0
+.names pq pk new_new_n91__
+00 1
+.names py new_new_n84__ new_new_n92__
+01 1
+.names pz new_new_n92__ new_new_n93__
+00 1
+.names pz new_new_n92__ new_new_n94__
+11 1
+.names new_new_n93__ new_new_n94__ new_new_n95__
+00 1
+.names pq new_new_n95__ new_new_n96__
+11 1
+.names new_new_n91__ new_new_n96__ new_new_n97__
+00 1
+.names ps new_new_n97__ pp0
+01 0
+.names pq pj new_new_n99__
+00 1
+.names pz new_new_n92__ new_new_n100__
+01 1
+.names pa0 new_new_n100__ new_new_n101__
+11 1
+.names pa0 new_new_n100__ new_new_n102__
+00 1
+.names new_new_n101__ new_new_n102__ new_new_n103__
+00 1
+.names pq new_new_n103__ new_new_n104__
+11 1
+.names new_new_n99__ new_new_n104__ new_new_n105__
+00 1
+.names ps new_new_n105__ pq0
+01 0
+.names pq pi new_new_n107__
+00 1
+.names pa0 new_new_n100__ new_new_n108__
+01 1
+.names pb0 new_new_n108__ new_new_n109__
+00 1
+.names pb0 new_new_n108__ new_new_n110__
+11 1
+.names new_new_n109__ new_new_n110__ new_new_n111__
+00 1
+.names pq new_new_n111__ new_new_n112__
+11 1
+.names new_new_n107__ new_new_n112__ new_new_n113__
+00 1
+.names ps new_new_n113__ pr0
+01 0
+.names pq ph new_new_n115__
+00 1
+.names pb0 new_new_n108__ new_new_n116__
+01 1
+.names pc0 new_new_n116__ new_new_n117__
+11 1
+.names pc0 new_new_n116__ new_new_n118__
+00 1
+.names new_new_n117__ new_new_n118__ new_new_n119__
+00 1
+.names pq new_new_n119__ new_new_n120__
+11 1
+.names new_new_n115__ new_new_n120__ new_new_n121__
+00 1
+.names ps new_new_n121__ ps0
+01 0
+.names pq pg new_new_n123__
+00 1
+.names pc0 new_new_n116__ new_new_n124__
+01 1
+.names pd0 new_new_n124__ new_new_n125__
+00 1
+.names pd0 new_new_n124__ new_new_n126__
+11 1
+.names new_new_n125__ new_new_n126__ new_new_n127__
+00 1
+.names pq new_new_n127__ new_new_n128__
+11 1
+.names new_new_n123__ new_new_n128__ new_new_n129__
+00 1
+.names ps new_new_n129__ pt0
+01 0
+.names pq pf new_new_n131__
+00 1
+.names pd0 new_new_n124__ new_new_n132__
+01 1
+.names pe0 new_new_n132__ new_new_n133__
+11 1
+.names pe0 new_new_n132__ new_new_n134__
+00 1
+.names new_new_n133__ new_new_n134__ new_new_n135__
+00 1
+.names pq new_new_n135__ new_new_n136__
+11 1
+.names new_new_n131__ new_new_n136__ new_new_n137__
+00 1
+.names ps new_new_n137__ pu0
+01 0
+.names pq pe new_new_n139__
+00 1
+.names pe0 new_new_n132__ new_new_n140__
+01 1
+.names pf0 new_new_n140__ new_new_n141__
+00 1
+.names pf0 new_new_n140__ new_new_n142__
+11 1
+.names new_new_n141__ new_new_n142__ new_new_n143__
+00 1
+.names pq new_new_n143__ new_new_n144__
+11 1
+.names new_new_n139__ new_new_n144__ new_new_n145__
+00 1
+.names ps new_new_n145__ pv0
+01 0
+.names pq pd new_new_n147__
+00 1
+.names pf0 new_new_n140__ new_new_n148__
+01 1
+.names pg0 new_new_n148__ new_new_n149__
+11 1
+.names pg0 new_new_n148__ new_new_n150__
+00 1
+.names new_new_n149__ new_new_n150__ new_new_n151__
+00 1
+.names pq new_new_n151__ new_new_n152__
+11 1
+.names new_new_n147__ new_new_n152__ new_new_n153__
+00 1
+.names ps new_new_n153__ pw0
+01 0
+.names pq pc new_new_n155__
+00 1
+.names pg0 new_new_n148__ new_new_n156__
+01 1
+.names ph0 new_new_n156__ new_new_n157__
+00 1
+.names ph0 new_new_n156__ new_new_n158__
+11 1
+.names new_new_n157__ new_new_n158__ new_new_n159__
+00 1
+.names pq new_new_n159__ new_new_n160__
+11 1
+.names new_new_n155__ new_new_n160__ new_new_n161__
+00 1
+.names ps new_new_n161__ px0
+01 0
+.names pq pb new_new_n163__
+00 1
+.names ph0 new_new_n156__ new_new_n164__
+01 1
+.names pi0 new_new_n164__ new_new_n165__
+11 1
+.names pi0 new_new_n164__ new_new_n166__
+00 1
+.names new_new_n165__ new_new_n166__ new_new_n167__
+00 1
+.names pq new_new_n167__ new_new_n168__
+11 1
+.names new_new_n163__ new_new_n168__ new_new_n169__
+00 1
+.names ps new_new_n169__ py0
+01 0
+.names pq pa new_new_n171__
+00 1
+.names pi0 new_new_n164__ new_new_n172__
+01 1
+.names pj0 new_new_n172__ new_new_n173__
+00 1
+.names pj0 new_new_n172__ new_new_n174__
+11 1
+.names new_new_n173__ new_new_n174__ new_new_n175__
+00 1
+.names pq new_new_n175__ new_new_n176__
+11 1
+.names new_new_n171__ new_new_n176__ new_new_n177__
+00 1
+.names ps new_new_n177__ pz0
+01 0
+.end

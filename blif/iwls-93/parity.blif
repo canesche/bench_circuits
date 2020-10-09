@@ -1,0 +1,95 @@
+# Benchmark "top" written by ABC on Thu Oct  8 20:19:10 2020
+.model top
+.inputs pp pa pb pc pd pe pf pg ph pi pj pk pl pm pn po
+.outputs pq
+.names pa pb new_new_n18__
+01 1
+.names pb pa new_new_n19__
+01 1
+.names new_new_n18__ new_new_n19__ new_new_n20__
+00 1
+.names pc pd new_new_n21__
+01 1
+.names pd pc new_new_n22__
+01 1
+.names new_new_n21__ new_new_n22__ new_new_n23__
+00 1
+.names new_new_n23__ new_new_n20__ new_new_n24__
+01 1
+.names new_new_n20__ new_new_n23__ new_new_n25__
+01 1
+.names new_new_n24__ new_new_n25__ new_new_n26__
+00 1
+.names pe pf new_new_n27__
+01 1
+.names pf pe new_new_n28__
+01 1
+.names new_new_n27__ new_new_n28__ new_new_n29__
+00 1
+.names pg ph new_new_n30__
+01 1
+.names ph pg new_new_n31__
+01 1
+.names new_new_n30__ new_new_n31__ new_new_n32__
+00 1
+.names new_new_n32__ new_new_n29__ new_new_n33__
+01 1
+.names new_new_n29__ new_new_n32__ new_new_n34__
+01 1
+.names new_new_n33__ new_new_n34__ new_new_n35__
+00 1
+.names new_new_n35__ new_new_n26__ new_new_n36__
+01 1
+.names new_new_n26__ new_new_n35__ new_new_n37__
+01 1
+.names new_new_n36__ new_new_n37__ new_new_n38__
+00 1
+.names pi pj new_new_n39__
+01 1
+.names pj pi new_new_n40__
+01 1
+.names new_new_n39__ new_new_n40__ new_new_n41__
+00 1
+.names pk pl new_new_n42__
+01 1
+.names pl pk new_new_n43__
+01 1
+.names new_new_n42__ new_new_n43__ new_new_n44__
+00 1
+.names new_new_n44__ new_new_n41__ new_new_n45__
+01 1
+.names new_new_n41__ new_new_n44__ new_new_n46__
+01 1
+.names new_new_n45__ new_new_n46__ new_new_n47__
+00 1
+.names pm pn new_new_n48__
+01 1
+.names pn pm new_new_n49__
+01 1
+.names new_new_n48__ new_new_n49__ new_new_n50__
+00 1
+.names po pp new_new_n51__
+01 1
+.names pp po new_new_n52__
+01 1
+.names new_new_n51__ new_new_n52__ new_new_n53__
+00 1
+.names new_new_n53__ new_new_n50__ new_new_n54__
+01 1
+.names new_new_n50__ new_new_n53__ new_new_n55__
+01 1
+.names new_new_n54__ new_new_n55__ new_new_n56__
+00 1
+.names new_new_n56__ new_new_n47__ new_new_n57__
+01 1
+.names new_new_n47__ new_new_n56__ new_new_n58__
+01 1
+.names new_new_n57__ new_new_n58__ new_new_n59__
+00 1
+.names new_new_n59__ new_new_n38__ new_new_n60__
+01 1
+.names new_new_n38__ new_new_n59__ new_new_n61__
+01 1
+.names new_new_n60__ new_new_n61__ pq
+00 0
+.end

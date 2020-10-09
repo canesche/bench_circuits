@@ -1,0 +1,28 @@
+# Benchmark "s27.bench" written by ABC on Thu Oct  8 20:27:46 2020
+.model s27.bench
+.inputs clock G0 G1 G2 G3
+.outputs G17
+
+.latch        n33         G5  0
+.latch        n36         G6  0
+.latch        n39         G7  0
+
+.names G0 G6 new_new_n15__
+01 1
+.names G3 new_new_n15__ new_new_n16__
+00 1
+.names G1 G7 new_new_n17_1__
+00 1
+.names new_new_n15__ new_new_n17_1__ new_new_n18__
+00 1
+.names new_new_n16__ new_new_n18__ new_new_n19__
+00 1
+.names G5 new_new_n19__ n36
+01 1
+.names n36 G0 n33
+01 1
+.names G2 new_new_n17_1__ n39
+00 1
+.names n36 G17
+0 1
+.end

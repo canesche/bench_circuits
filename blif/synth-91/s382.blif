@@ -1,0 +1,314 @@
+# Benchmark "s382.bench" written by ABC on Thu Oct  8 20:27:46 2020
+.model s382.bench
+.inputs clock FM TEST CLR
+.outputs GRN1 GRN2 RED1 YLW2 RED2 YLW1
+
+.latch       n322      TESTL  0
+.latch       n325        FML  0
+.latch       n328 OLATCH_Y2L  0
+.latch       n331 OLATCHVUC_6  0
+.latch       n334 OLATCHVUC_5  0
+.latch       n337 OLATCH_R1L  0
+.latch       n340 OLATCH_G2L  0
+.latch       n343 OLATCH_G1L  0
+.latch       n346 OLATCH_FEL  0
+.latch       n349      C3_Q3  0
+.latch       n352      C3_Q2  0
+.latch       n355      C3_Q1  0
+.latch       n358      C3_Q0  0
+.latch       n361      UC_16  0
+.latch       n364      UC_17  0
+.latch       n367      UC_18  0
+.latch       n370      UC_19  0
+.latch       n373       UC_8  0
+.latch       n376       UC_9  0
+.latch       n379      UC_10  0
+.latch       n382      UC_11  0
+
+.names TEST TESTL new_new_n73__
+11 1
+.names TEST TESTL new_new_n74__
+00 1
+.names new_new_n73__ new_new_n74__ new_new_n75_1__
+00 1
+.names CLR new_new_n75_1__ n322
+01 1
+.names FM FML new_new_n77__
+11 1
+.names FM FML new_new_n78__
+00 1
+.names new_new_n77__ new_new_n78__ new_new_n79__
+00 1
+.names CLR new_new_n79__ n325
+01 1
+.names CLR OLATCH_FEL new_new_n81__
+00 1
+.names C3_Q2 C3_Q1 new_new_n82__
+01 1
+.names new_new_n81__ new_new_n82__ new_new_n83__
+11 1
+.names C3_Q0 new_new_n83__ n328
+11 1
+.names CLR OLATCH_FEL new_new_n85_1__
+01 1
+.names C3_Q1 C3_Q0 new_new_n86__
+01 1
+.names FML new_new_n86__ new_new_n87__
+01 1
+.names C3_Q3 C3_Q2 new_new_n88__
+01 1
+.names new_new_n87__ new_new_n88__ new_new_n89__
+11 1
+.names new_new_n89__ new_new_n85_1__ new_new_n90_1__
+01 1
+.names CLR FML new_new_n91__
+01 1
+.names C3_Q2 new_new_n91__ new_new_n92__
+11 1
+.names C3_Q1 new_new_n92__ new_new_n93__
+01 1
+.names C3_Q0 new_new_n93__ new_new_n94__
+01 1
+.names new_new_n90_1__ new_new_n94__ n346
+00 0
+.names C3_Q2 C3_Q3 new_new_n96__
+01 1
+.names CLR new_new_n96__ new_new_n97__
+01 1
+.names new_new_n88__ new_new_n91__ new_new_n98__
+11 1
+.names new_new_n97__ new_new_n98__ new_new_n99__
+00 1
+.names C3_Q1 new_new_n99__ new_new_n100_1__
+00 1
+.names C3_Q0 new_new_n100_1__ new_new_n101__
+01 1
+.names new_new_n90_1__ new_new_n101__ new_new_n102__
+00 1
+.names n346 new_new_n102__ new_new_n103__
+00 1
+.names UC_17 new_new_n102__ new_new_n104__
+00 1
+.names new_new_n103__ new_new_n104__ n331
+00 1
+.names CLR C3_Q2 new_new_n106__
+01 1
+.names C3_Q1 C3_Q0 new_new_n107__
+00 1
+.names CLR C3_Q3 new_new_n108__
+01 1
+.names new_new_n107__ new_new_n108__ new_new_n109__
+11 1
+.names new_new_n106__ new_new_n109__ new_new_n110_1__
+00 1
+.names n346 new_new_n110_1__ new_new_n111__
+00 1
+.names UC_17 n346 new_new_n112__
+01 1
+.names new_new_n111__ new_new_n112__ n334
+00 1
+.names C3_Q3 C3_Q2 new_new_n114__
+00 1
+.names OLATCH_FEL new_new_n114__ new_new_n115_1__
+01 1
+.names OLATCH_FEL C3_Q2 new_new_n116__
+00 1
+.names new_new_n86__ new_new_n116__ new_new_n117__
+11 1
+.names CLR new_new_n115_1__ new_new_n118__
+00 1
+.names new_new_n117__ new_new_n118__ n337
+01 0
+.names C3_Q1 C3_Q0 new_new_n120_1__
+11 1
+.names CLR new_new_n120_1__ new_new_n121__
+01 1
+.names C3_Q0 C3_Q3 new_new_n122__
+01 1
+.names CLR new_new_n122__ new_new_n123__
+01 1
+.names new_new_n85_1__ new_new_n106__ new_new_n124__
+00 1
+.names new_new_n121__ new_new_n124__ new_new_n125__
+01 1
+.names new_new_n123__ new_new_n125__ n340
+01 1
+.names FML C3_Q3 new_new_n127__
+11 1
+.names FML new_new_n107__ new_new_n128__
+11 1
+.names new_new_n127__ new_new_n128__ new_new_n129__
+00 1
+.names new_new_n106__ new_new_n129__ new_new_n130__
+11 1
+.names FML C3_Q3 new_new_n131__
+00 1
+.names new_new_n86__ new_new_n131__ new_new_n132__
+11 1
+.names new_new_n132__ OLATCH_FEL new_new_n133__
+01 1
+.names new_new_n133__ new_new_n130__ n343
+01 1
+.names UC_17 UC_18 new_new_n135__
+00 1
+.names UC_19 new_new_n135__ new_new_n136__
+01 1
+.names UC_9 UC_10 new_new_n137__
+00 1
+.names UC_11 new_new_n137__ new_new_n138__
+01 1
+.names new_new_n138__ UC_8 new_new_n139__
+01 1
+.names TESTL new_new_n139__ new_new_n140__
+00 1
+.names new_new_n136__ new_new_n140__ new_new_n141__
+00 1
+.names UC_16 new_new_n141__ new_new_n142__
+11 1
+.names C3_Q2 new_new_n142__ new_new_n143__
+11 1
+.names C3_Q1 new_new_n143__ new_new_n144__
+11 1
+.names C3_Q0 new_new_n144__ new_new_n145__
+11 1
+.names C3_Q3 new_new_n145__ new_new_n146__
+00 1
+.names C3_Q2 C3_Q1 new_new_n147__
+00 1
+.names C3_Q0 new_new_n147__ new_new_n148__
+01 1
+.names new_new_n148__ new_new_n142__ new_new_n149__
+01 1
+.names C3_Q3 new_new_n149__ new_new_n150__
+11 1
+.names CLR new_new_n146__ new_new_n151__
+00 1
+.names new_new_n150__ new_new_n151__ n349
+01 1
+.names C3_Q1 new_new_n142__ new_new_n153__
+11 1
+.names C3_Q0 new_new_n153__ new_new_n154__
+11 1
+.names C3_Q2 new_new_n154__ new_new_n155__
+00 1
+.names C3_Q2 new_new_n154__ new_new_n156__
+11 1
+.names new_new_n155__ new_new_n156__ new_new_n157__
+00 1
+.names CLR new_new_n157__ new_new_n158__
+01 1
+.names new_new_n150__ new_new_n158__ n352
+01 1
+.names C3_Q0 new_new_n142__ new_new_n160__
+11 1
+.names C3_Q1 new_new_n160__ new_new_n161__
+00 1
+.names C3_Q1 new_new_n160__ new_new_n162__
+11 1
+.names new_new_n161__ new_new_n162__ new_new_n163__
+00 1
+.names CLR new_new_n163__ new_new_n164__
+01 1
+.names new_new_n150__ new_new_n164__ n355
+01 1
+.names C3_Q0 new_new_n142__ new_new_n166__
+00 1
+.names new_new_n160__ new_new_n166__ new_new_n167__
+00 1
+.names CLR new_new_n167__ new_new_n168__
+01 1
+.names new_new_n150__ new_new_n168__ n358
+01 1
+.names new_new_n140__ UC_17 new_new_n170__
+01 1
+.names UC_18 new_new_n170__ new_new_n171__
+11 1
+.names UC_19 new_new_n171__ new_new_n172__
+11 1
+.names UC_16 new_new_n172__ new_new_n173__
+00 1
+.names CLR new_new_n173__ new_new_n174__
+00 1
+.names new_new_n142__ new_new_n174__ n361
+01 1
+.names new_new_n140__ UC_18 new_new_n176__
+01 1
+.names UC_19 new_new_n176__ new_new_n177__
+11 1
+.names UC_17 new_new_n177__ new_new_n178__
+00 1
+.names UC_17 new_new_n177__ new_new_n179__
+11 1
+.names new_new_n178__ new_new_n179__ new_new_n180__
+00 1
+.names CLR new_new_n180__ new_new_n181__
+01 1
+.names new_new_n142__ new_new_n181__ n364
+01 1
+.names new_new_n140__ UC_19 new_new_n183__
+01 1
+.names UC_18 new_new_n183__ new_new_n184__
+00 1
+.names UC_18 new_new_n183__ new_new_n185__
+11 1
+.names new_new_n184__ new_new_n185__ new_new_n186__
+00 1
+.names CLR new_new_n186__ new_new_n187__
+01 1
+.names new_new_n142__ new_new_n187__ n367
+01 1
+.names UC_19 new_new_n140__ new_new_n189__
+01 1
+.names new_new_n183__ new_new_n189__ new_new_n190__
+00 1
+.names CLR new_new_n190__ new_new_n191__
+01 1
+.names new_new_n142__ new_new_n191__ n370
+01 1
+.names UC_9 UC_10 new_new_n193__
+11 1
+.names UC_11 new_new_n193__ new_new_n194__
+11 1
+.names UC_8 new_new_n194__ new_new_n195__
+00 1
+.names CLR new_new_n195__ new_new_n196__
+00 1
+.names new_new_n139__ new_new_n196__ n373
+01 1
+.names UC_10 UC_11 new_new_n198__
+11 1
+.names UC_9 new_new_n198__ new_new_n199__
+00 1
+.names UC_9 new_new_n198__ new_new_n200__
+11 1
+.names new_new_n199__ new_new_n200__ new_new_n201__
+00 1
+.names CLR new_new_n201__ new_new_n202__
+01 1
+.names new_new_n139__ new_new_n202__ n376
+01 1
+.names UC_10 UC_11 new_new_n204__
+00 1
+.names new_new_n198__ new_new_n204__ new_new_n205__
+00 1
+.names CLR new_new_n205__ new_new_n206__
+01 1
+.names new_new_n139__ new_new_n206__ n379
+01 1
+.names CLR UC_11 new_new_n208__
+00 1
+.names new_new_n139__ new_new_n208__ n382
+01 1
+.names OLATCHVUC_5 RED2
+0 1
+.names OLATCHVUC_6 YLW1
+0 1
+.names OLATCH_G1L GRN1
+1 1
+.names OLATCH_G2L GRN2
+1 1
+.names OLATCH_R1L RED1
+1 1
+.names OLATCH_Y2L YLW2
+1 1
+.end

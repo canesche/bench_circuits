@@ -1,0 +1,99 @@
+# Benchmark "cmb" written by ABC on Thu Oct  8 20:27:40 2020
+.model cmb
+.inputs a b c d e f g h i j k l m n o p
+.outputs q r s t
+.names d e new_new_n21__
+11 1
+.names c new_new_n21__ new_new_n22__
+11 1
+.names h i new_new_n23__
+11 1
+.names g new_new_n23__ new_new_n24__
+11 1
+.names f new_new_n24__ new_new_n25__
+11 1
+.names a b new_new_n26__
+11 1
+.names new_new_n22__ new_new_n25__ new_new_n27__
+11 1
+.names new_new_n26__ new_new_n27__ new_new_n28__
+11 1
+.names k l new_new_n29__
+11 1
+.names j new_new_n29__ new_new_n30__
+11 1
+.names new_new_n28__ new_new_n30__ q
+11 1
+.names p e new_new_n32__
+01 1
+.names n o new_new_n33__
+01 1
+.names new_new_n32__ new_new_n33__ new_new_n34__
+00 1
+.names m n new_new_n35__
+01 1
+.names l m new_new_n36__
+01 1
+.names new_new_n35__ new_new_n36__ new_new_n37__
+00 1
+.names new_new_n34__ new_new_n37__ new_new_n38__
+11 1
+.names k l new_new_n39__
+01 1
+.names new_new_n39__ new_new_n38__ new_new_n40__
+01 1
+.names j k new_new_n41__
+01 1
+.names new_new_n41__ new_new_n40__ new_new_n42__
+01 1
+.names h i new_new_n43__
+01 1
+.names i j new_new_n44__
+01 1
+.names new_new_n43__ new_new_n44__ new_new_n45__
+00 1
+.names new_new_n42__ new_new_n45__ new_new_n46__
+11 1
+.names g h new_new_n47__
+01 1
+.names new_new_n47__ f new_new_n48__
+01 1
+.names g h new_new_n49__
+00 1
+.names new_new_n48__ new_new_n49__ new_new_n50__
+00 1
+.names new_new_n50__ e new_new_n51__
+01 1
+.names f new_new_n49__ new_new_n52__
+01 1
+.names new_new_n51__ new_new_n52__ new_new_n53__
+00 1
+.names new_new_n53__ new_new_n46__ new_new_n54__
+01 1
+.names p new_new_n54__ r
+01 0
+.names o new_new_n54__ s
+11 0
+.names h i new_new_n57__
+00 1
+.names g new_new_n57__ new_new_n58__
+01 1
+.names l m new_new_n59__
+00 1
+.names k new_new_n59__ new_new_n60__
+01 1
+.names j new_new_n60__ new_new_n61__
+01 1
+.names e f new_new_n62__
+00 1
+.names new_new_n58__ new_new_n61__ new_new_n63__
+11 1
+.names new_new_n62__ new_new_n63__ new_new_n64__
+11 1
+.names o p new_new_n65__
+00 1
+.names n new_new_n65__ new_new_n66__
+01 1
+.names new_new_n64__ new_new_n66__ t
+11 1
+.end

@@ -1,0 +1,258 @@
+# Benchmark "s349.bench" written by ABC on Thu Oct  8 20:27:46 2020
+.model s349.bench
+.inputs clock START B0 B1 B2 B3 A0 A1 A2 A3
+.outputs CNTVCO2 CNTVCON2 READY P0 P1 P2 P3 P4 P5 P6 P7
+
+.latch       n283        CT2  0
+.latch       n286        CT1  0
+.latch       n289        CT0  0
+.latch       n292     ACVQN3  0
+.latch       n295     ACVQN2  0
+.latch       n298     ACVQN1  0
+.latch       n301     ACVQN0  0
+.latch       n304     MRVQN3  0
+.latch       n307     MRVQN2  0
+.latch       n310     MRVQN1  0
+.latch       n313     MRVQN0  0
+.latch       n316        AX3  0
+.latch       n319        AX2  0
+.latch       n322        AX1  0
+.latch       n325        AX0  0
+
+.names CT1 CT0 new_new_n66__
+11 1
+.names CT2 new_new_n66__ CNTVCO2
+11 1
+.names CT1 CT0 new_new_n68__
+01 1
+.names CT2 new_new_n68__ READY
+11 1
+.names READY new_new_n66__ new_new_n70__
+01 1
+.names CT2 new_new_n70__ new_new_n71__
+00 1
+.names CT2 new_new_n70__ new_new_n72_1__
+11 1
+.names new_new_n71__ new_new_n72_1__ new_new_n73__
+00 1
+.names START new_new_n73__ n283
+01 1
+.names READY CT0 new_new_n75__
+01 1
+.names CT1 new_new_n75__ new_new_n76__
+00 1
+.names CT1 new_new_n75__ new_new_n77_1__
+11 1
+.names new_new_n76__ new_new_n77_1__ new_new_n78__
+00 1
+.names START new_new_n78__ n286
+01 1
+.names CT0 READY new_new_n80__
+01 1
+.names new_new_n75__ new_new_n80__ new_new_n81__
+00 1
+.names START new_new_n81__ n289
+01 1
+.names CT1 CT0 new_new_n83__
+00 1
+.names CT2 new_new_n83__ new_new_n84__
+01 1
+.names READY new_new_n84__ new_new_n85__
+00 1
+.names MRVQN0 AX0 new_new_n86__
+01 1
+.names ACVQN0 new_new_n86__ new_new_n87_1__
+01 1
+.names MRVQN0 AX1 new_new_n88__
+01 1
+.names new_new_n88__ ACVQN1 new_new_n89__
+01 1
+.names new_new_n89__ new_new_n87_1__ new_new_n90__
+01 1
+.names ACVQN1 new_new_n88__ new_new_n91__
+01 1
+.names new_new_n90__ new_new_n91__ new_new_n92_1__
+00 1
+.names MRVQN0 AX2 new_new_n93__
+01 1
+.names new_new_n93__ ACVQN2 new_new_n94__
+01 1
+.names new_new_n92_1__ new_new_n94__ new_new_n95__
+00 1
+.names ACVQN2 new_new_n93__ new_new_n96__
+01 1
+.names new_new_n95__ new_new_n96__ new_new_n97_1__
+00 1
+.names MRVQN0 AX3 new_new_n98__
+01 1
+.names new_new_n98__ ACVQN3 new_new_n99__
+01 1
+.names new_new_n97_1__ new_new_n99__ new_new_n100__
+00 1
+.names ACVQN3 new_new_n98__ new_new_n101__
+01 1
+.names new_new_n100__ new_new_n101__ new_new_n102_1__
+00 1
+.names new_new_n102_1__ new_new_n85__ new_new_n103__
+01 1
+.names ACVQN3 new_new_n85__ new_new_n104__
+00 1
+.names new_new_n103__ new_new_n104__ new_new_n105__
+00 1
+.names START new_new_n105__ n292
+00 0
+.names new_new_n97_1__ new_new_n98__ new_new_n107_1__
+01 1
+.names ACVQN3 new_new_n107_1__ new_new_n108__
+01 1
+.names new_new_n98__ new_new_n97_1__ new_new_n109__
+01 1
+.names ACVQN3 new_new_n109__ new_new_n110__
+11 1
+.names new_new_n110__ new_new_n102_1__ new_new_n111__
+01 1
+.names new_new_n108__ new_new_n111__ new_new_n112_1__
+00 1
+.names new_new_n112_1__ new_new_n85__ new_new_n113__
+01 1
+.names ACVQN2 new_new_n85__ new_new_n114__
+00 1
+.names new_new_n113__ new_new_n114__ new_new_n115__
+00 1
+.names START new_new_n115__ n295
+00 0
+.names new_new_n92_1__ new_new_n93__ new_new_n117__
+01 1
+.names ACVQN2 new_new_n117__ new_new_n118__
+01 1
+.names new_new_n93__ new_new_n92_1__ new_new_n119__
+01 1
+.names ACVQN2 new_new_n119__ new_new_n120__
+11 1
+.names new_new_n120__ new_new_n97_1__ new_new_n121__
+01 1
+.names new_new_n118__ new_new_n121__ new_new_n122__
+00 1
+.names new_new_n122__ new_new_n85__ new_new_n123__
+01 1
+.names ACVQN1 new_new_n85__ new_new_n124__
+00 1
+.names new_new_n123__ new_new_n124__ new_new_n125__
+00 1
+.names START new_new_n125__ n298
+00 0
+.names new_new_n87_1__ new_new_n88__ new_new_n127__
+11 1
+.names ACVQN1 new_new_n127__ new_new_n128__
+01 1
+.names new_new_n87_1__ new_new_n88__ new_new_n129__
+00 1
+.names ACVQN1 new_new_n129__ new_new_n130__
+11 1
+.names new_new_n130__ new_new_n92_1__ new_new_n131__
+01 1
+.names new_new_n128__ new_new_n131__ new_new_n132__
+00 1
+.names new_new_n132__ new_new_n85__ new_new_n133__
+01 1
+.names ACVQN0 new_new_n85__ new_new_n134__
+00 1
+.names new_new_n133__ new_new_n134__ new_new_n135__
+00 1
+.names START new_new_n135__ n301
+00 0
+.names READY B3 new_new_n137__
+01 1
+.names MRVQN3 READY new_new_n138__
+01 1
+.names new_new_n137__ new_new_n138__ new_new_n139__
+00 1
+.names new_new_n85__ new_new_n139__ new_new_n140__
+00 1
+.names new_new_n86__ ACVQN0 new_new_n141__
+01 1
+.names new_new_n87_1__ new_new_n141__ new_new_n142__
+00 1
+.names new_new_n85__ new_new_n142__ new_new_n143__
+11 1
+.names new_new_n140__ new_new_n143__ n304
+00 1
+.names READY B2 new_new_n145__
+01 1
+.names MRVQN2 READY new_new_n146__
+01 1
+.names new_new_n145__ new_new_n146__ new_new_n147__
+00 1
+.names new_new_n85__ new_new_n147__ new_new_n148__
+00 1
+.names MRVQN3 new_new_n85__ new_new_n149__
+01 1
+.names new_new_n148__ new_new_n149__ n307
+00 1
+.names READY B1 new_new_n151__
+01 1
+.names MRVQN1 READY new_new_n152__
+01 1
+.names new_new_n151__ new_new_n152__ new_new_n153__
+00 1
+.names new_new_n85__ new_new_n153__ new_new_n154__
+00 1
+.names MRVQN2 new_new_n85__ new_new_n155__
+01 1
+.names new_new_n154__ new_new_n155__ n310
+00 1
+.names READY B0 new_new_n157__
+01 1
+.names MRVQN0 READY new_new_n158__
+01 1
+.names new_new_n157__ new_new_n158__ new_new_n159__
+00 1
+.names new_new_n85__ new_new_n159__ new_new_n160__
+00 1
+.names MRVQN1 new_new_n85__ new_new_n161__
+01 1
+.names new_new_n160__ new_new_n161__ n313
+00 1
+.names A3 new_new_n84__ new_new_n163__
+11 1
+.names new_new_n84__ AX3 new_new_n164__
+01 1
+.names new_new_n163__ new_new_n164__ n316
+00 0
+.names A2 new_new_n84__ new_new_n166__
+11 1
+.names new_new_n84__ AX2 new_new_n167__
+01 1
+.names new_new_n166__ new_new_n167__ n319
+00 0
+.names A1 new_new_n84__ new_new_n169__
+11 1
+.names new_new_n84__ AX1 new_new_n170__
+01 1
+.names new_new_n169__ new_new_n170__ n322
+00 0
+.names A0 new_new_n84__ new_new_n172__
+11 1
+.names new_new_n84__ AX0 new_new_n173__
+01 1
+.names new_new_n172__ new_new_n173__ n325
+00 0
+.names CNTVCO2 CNTVCON2
+0 1
+.names MRVQN0 P0
+0 1
+.names MRVQN1 P1
+0 1
+.names MRVQN2 P2
+0 1
+.names MRVQN3 P3
+0 1
+.names ACVQN0 P4
+0 1
+.names ACVQN1 P5
+0 1
+.names ACVQN2 P6
+0 1
+.names ACVQN3 P7
+0 1
+.end

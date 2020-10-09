@@ -1,0 +1,21 @@
+# Benchmark "traffic_cl" written by ABC on Thu Oct  8 20:27:43 2020
+.model traffic_cl
+.inputs a b c d e
+.outputs f
+.names c e new_new_n7__
+11 1
+.names b new_new_n7__ new_new_n8__
+11 1
+.names a new_new_n8__ new_new_n9__
+00 1
+.names b new_new_n7__ new_new_n10__
+00 1
+.names c e new_new_n11__
+00 1
+.names new_new_n10__ new_new_n11__ new_new_n12__
+00 1
+.names new_new_n9__ new_new_n12__ new_new_n13__
+01 1
+.names d new_new_n13__ f
+00 0
+.end

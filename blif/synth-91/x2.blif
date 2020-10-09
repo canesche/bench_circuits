@@ -1,0 +1,113 @@
+# Benchmark "x2" written by ABC on Thu Oct  8 20:27:50 2020
+.model x2
+.inputs a b c d e f g h i j
+.outputs k l m n o p q
+.names i h new_new_n18__
+01 1
+.names j new_new_n18__ new_new_n19__
+11 1
+.names h i new_new_n20__
+01 1
+.names i j new_new_n21__
+11 1
+.names h j new_new_n22__
+01 1
+.names new_new_n21__ new_new_n22__ new_new_n23__
+00 1
+.names i j new_new_n24__
+00 1
+.names new_new_n19__ new_new_n24__ new_new_n25__
+00 1
+.names new_new_n20__ new_new_n25__ new_new_n26__
+01 1
+.names new_new_n23__ new_new_n26__ k
+11 0
+.names j h new_new_n28__
+01 1
+.names new_new_n20__ new_new_n28__ new_new_n29__
+00 1
+.names new_new_n23__ new_new_n29__ l
+11 0
+.names h i new_new_n31__
+00 1
+.names j new_new_n31__ m
+01 1
+.names a b new_new_n33__
+00 1
+.names c new_new_n22__ new_new_n34__
+00 1
+.names new_new_n33__ new_new_n34__ new_new_n35__
+11 1
+.names new_new_n19__ new_new_n21__ new_new_n36__
+00 1
+.names new_new_n28__ m new_new_n37__
+00 1
+.names new_new_n36__ new_new_n37__ new_new_n38__
+11 1
+.names new_new_n35__ new_new_n38__ n
+11 0
+.names new_new_n20__ m new_new_n40__
+00 1
+.names new_new_n21__ new_new_n40__ new_new_n41__
+01 1
+.names new_new_n22__ g new_new_n42__
+01 1
+.names new_new_n41__ new_new_n42__ o
+11 0
+.names h f new_new_n44__
+01 1
+.names i new_new_n44__ new_new_n45__
+11 1
+.names j new_new_n45__ new_new_n46__
+11 1
+.names h c new_new_n47__
+01 1
+.names new_new_n33__ new_new_n47__ new_new_n48__
+11 1
+.names new_new_n48__ j new_new_n49__
+01 1
+.names i new_new_n49__ new_new_n50__
+00 1
+.names b c new_new_n51__
+01 1
+.names a new_new_n51__ new_new_n52__
+01 1
+.names new_new_n21__ new_new_n52__ new_new_n53__
+11 1
+.names e d new_new_n54__
+01 1
+.names j new_new_n54__ new_new_n55__
+01 1
+.names new_new_n53__ new_new_n55__ new_new_n56__
+00 1
+.names new_new_n56__ h new_new_n57__
+01 1
+.names new_new_n46__ g new_new_n58__
+01 1
+.names new_new_n57__ new_new_n58__ new_new_n59__
+01 1
+.names new_new_n50__ new_new_n59__ p
+01 0
+.names c j new_new_n61__
+01 1
+.names new_new_n33__ new_new_n61__ new_new_n62__
+11 1
+.names j d new_new_n63__
+01 1
+.names e i new_new_n64__
+11 1
+.names new_new_n63__ new_new_n64__ new_new_n65__
+11 1
+.names new_new_n62__ new_new_n65__ new_new_n66__
+00 1
+.names new_new_n66__ h new_new_n67__
+01 1
+.names m new_new_n46__ new_new_n68__
+00 1
+.names new_new_n19__ g new_new_n69__
+01 1
+.names new_new_n68__ new_new_n69__ new_new_n70__
+11 1
+.names new_new_n67__ new_new_n70__ q
+01 0
+.end

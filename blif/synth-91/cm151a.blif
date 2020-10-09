@@ -1,0 +1,65 @@
+# Benchmark "CM151" written by ABC on Thu Oct  8 20:27:39 2020
+.model CM151
+.inputs a b c d e f g h i j k l
+.outputs m n
+.names b i new_new_n15__
+11 1
+.names a new_new_n15__ new_new_n16__
+00 1
+.names b i new_new_n17__
+01 1
+.names new_new_n16__ new_new_n17__ new_new_n18__
+00 1
+.names d i new_new_n19__
+11 1
+.names c new_new_n19__ new_new_n20__
+00 1
+.names d i new_new_n21__
+01 1
+.names new_new_n20__ new_new_n21__ new_new_n22__
+00 1
+.names new_new_n22__ j new_new_n23__
+01 1
+.names new_new_n23__ new_new_n18__ new_new_n24__
+01 1
+.names j new_new_n22__ new_new_n25__
+11 1
+.names new_new_n24__ new_new_n25__ new_new_n26__
+00 1
+.names f i new_new_n27__
+11 1
+.names e new_new_n27__ new_new_n28__
+00 1
+.names f i new_new_n29__
+01 1
+.names new_new_n28__ new_new_n29__ new_new_n30__
+00 1
+.names h i new_new_n31__
+11 1
+.names g new_new_n31__ new_new_n32__
+00 1
+.names h i new_new_n33__
+01 1
+.names new_new_n32__ new_new_n33__ new_new_n34__
+00 1
+.names new_new_n34__ j new_new_n35__
+01 1
+.names new_new_n35__ new_new_n30__ new_new_n36__
+01 1
+.names j new_new_n34__ new_new_n37__
+11 1
+.names new_new_n36__ new_new_n37__ new_new_n38__
+00 1
+.names new_new_n38__ k new_new_n39__
+01 1
+.names new_new_n39__ new_new_n26__ new_new_n40__
+01 1
+.names k new_new_n38__ new_new_n41__
+11 1
+.names new_new_n40__ new_new_n41__ new_new_n42__
+00 1
+.names l new_new_n42__ m
+01 1
+.names m n
+0 1
+.end

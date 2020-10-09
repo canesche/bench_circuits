@@ -1,0 +1,1385 @@
+# Benchmark "top" written by ABC on Thu Oct  8 20:19:14 2020
+.model top
+.inputs clock ppccconfirm pstarto ppccreqcode1 ptm0i ppccreqcode2 ptm1i \
+ ppccreqcode3 ptm1l pwdcntxxxxstate1 pwdcntxxxxstate3 packl \
+ pwdcntxxxxstate2 pbus_inactive ppccreq ppccsawreset plastrqsti pstarti \
+ preseti ptag_match packi ppccackcode ppccack pvsacki pvtm0i psbcresetpcc \
+ pclk pslotspace_id_match pvtm1l pphysrecxxxxstate1 pnubusactive pvtm0l \
+ pphysrecxxxxstate0 pcoherencystate2i pgranti prqsti psinglestep \
+ pcoherencystate1i ppccreqcode0 pvackl pvacki ppccsync
+.outputs pmasterxxxxen_vdbufi presetxxxxsbcresetpcc pwdcntxxxxwd_cnt1 \
+ pmasterxxxxen_abufo pwdcntxxxxwd_cnt0 pwdcntxxxxwd_cnt2 \
+ pmasterxxxxen_pdbufo pnubusxxxxnubusactive pphysrecxxxxnextstate0 \
+ pslavexxxxsbcreqcode2 pwdcntxxxxnextstate3 pslavexxxxsbcreqcode0 \
+ pvirmachxxxxsbcsetdirty pwdcntxxxxnextstate2 porxxxxen_start \
+ porxxxxsbcackcode0 pslavexxxxsbcreqcode1 pslavexxxxsnoopstate_w \
+ pwdcntxxxxnextstate1 porxxxxvsacko presetxxxxreset pvirmachxxxxen_vdbufo \
+ porxxxxreseto porxxxxsbcackcodelatch pslavexxxxgeneratenextstate \
+ pvirmachxxxxsbcconfigure pmasterxxxxl_dbufo_if_tm0 porxxxxacko \
+ pmasterxxxxsbc_writecache porxxxxen_vcntl pnubusxxxxl_pabufi \
+ pnextstatexxxxcoherencystate2o pmasterxxxxrqsto porxxxxvacko \
+ pslavexxxxl_vabufi pslavexxxxsnoopaddrfromproc porxxxxsbcackcode1 \
+ porxxxxstarto pmasterxxxxl_pdbufi porxxxxsbcackcode2 pslavexxxxsbcreq \
+ porxxxxl_dbufo porxxxxsbcackcode3 pslavexxxxsnoopvtagstate_r porxxxxtm0o \
+ pphysrecxxxxnextstate1 pmasterxxxxarb_active porxxxxen_cntl porxxxxtm1o \
+ pencodemuxxxxxmx_ad_8 pmasterxxxxen_pdbufi porxxxxsbcack porxxxxvtm1o \
+ pslavexxxxsnoopvtag_w porxxxxvtm0o pvirmachxxxxsbccacherelease
+
+.latch      n1496 nresetxxxxstate0  2
+.latch      n1499 nnubusxxxxstate1  2
+.latch      n1502 nslavexxxxstate0  2
+.latch      n1505 nslavexxxxstate1  2
+.latch      n1508 nslavexxxxstate2  2
+.latch      n1511 nmasterxxxxstate1  2
+.latch      n1514 nmasterxxxxstate2  2
+.latch      n1517 nmasterxxxxstate3  2
+.latch      n1520 nnubusxxxxstate0  2
+.latch      n1523 nmasterxxxxstate0  2
+.latch      n1526 nresetxxxxstate1  2
+.latch      n1529 nset_ex_wd_cnt1  2
+.latch      n1532 nresetxxxxstate2  2
+.latch      n1535 nreset_wd_cnt  2
+.latch      n1538 nvirmachxxxxstate0  2
+.latch      n1541 nwd_cnt_test  2
+.latch      n1544 nvirmachxxxxstate1  2
+.latch      n1547 nincr_wd_cnt  2
+.latch      n1550 nwdcntxxxxstate0  2
+.latch      n1553 nv_receive_begin  2
+.latch      n1556 ngen_reset  2
+.latch      n1559 np_receive_begin  2
+.latch      n1562  nintr_req  2
+.latch      n1565 nintr_done  2
+.latch      n1568 nv_transmit_begin  2
+.latch      n1571 nupdatereq  2
+.latch      n1574 nupdatedone  2
+
+.names nmasterxxxxstate3 nmasterxxxxstate1 new_new_n179__
+01 1
+.names new_new_n179__ pvackl new_new_n180__
+01 1
+.names psbcresetpcc nmasterxxxxstate0 new_new_n181__
+01 1
+.names nmasterxxxxstate3 new_new_n181__ new_new_n182__
+11 1
+.names pstarti nmasterxxxxstate2 new_new_n183__
+01 1
+.names pvtm0i new_new_n182__ new_new_n184__
+11 1
+.names new_new_n183__ new_new_n184__ new_new_n185__
+11 1
+.names pvsacki new_new_n185__ n1553
+11 1
+.names new_new_n180__ n1553 new_new_n187__
+11 1
+.names new_new_n181__ new_new_n187__ pmasterxxxxen_vdbufi
+00 0
+.names ppccsawreset nresetxxxxstate1 new_new_n189__
+01 1
+.names preseti nresetxxxxstate0 new_new_n190__
+00 1
+.names nresetxxxxstate2 new_new_n189__ new_new_n191__
+00 1
+.names new_new_n190__ new_new_n191__ presetxxxxsbcresetpcc
+11 0
+.names psbcresetpcc nreset_wd_cnt new_new_n193__
+11 1
+.names pwdcntxxxxstate3 new_new_n193__ new_new_n194__
+11 1
+.names pwdcntxxxxstate2 new_new_n194__ new_new_n195__
+01 1
+.names nincr_wd_cnt new_new_n195__ new_new_n196_1__
+11 1
+.names pwdcntxxxxstate2 new_new_n193__ new_new_n197__
+11 1
+.names pwdcntxxxxstate1 nincr_wd_cnt new_new_n198__
+01 1
+.names pwdcntxxxxstate3 new_new_n198__ new_new_n199__
+11 1
+.names new_new_n199__ new_new_n197__ new_new_n200__
+01 1
+.names new_new_n196_1__ new_new_n200__ pwdcntxxxxwd_cnt1
+00 0
+.names ppccreqcode3 ppccreq new_new_n202__
+01 1
+.names ppccreqcode1 ppccreqcode2 new_new_n203__
+11 1
+.names new_new_n203__ new_new_n202__ new_new_n204__
+01 1
+.names psinglestep new_new_n204__ new_new_n205__
+01 1
+.names nmasterxxxxstate1 nmasterxxxxstate2 new_new_n206_1__
+00 1
+.names prqsti new_new_n206_1__ new_new_n207__
+01 1
+.names pvsacki nmasterxxxxstate2 new_new_n208__
+01 1
+.names pgranti new_new_n179__ new_new_n209__
+11 1
+.names new_new_n208__ new_new_n209__ new_new_n210__
+11 1
+.names pbus_inactive new_new_n210__ new_new_n211_1__
+11 1
+.names ppccconfirm new_new_n211_1__ new_new_n212__
+11 1
+.names new_new_n207__ new_new_n212__ new_new_n213__
+11 1
+.names nmasterxxxxstate0 nmasterxxxxstate3 new_new_n214__
+01 1
+.names new_new_n213__ new_new_n214__ new_new_n215__
+00 1
+.names psbcresetpcc new_new_n205__ new_new_n216_1__
+01 1
+.names new_new_n215__ new_new_n216_1__ pmasterxxxxen_abufo
+01 1
+.names pwdcntxxxxstate3 nwdcntxxxxstate0 new_new_n218__
+11 1
+.names nincr_wd_cnt new_new_n193__ new_new_n219__
+11 1
+.names new_new_n218__ new_new_n219__ new_new_n220__
+11 1
+.names pwdcntxxxxstate1 pwdcntxxxxstate2 new_new_n221_1__
+11 1
+.names new_new_n221_1__ nincr_wd_cnt new_new_n222__
+01 1
+.names new_new_n222__ new_new_n194__ new_new_n223__
+01 1
+.names new_new_n220__ new_new_n223__ pwdcntxxxxwd_cnt0
+00 0
+.names nincr_wd_cnt new_new_n197__ new_new_n225__
+11 1
+.names pwdcntxxxxstate3 new_new_n225__ new_new_n226_1__
+11 1
+.names pwdcntxxxxstate1 new_new_n193__ new_new_n227__
+11 1
+.names new_new_n226_1__ new_new_n227__ pwdcntxxxxwd_cnt2
+00 0
+.names packl nmasterxxxxstate2 new_new_n229__
+01 1
+.names nmasterxxxxstate3 new_new_n181__ new_new_n230__
+01 1
+.names new_new_n229__ new_new_n230__ pmasterxxxxen_pdbufo
+11 1
+.names preseti packi new_new_n232__
+00 1
+.names nintr_done nnubusxxxxstate1 new_new_n233__
+01 1
+.names nnubusxxxxstate1 nnubusxxxxstate0 new_new_n234__
+01 1
+.names new_new_n233__ new_new_n234__ new_new_n235__
+00 1
+.names pstarti new_new_n232__ new_new_n236_1__
+01 1
+.names new_new_n235__ new_new_n236_1__ new_new_n237__
+01 1
+.names nnubusxxxxstate0 pstarti new_new_n238__
+01 1
+.names new_new_n232__ new_new_n238__ new_new_n239__
+11 1
+.names nintr_done new_new_n239__ new_new_n240__
+01 1
+.names nnubusxxxxstate1 new_new_n240__ new_new_n241_1__
+01 1
+.names new_new_n237__ new_new_n241_1__ pnubusxxxxnubusactive
+00 0
+.names pphysrecxxxxstate1 nv_receive_begin new_new_n243__
+11 1
+.names pphysrecxxxxstate0 new_new_n243__ new_new_n244__
+00 1
+.names ptm0i pphysrecxxxxstate1 new_new_n245__
+11 1
+.names nwd_cnt_test new_new_n245__ new_new_n246_1__
+11 1
+.names new_new_n246_1__ new_new_n244__ new_new_n247__
+01 1
+.names packi psbcresetpcc new_new_n248__
+00 1
+.names new_new_n247__ new_new_n248__ pphysrecxxxxnextstate0
+01 1
+.names pslotspace_id_match nintr_req new_new_n250__
+00 1
+.names ppccsync new_new_n250__ new_new_n251_1__
+00 1
+.names pstarti pnubusactive new_new_n252__
+01 1
+.names pvsacki nslavexxxxstate1 new_new_n253__
+01 1
+.names nintr_req new_new_n252__ new_new_n254__
+11 1
+.names new_new_n253__ new_new_n254__ new_new_n255__
+11 1
+.names nslavexxxxstate0 new_new_n255__ new_new_n256_1__
+11 1
+.names new_new_n251_1__ new_new_n256_1__ new_new_n257__
+11 1
+.names nslavexxxxstate0 nslavexxxxstate1 new_new_n258__
+00 1
+.names new_new_n257__ new_new_n258__ new_new_n259__
+00 1
+.names new_new_n259__ new_new_n232__ new_new_n260__
+01 1
+.names nslavexxxxstate2 new_new_n260__ pslavexxxxsbcreqcode2
+11 1
+.names preseti nslavexxxxstate0 new_new_n262__
+01 1
+.names nslavexxxxstate1 pvtm0l new_new_n263__
+01 1
+.names new_new_n262__ new_new_n263__ new_new_n264__
+11 1
+.names ptag_match new_new_n264__ new_new_n265__
+11 1
+.names nslavexxxxstate2 new_new_n265__ new_new_n266_1__
+11 1
+.names ptm1l pcoherencystate2i new_new_n267__
+01 1
+.names new_new_n266_1__ new_new_n267__ n1568
+11 1
+.names pvtm1l n1568 new_new_n269__
+11 1
+.names ptm1l new_new_n266_1__ new_new_n270__
+11 1
+.names pcoherencystate2i pcoherencystate1i new_new_n271_1__
+01 1
+.names new_new_n270__ new_new_n271_1__ new_new_n272__
+11 1
+.names new_new_n269__ new_new_n272__ pslavexxxxsbcreqcode0
+00 0
+.names psbcresetpcc nvirmachxxxxstate0 new_new_n274__
+01 1
+.names pvacki new_new_n274__ new_new_n275__
+11 1
+.names pvtm0i new_new_n275__ new_new_n276_1__
+11 1
+.names nvirmachxxxxstate1 new_new_n276_1__ pvirmachxxxxsbcsetdirty
+11 1
+.names ptm1i new_new_n245__ new_new_n278__
+11 1
+.names new_new_n243__ new_new_n278__ new_new_n279__
+00 1
+.names new_new_n279__ nwd_cnt_test new_new_n280__
+01 1
+.names pphysrecxxxxstate0 new_new_n280__ new_new_n281_1__
+00 1
+.names plastrqsti new_new_n281_1__ new_new_n282__
+00 1
+.names nmasterxxxxstate1 nmasterxxxxstate2 new_new_n283__
+11 1
+.names nmasterxxxxstate3 new_new_n283__ new_new_n284__
+01 1
+.names pgranti new_new_n284__ new_new_n285__
+11 1
+.names pbus_inactive new_new_n285__ new_new_n286_1__
+00 1
+.names ppccreqcode3 ppccreq new_new_n287__
+11 1
+.names nmasterxxxxstate0 new_new_n287__ new_new_n288__
+01 1
+.names ppccreqcode1 ppccreqcode0 new_new_n289__
+01 1
+.names ppccreqcode2 new_new_n289__ new_new_n290__
+01 1
+.names new_new_n288__ new_new_n290__ new_new_n291_1__
+11 1
+.names nmasterxxxxstate3 new_new_n206_1__ new_new_n292__
+11 1
+.names new_new_n291_1__ new_new_n292__ new_new_n293__
+01 1
+.names nmasterxxxxstate1 new_new_n183__ new_new_n294__
+00 1
+.names plastrqsti new_new_n294__ new_new_n295__
+00 1
+.names packl nmasterxxxxstate0 new_new_n296_1__
+11 1
+.names new_new_n295__ new_new_n296_1__ new_new_n297__
+11 1
+.names nmasterxxxxstate2 new_new_n214__ new_new_n298__
+11 1
+.names new_new_n297__ new_new_n298__ new_new_n299__
+00 1
+.names new_new_n286_1__ new_new_n293__ new_new_n300__
+00 1
+.names new_new_n299__ new_new_n300__ new_new_n301_1__
+11 1
+.names new_new_n282__ new_new_n301_1__ new_new_n302__
+01 1
+.names pphysrecxxxxstate1 pphysrecxxxxstate0 new_new_n303__
+11 1
+.names np_receive_begin new_new_n303__ new_new_n304__
+11 1
+.names new_new_n304__ new_new_n302__ new_new_n305__
+01 1
+.names psbcresetpcc new_new_n305__ new_new_n306_1__
+00 1
+.names new_new_n303__ new_new_n248__ new_new_n307__
+01 1
+.names pmasterxxxxen_pdbufo new_new_n307__ new_new_n308__
+00 1
+.names new_new_n306_1__ new_new_n308__ porxxxxen_start
+01 0
+.names nmasterxxxxstate0 new_new_n206_1__ new_new_n310__
+01 1
+.names ppccreq new_new_n310__ new_new_n311_1__
+11 1
+.names ppccreqcode3 new_new_n311_1__ new_new_n312__
+11 1
+.names ppccreqcode0 new_new_n312__ new_new_n313__
+11 1
+.names nmasterxxxxstate3 new_new_n311_1__ new_new_n314__
+11 1
+.names prqsti psinglestep new_new_n315__
+00 1
+.names new_new_n203__ new_new_n315__ new_new_n316_1__
+00 1
+.names new_new_n314__ new_new_n316_1__ new_new_n317__
+11 1
+.names ppccreqcode1 new_new_n312__ new_new_n318__
+11 1
+.names new_new_n317__ new_new_n318__ new_new_n319__
+00 1
+.names ppccreqcode2 new_new_n312__ new_new_n320__
+11 1
+.names nmasterxxxxstate3 new_new_n320__ new_new_n321_1__
+11 1
+.names new_new_n321_1__ new_new_n319__ new_new_n322__
+01 1
+.names psinglestep new_new_n211_1__ new_new_n323__
+01 1
+.names ppccconfirm new_new_n202__ new_new_n324__
+11 1
+.names new_new_n203__ new_new_n324__ new_new_n325__
+01 1
+.names new_new_n325__ new_new_n323__ new_new_n326_1__
+01 1
+.names new_new_n313__ new_new_n322__ new_new_n327__
+01 1
+.names new_new_n326_1__ new_new_n327__ new_new_n328__
+01 1
+.names psbcresetpcc new_new_n328__ new_new_n329__
+00 1
+.names psbcresetpcc packi new_new_n330__
+01 1
+.names ptm0i nv_receive_begin new_new_n331__
+00 1
+.names new_new_n331__ nwd_cnt_test new_new_n332__
+01 1
+.names ptm1i nv_receive_begin new_new_n333__
+00 1
+.names new_new_n333__ new_new_n332__ new_new_n334__
+01 1
+.names pphysrecxxxxstate0 new_new_n330__ new_new_n335__
+01 1
+.names new_new_n334__ new_new_n335__ new_new_n336__
+01 1
+.names pphysrecxxxxstate1 new_new_n336__ new_new_n337__
+11 1
+.names new_new_n329__ new_new_n337__ porxxxxsbcackcode0
+00 0
+.names ptm1l pvtm1l new_new_n339__
+00 1
+.names new_new_n271_1__ new_new_n339__ new_new_n340__
+01 1
+.names new_new_n266_1__ new_new_n340__ new_new_n341__
+11 1
+.names new_new_n272__ new_new_n341__ pslavexxxxsbcreqcode1
+00 0
+.names packi nslavexxxxstate0 new_new_n343__
+00 1
+.names nslavexxxxstate1 nslavexxxxstate2 new_new_n344__
+00 1
+.names pstarto pvtm0l new_new_n345__
+11 1
+.names new_new_n345__ pstarti new_new_n346__
+01 1
+.names new_new_n346__ new_new_n344__ new_new_n347__
+01 1
+.names nslavexxxxstate1 nslavexxxxstate2 new_new_n348__
+11 1
+.names new_new_n347__ new_new_n348__ new_new_n349__
+00 1
+.names preseti new_new_n343__ new_new_n350__
+01 1
+.names new_new_n349__ new_new_n350__ new_new_n351__
+01 1
+.names nupdatereq new_new_n351__ pslavexxxxsnoopaddrfromproc
+11 1
+.names new_new_n271_1__ new_new_n340__ new_new_n353__
+00 1
+.names new_new_n353__ new_new_n266_1__ new_new_n354__
+01 1
+.names n1568 new_new_n354__ pslavexxxxgeneratenextstate
+00 0
+.names pslavexxxxsnoopaddrfromproc pslavexxxxgeneratenextstate \
+ pslavexxxxsnoopstate_w
+00 0
+.names pstarto packi new_new_n357__
+00 1
+.names pstarti new_new_n357__ new_new_n358__
+11 1
+.names preseti new_new_n358__ new_new_n359__
+01 1
+.names pvtm0l new_new_n359__ new_new_n360__
+11 1
+.names new_new_n262__ new_new_n360__ new_new_n361__
+00 1
+.names new_new_n361__ new_new_n344__ pslavexxxxsnoopvtagstate_r
+01 1
+.names ppccreqcode2 ppccreqcode0 new_new_n363__
+11 1
+.names psbcresetpcc psinglestep new_new_n364__
+00 1
+.names new_new_n215__ new_new_n202__ new_new_n365__
+01 1
+.names new_new_n364__ new_new_n365__ new_new_n366__
+11 1
+.names ppccreqcode1 new_new_n366__ new_new_n367__
+01 1
+.names new_new_n363__ new_new_n367__ new_new_n368__
+00 1
+.names ppccreqcode2 new_new_n366__ new_new_n369__
+01 1
+.names new_new_n369__ ppccreqcode0 n1559
+01 1
+.names new_new_n368__ n1559 new_new_n371__
+11 1
+.names nvirmachxxxxstate1 new_new_n274__ pvirmachxxxxen_vdbufo
+01 1
+.names nwd_cnt_test pvirmachxxxxen_vdbufo new_new_n373__
+01 1
+.names nv_receive_begin nv_transmit_begin new_new_n374__
+01 1
+.names nvirmachxxxxstate1 new_new_n374__ new_new_n375__
+00 1
+.names psbcresetpcc nvirmachxxxxstate0 new_new_n376__
+00 1
+.names new_new_n375__ new_new_n376__ new_new_n377__
+01 1
+.names pslavexxxxsnoopvtagstate_r new_new_n371__ new_new_n378__
+01 1
+.names new_new_n373__ new_new_n378__ new_new_n379__
+01 1
+.names new_new_n377__ new_new_n379__ new_new_n380__
+01 1
+.names new_new_n265__ new_new_n267__ new_new_n381__
+00 1
+.names new_new_n353__ new_new_n381__ new_new_n382__
+00 1
+.names ppccack nslavexxxxstate2 new_new_n383__
+00 1
+.names new_new_n262__ new_new_n383__ new_new_n384__
+11 1
+.names new_new_n382__ new_new_n384__ new_new_n385__
+00 1
+.names new_new_n380__ new_new_n385__ porxxxxvsacko
+11 0
+.names preseti nresetxxxxstate2 presetxxxxreset
+11 1
+.names preseti nintr_done new_new_n388__
+00 1
+.names pstarti nnubusxxxxstate0 new_new_n389__
+00 1
+.names nnubusxxxxstate1 new_new_n388__ new_new_n390__
+01 1
+.names new_new_n389__ new_new_n390__ new_new_n391__
+11 1
+.names packi new_new_n391__ new_new_n392__
+11 1
+.names packi nnubusxxxxstate1 new_new_n393__
+00 1
+.names new_new_n233__ new_new_n393__ new_new_n394__
+00 1
+.names preseti nnubusxxxxstate0 new_new_n395__
+01 1
+.names new_new_n394__ new_new_n395__ new_new_n396__
+01 1
+.names pstarti new_new_n396__ new_new_n397__
+11 1
+.names ppccreqcode1 ppccreqcode2 new_new_n398__
+00 1
+.names ppccreqcode0 new_new_n398__ new_new_n399__
+11 1
+.names new_new_n337__ new_new_n399__ new_new_n400__
+11 1
+.names psbcresetpcc new_new_n312__ new_new_n401__
+01 1
+.names new_new_n400__ new_new_n401__ n1556
+00 0
+.names new_new_n392__ new_new_n397__ new_new_n403__
+00 1
+.names n1556 new_new_n403__ porxxxxreseto
+01 0
+.names preseti nresetxxxxstate2 new_new_n405__
+01 1
+.names nmasterxxxxstate3 new_new_n183__ new_new_n406__
+01 1
+.names nmasterxxxxstate1 nmasterxxxxstate3 new_new_n407__
+11 1
+.names new_new_n406__ new_new_n407__ new_new_n408__
+00 1
+.names new_new_n408__ new_new_n296_1__ new_new_n409__
+01 1
+.names psbcresetpcc new_new_n409__ new_new_n410__
+01 1
+.names psbcresetpcc nmasterxxxxstate1 new_new_n411__
+00 1
+.names nmasterxxxxstate0 new_new_n411__ new_new_n412__
+01 1
+.names nupdatedone new_new_n412__ new_new_n413__
+11 1
+.names nmasterxxxxstate2 new_new_n413__ new_new_n414__
+11 1
+.names new_new_n405__ new_new_n410__ new_new_n415__
+00 1
+.names new_new_n414__ new_new_n415__ new_new_n416__
+01 1
+.names pvsacki psinglestep new_new_n417__
+00 1
+.names new_new_n181__ new_new_n292__ new_new_n418__
+11 1
+.names new_new_n417__ new_new_n418__ new_new_n419__
+11 1
+.names new_new_n303__ new_new_n330__ new_new_n420__
+01 1
+.names new_new_n329__ new_new_n416__ new_new_n421__
+01 1
+.names new_new_n419__ new_new_n420__ new_new_n422__
+00 1
+.names new_new_n421__ new_new_n422__ porxxxxsbcackcodelatch
+11 0
+.names ppccack new_new_n377__ new_new_n424__
+00 1
+.names pvirmachxxxxen_vdbufo new_new_n424__ pvirmachxxxxsbcconfigure
+00 0
+.names new_new_n326_1__ psbcresetpcc new_new_n426__
+01 1
+.names new_new_n419__ new_new_n426__ new_new_n427__
+11 1
+.names pstarti new_new_n393__ new_new_n428__
+01 1
+.names new_new_n395__ new_new_n428__ new_new_n429__
+11 1
+.names nintr_done new_new_n429__ new_new_n430__
+11 1
+.names new_new_n430__ new_new_n427__ porxxxxacko
+01 0
+.names pvsacki pstarti new_new_n432__
+01 1
+.names new_new_n432__ new_new_n229__ new_new_n433__
+01 1
+.names new_new_n182__ new_new_n433__ new_new_n434__
+00 1
+.names pmasterxxxxen_vdbufi new_new_n434__ pmasterxxxxsbc_writecache
+11 0
+.names prqsti new_new_n292__ new_new_n436__
+01 1
+.names new_new_n212__ new_new_n436__ new_new_n437__
+00 1
+.names new_new_n437__ new_new_n216_1__ new_new_n438__
+01 1
+.names pstarti pvsacki new_new_n439__
+11 1
+.names new_new_n206_1__ new_new_n439__ new_new_n440__
+11 1
+.names new_new_n229__ new_new_n440__ new_new_n441__
+00 1
+.names new_new_n441__ new_new_n182__ new_new_n442__
+01 1
+.names n1568 pvirmachxxxxen_vdbufo new_new_n443__
+00 1
+.names new_new_n442__ new_new_n443__ new_new_n444__
+01 1
+.names new_new_n377__ new_new_n438__ new_new_n445__
+00 1
+.names new_new_n444__ new_new_n445__ porxxxxen_vcntl
+11 0
+.names new_new_n389__ new_new_n393__ new_new_n447__
+11 1
+.names nnubusxxxxstate1 new_new_n238__ new_new_n448__
+01 1
+.names pstarti nnubusxxxxstate1 new_new_n449__
+01 1
+.names nnubusxxxxstate0 new_new_n449__ new_new_n450__
+11 1
+.names new_new_n448__ new_new_n450__ new_new_n451__
+00 1
+.names new_new_n451__ packi new_new_n452__
+01 1
+.names new_new_n447__ new_new_n452__ new_new_n453__
+00 1
+.names nintr_done new_new_n453__ new_new_n454__
+11 1
+.names preseti new_new_n454__ pnubusxxxxl_pabufi
+11 0
+.names pvtm1l new_new_n267__ pnextstatexxxxcoherencystate2o
+01 1
+.names nmasterxxxxstate3 new_new_n206_1__ new_new_n457__
+01 1
+.names nmasterxxxxstate0 new_new_n457__ new_new_n458__
+11 1
+.names pbus_inactive new_new_n417__ new_new_n459__
+11 1
+.names pgranti new_new_n459__ new_new_n460__
+11 1
+.names new_new_n460__ new_new_n284__ new_new_n461__
+01 1
+.names nmasterxxxxstate2 nmasterxxxxstate0 new_new_n462__
+00 1
+.names psinglestep nmasterxxxxstate3 new_new_n463__
+01 1
+.names new_new_n463__ new_new_n202__ new_new_n464__
+01 1
+.names nmasterxxxxstate1 new_new_n464__ new_new_n465__
+00 1
+.names prqsti new_new_n465__ new_new_n466__
+00 1
+.names new_new_n407__ new_new_n466__ new_new_n467__
+00 1
+.names new_new_n467__ new_new_n462__ new_new_n468__
+01 1
+.names new_new_n458__ new_new_n461__ new_new_n469__
+00 1
+.names new_new_n468__ new_new_n469__ new_new_n470__
+01 1
+.names psbcresetpcc new_new_n470__ pmasterxxxxrqsto
+00 1
+.names nwd_cnt_test pvirmachxxxxen_vdbufo pvirmachxxxxsbccacherelease
+11 1
+.names new_new_n419__ pvirmachxxxxsbccacherelease porxxxxvacko
+00 0
+.names packi new_new_n252__ new_new_n474__
+11 1
+.names pnubusactive new_new_n474__ new_new_n475__
+01 1
+.names pstarti packi new_new_n476__
+11 1
+.names pstarti packi new_new_n477__
+00 1
+.names nslavexxxxstate0 new_new_n477__ new_new_n478__
+11 1
+.names new_new_n476__ new_new_n478__ new_new_n479__
+00 1
+.names new_new_n475__ new_new_n479__ new_new_n480__
+01 1
+.names new_new_n480__ new_new_n253__ new_new_n481__
+01 1
+.names nintr_req new_new_n481__ new_new_n482__
+01 1
+.names nslavexxxxstate2 new_new_n482__ new_new_n483__
+11 1
+.names nslavexxxxstate2 new_new_n477__ new_new_n484__
+01 1
+.names new_new_n258__ new_new_n484__ new_new_n485__
+11 1
+.names nslavexxxxstate2 new_new_n250__ new_new_n486__
+00 1
+.names nslavexxxxstate2 pstarti new_new_n487__
+01 1
+.names nslavexxxxstate1 new_new_n487__ new_new_n488__
+01 1
+.names new_new_n348__ new_new_n486__ new_new_n489__
+00 1
+.names new_new_n488__ new_new_n489__ new_new_n490__
+01 1
+.names nslavexxxxstate0 new_new_n490__ new_new_n491__
+00 1
+.names packi new_new_n491__ new_new_n492__
+11 1
+.names preseti new_new_n483__ new_new_n493__
+00 1
+.names new_new_n485__ new_new_n492__ new_new_n494__
+00 1
+.names new_new_n493__ new_new_n494__ pslavexxxxl_vabufi
+11 0
+.names ptm0i new_new_n410__ new_new_n496__
+01 1
+.names ptm0i new_new_n244__ new_new_n497__
+00 1
+.names ptm0i ptm1i new_new_n498__
+01 1
+.names ptm1i ptm0i new_new_n499__
+01 1
+.names nv_receive_begin new_new_n499__ new_new_n500__
+01 1
+.names pphysrecxxxxstate0 new_new_n498__ new_new_n501__
+00 1
+.names new_new_n500__ new_new_n501__ new_new_n502__
+01 1
+.names nwd_cnt_test new_new_n502__ new_new_n503__
+11 1
+.names new_new_n503__ pphysrecxxxxstate1 new_new_n504__
+01 1
+.names new_new_n497__ new_new_n504__ new_new_n505__
+00 1
+.names new_new_n505__ new_new_n330__ new_new_n506__
+01 1
+.names new_new_n496__ new_new_n506__ porxxxxsbcackcode1
+00 0
+.names ppccreqcode3 new_new_n314__ new_new_n508__
+01 1
+.names prqsti new_new_n508__ new_new_n509__
+01 1
+.names new_new_n203__ new_new_n509__ new_new_n510__
+01 1
+.names new_new_n211_1__ new_new_n510__ new_new_n511__
+00 1
+.names new_new_n511__ new_new_n364__ porxxxxstarto
+01 1
+.names pvsacki pvtm0i new_new_n513__
+01 1
+.names nmasterxxxxstate2 new_new_n513__ new_new_n514__
+00 1
+.names nmasterxxxxstate1 new_new_n514__ new_new_n515__
+00 1
+.names packl new_new_n515__ new_new_n516__
+00 1
+.names pstarti pvsacki new_new_n517__
+00 1
+.names new_new_n439__ new_new_n517__ new_new_n518__
+00 1
+.names new_new_n518__ new_new_n229__ new_new_n519__
+01 1
+.names new_new_n516__ new_new_n519__ new_new_n520__
+00 1
+.names new_new_n520__ new_new_n182__ pmasterxxxxl_pdbufi
+01 1
+.names new_new_n204__ new_new_n323__ new_new_n522__
+01 1
+.names ppccconfirm new_new_n522__ new_new_n523__
+11 1
+.names ppccreqcode0 new_new_n320__ new_new_n524__
+11 1
+.names new_new_n409__ new_new_n499__ new_new_n525__
+11 1
+.names new_new_n523__ new_new_n322__ new_new_n526__
+01 1
+.names new_new_n524__ new_new_n526__ new_new_n527__
+01 1
+.names new_new_n525__ new_new_n527__ new_new_n528__
+01 1
+.names psbcresetpcc new_new_n528__ new_new_n529__
+00 1
+.names nresetxxxxstate1 new_new_n405__ new_new_n530__
+01 1
+.names new_new_n529__ new_new_n530__ new_new_n531__
+00 1
+.names new_new_n303__ new_new_n498__ new_new_n532__
+01 1
+.names pphysrecxxxxstate0 new_new_n332__ new_new_n533__
+01 1
+.names new_new_n533__ pphysrecxxxxstate1 new_new_n534__
+01 1
+.names new_new_n532__ new_new_n534__ new_new_n535__
+00 1
+.names new_new_n244__ new_new_n499__ new_new_n536__
+01 1
+.names new_new_n536__ new_new_n535__ new_new_n537__
+01 1
+.names new_new_n537__ new_new_n330__ new_new_n538__
+01 1
+.names new_new_n410__ new_new_n498__ new_new_n539__
+11 1
+.names new_new_n538__ new_new_n539__ new_new_n540__
+00 1
+.names new_new_n531__ new_new_n540__ porxxxxsbcackcode2
+11 0
+.names pslavexxxxsbcreqcode2 pslavexxxxgeneratenextstate pslavexxxxsbcreq
+00 0
+.names ppccreqcode2 ppccreqcode1 new_new_n543__
+01 1
+.names new_new_n366__ new_new_n543__ new_new_n544__
+00 1
+.names ppccreqcode0 new_new_n544__ new_new_n545__
+00 1
+.names ppccreqcode1 ppccreqcode0 new_new_n546__
+00 1
+.names new_new_n366__ new_new_n546__ new_new_n547__
+00 1
+.names ppccreqcode2 new_new_n547__ new_new_n548__
+00 1
+.names new_new_n424__ new_new_n545__ new_new_n549__
+00 1
+.names new_new_n373__ new_new_n548__ new_new_n550__
+00 1
+.names new_new_n549__ new_new_n550__ porxxxxl_dbufo
+11 0
+.names n1556 new_new_n405__ porxxxxsbcackcode3
+00 0
+.names new_new_n419__ new_new_n430__ porxxxxtm0o
+00 0
+.names pphysrecxxxxstate0 nv_receive_begin new_new_n554__
+01 1
+.names new_new_n554__ pphysrecxxxxstate1 new_new_n555__
+01 1
+.names new_new_n246_1__ new_new_n555__ new_new_n556__
+00 1
+.names new_new_n556__ new_new_n248__ new_new_n557__
+01 1
+.names psbcresetpcc np_receive_begin new_new_n558__
+01 1
+.names new_new_n303__ new_new_n558__ new_new_n559__
+11 1
+.names new_new_n557__ new_new_n559__ pphysrecxxxxnextstate1
+00 0
+.names pstarti new_new_n458__ new_new_n561__
+11 1
+.names new_new_n285__ new_new_n561__ new_new_n562__
+00 1
+.names new_new_n468__ new_new_n562__ new_new_n563__
+01 1
+.names psbcresetpcc new_new_n563__ pmasterxxxxarb_active
+00 1
+.names psbcresetpcc new_new_n301_1__ new_new_n565__
+00 1
+.names nnubusxxxxstate0 pslotspace_id_match new_new_n566__
+01 1
+.names new_new_n233__ new_new_n566__ new_new_n567__
+00 1
+.names new_new_n234__ new_new_n567__ new_new_n568__
+00 1
+.names new_new_n568__ new_new_n477__ new_new_n569__
+01 1
+.names preseti new_new_n569__ new_new_n570__
+01 1
+.names new_new_n565__ new_new_n570__ porxxxxen_cntl
+00 0
+.names new_new_n545__ porxxxxtm0o new_new_n572__
+11 1
+.names ppccreqcode2 new_new_n367__ new_new_n573__
+11 1
+.names new_new_n573__ new_new_n572__ porxxxxtm1o
+01 0
+.names ppccreqcode2 ppccreqcode3 new_new_n575__
+00 1
+.names new_new_n289__ new_new_n575__ pencodemuxxxxxmx_ad_8
+01 1
+.names pvackl nmasterxxxxstate1 new_new_n577__
+11 1
+.names new_new_n183__ new_new_n577__ new_new_n578__
+00 1
+.names pvsacki new_new_n296_1__ new_new_n579__
+01 1
+.names new_new_n578__ new_new_n579__ new_new_n580__
+01 1
+.names new_new_n320__ new_new_n319__ new_new_n581__
+01 1
+.names new_new_n313__ new_new_n581__ new_new_n582__
+01 1
+.names new_new_n580__ new_new_n582__ new_new_n583__
+01 1
+.names psbcresetpcc new_new_n583__ new_new_n584__
+00 1
+.names new_new_n584__ new_new_n416__ new_new_n585__
+01 1
+.names new_new_n337__ new_new_n427__ new_new_n586__
+01 1
+.names new_new_n585__ new_new_n586__ porxxxxsbcack
+11 0
+.names ppccreqcode1 n1559 porxxxxvtm1o
+11 1
+.names ppccackcode pvirmachxxxxen_vdbufo new_new_n589__
+01 1
+.names n1568 new_new_n371__ new_new_n590__
+01 1
+.names new_new_n373__ new_new_n589__ new_new_n591__
+00 1
+.names new_new_n590__ new_new_n591__ porxxxxvtm0o
+11 0
+.names nresetxxxxstate0 nresetxxxxstate1 new_new_n593__
+00 1
+.names ngen_reset new_new_n593__ new_new_n594__
+11 1
+.names nresetxxxxstate2 new_new_n594__ new_new_n595__
+01 1
+.names preseti new_new_n595__ n1496
+11 1
+.names pslotspace_id_match new_new_n449__ new_new_n597__
+01 1
+.names new_new_n597__ new_new_n451__ new_new_n598__
+01 1
+.names new_new_n388__ new_new_n598__ new_new_n599__
+01 1
+.names packi new_new_n599__ new_new_n600__
+01 1
+.names new_new_n430__ new_new_n600__ n1499
+00 0
+.names new_new_n232__ new_new_n487__ new_new_n602__
+11 1
+.names new_new_n263__ new_new_n602__ new_new_n603__
+11 1
+.names new_new_n339__ pcoherencystate1i new_new_n604__
+01 1
+.names pcoherencystate2i new_new_n604__ new_new_n605__
+00 1
+.names new_new_n605__ ptag_match new_new_n606__
+01 1
+.names nslavexxxxstate1 new_new_n606__ new_new_n607__
+00 1
+.names pcoherencystate2i pcoherencystate1i new_new_n608__
+11 1
+.names ptm1l new_new_n608__ new_new_n609__
+11 1
+.names new_new_n609__ new_new_n263__ new_new_n610__
+01 1
+.names new_new_n607__ new_new_n610__ new_new_n611__
+00 1
+.names pvsacki nslavexxxxstate1 new_new_n612__
+11 1
+.names new_new_n612__ new_new_n611__ new_new_n613__
+01 1
+.names nslavexxxxstate2 new_new_n613__ new_new_n614__
+11 1
+.names new_new_n614__ new_new_n262__ new_new_n615__
+01 1
+.names new_new_n603__ new_new_n615__ n1502
+00 0
+.names pvtm0l new_new_n345__ new_new_n617__
+01 1
+.names new_new_n617__ ptm1l new_new_n618__
+01 1
+.names new_new_n618__ new_new_n487__ new_new_n619__
+01 1
+.names new_new_n250__ ppccsync new_new_n620__
+01 1
+.names new_new_n620__ nslavexxxxstate2 new_new_n621__
+01 1
+.names new_new_n619__ new_new_n621__ new_new_n622__
+00 1
+.names new_new_n343__ new_new_n622__ new_new_n623__
+01 1
+.names preseti new_new_n623__ new_new_n624__
+01 1
+.names new_new_n232__ new_new_n252__ new_new_n625__
+11 1
+.names pvsacki nslavexxxxstate0 new_new_n626__
+11 1
+.names packi nintr_req new_new_n627__
+00 1
+.names pnubusactive new_new_n627__ new_new_n628__
+11 1
+.names new_new_n343__ new_new_n626__ new_new_n629__
+00 1
+.names new_new_n628__ new_new_n629__ new_new_n630__
+01 1
+.names nslavexxxxstate2 new_new_n630__ new_new_n631__
+00 1
+.names preseti new_new_n631__ new_new_n632__
+00 1
+.names new_new_n625__ new_new_n632__ new_new_n633__
+00 1
+.names new_new_n611__ new_new_n262__ new_new_n634__
+01 1
+.names nslavexxxxstate2 new_new_n634__ new_new_n635__
+11 1
+.names new_new_n633__ new_new_n635__ new_new_n636__
+01 1
+.names nslavexxxxstate1 new_new_n636__ new_new_n637__
+00 1
+.names new_new_n624__ new_new_n637__ n1505
+01 0
+.names new_new_n630__ new_new_n348__ new_new_n639__
+01 1
+.names pstarto pvtm0l new_new_n640__
+01 1
+.names new_new_n640__ pstarti new_new_n641__
+01 1
+.names new_new_n344__ new_new_n641__ new_new_n642__
+11 1
+.names new_new_n251_1__ nslavexxxxstate2 new_new_n643__
+01 1
+.names new_new_n642__ new_new_n643__ new_new_n644__
+00 1
+.names new_new_n644__ new_new_n343__ new_new_n645__
+01 1
+.names new_new_n639__ new_new_n645__ new_new_n646__
+00 1
+.names nslavexxxxstate2 ppccack new_new_n647__
+01 1
+.names nslavexxxxstate1 new_new_n647__ new_new_n648__
+11 1
+.names new_new_n648__ new_new_n646__ new_new_n649__
+01 1
+.names preseti new_new_n649__ new_new_n650__
+00 1
+.names ppccsync nslavexxxxstate2 new_new_n651__
+00 1
+.names new_new_n606__ nslavexxxxstate2 new_new_n652__
+01 1
+.names new_new_n651__ new_new_n652__ new_new_n653__
+00 1
+.names nslavexxxxstate1 new_new_n653__ new_new_n654__
+00 1
+.names new_new_n262__ new_new_n654__ new_new_n655__
+11 1
+.names ppccsync new_new_n344__ new_new_n656__
+01 1
+.names new_new_n348__ new_new_n656__ new_new_n657__
+00 1
+.names new_new_n657__ new_new_n232__ new_new_n658__
+01 1
+.names pstarti new_new_n658__ new_new_n659__
+11 1
+.names new_new_n655__ new_new_n659__ new_new_n660__
+00 1
+.names new_new_n650__ new_new_n660__ n1508
+01 0
+.names new_new_n462__ new_new_n465__ new_new_n662__
+01 1
+.names prqsti new_new_n399__ new_new_n663__
+00 1
+.names new_new_n663__ new_new_n202__ new_new_n664__
+01 1
+.names new_new_n662__ new_new_n664__ new_new_n665__
+01 1
+.names psinglestep new_new_n325__ new_new_n666__
+01 1
+.names new_new_n399__ new_new_n666__ new_new_n667__
+01 1
+.names pbus_inactive new_new_n667__ new_new_n668__
+11 1
+.names new_new_n668__ nmasterxxxxstate2 new_new_n669__
+01 1
+.names pvsacki new_new_n669__ new_new_n670__
+00 1
+.names new_new_n670__ new_new_n209__ new_new_n671__
+01 1
+.names new_new_n561__ new_new_n665__ new_new_n672__
+00 1
+.names new_new_n671__ new_new_n672__ new_new_n673__
+01 1
+.names psbcresetpcc new_new_n673__ new_new_n674__
+00 1
+.names pmasterxxxxen_vdbufi new_new_n674__ new_new_n675__
+00 1
+.names pvsacki new_new_n179__ new_new_n676__
+11 1
+.names packl nmasterxxxxstate1 new_new_n677__
+01 1
+.names new_new_n676__ new_new_n677__ new_new_n678__
+00 1
+.names new_new_n678__ new_new_n181__ new_new_n679__
+01 1
+.names new_new_n679__ new_new_n675__ n1511
+01 0
+.names nmasterxxxxstate2 new_new_n287__ new_new_n681__
+01 1
+.names ppccreqcode0 new_new_n681__ new_new_n682__
+01 1
+.names new_new_n398__ new_new_n682__ new_new_n683__
+11 1
+.names nmasterxxxxstate2 new_new_n683__ new_new_n684__
+11 1
+.names new_new_n684__ nupdatedone new_new_n685__
+01 1
+.names new_new_n685__ new_new_n412__ new_new_n686__
+01 1
+.names new_new_n543__ new_new_n546__ new_new_n687__
+00 1
+.names new_new_n202__ new_new_n315__ new_new_n688__
+11 1
+.names new_new_n687__ new_new_n688__ new_new_n689__
+01 1
+.names nmasterxxxxstate1 new_new_n689__ new_new_n690__
+00 1
+.names nmasterxxxxstate2 new_new_n214__ new_new_n691__
+01 1
+.names new_new_n690__ new_new_n691__ new_new_n692__
+01 1
+.names new_new_n324__ new_new_n459__ new_new_n693__
+11 1
+.names new_new_n289__ new_new_n693__ new_new_n694__
+11 1
+.names new_new_n694__ new_new_n209__ new_new_n695__
+01 1
+.names nmasterxxxxstate2 new_new_n695__ new_new_n696__
+11 1
+.names new_new_n692__ new_new_n696__ new_new_n697__
+00 1
+.names psbcresetpcc new_new_n697__ new_new_n698__
+00 1
+.names new_new_n182__ new_new_n514__ new_new_n699__
+00 1
+.names new_new_n686__ new_new_n698__ new_new_n700__
+00 1
+.names new_new_n699__ new_new_n700__ new_new_n701__
+01 1
+.names pmasterxxxxen_pdbufo new_new_n519__ new_new_n702__
+11 1
+.names new_new_n181__ new_new_n702__ new_new_n703__
+00 1
+.names new_new_n701__ new_new_n703__ n1514
+11 0
+.names nmasterxxxxstate1 new_new_n681__ new_new_n705__
+01 1
+.names new_new_n290__ new_new_n214__ new_new_n706__
+01 1
+.names new_new_n705__ new_new_n706__ new_new_n707__
+11 1
+.names nmasterxxxxstate2 nmasterxxxxstate3 new_new_n708__
+11 1
+.names nmasterxxxxstate1 new_new_n708__ new_new_n709__
+11 1
+.names new_new_n707__ new_new_n709__ new_new_n710__
+00 1
+.names ppccreqcode0 ppccreqcode1 new_new_n711__
+01 1
+.names new_new_n363__ new_new_n324__ new_new_n712__
+01 1
+.names new_new_n711__ new_new_n712__ new_new_n713__
+01 1
+.names new_new_n398__ new_new_n713__ new_new_n714__
+01 1
+.names new_new_n714__ new_new_n283__ new_new_n715__
+01 1
+.names new_new_n460__ new_new_n715__ new_new_n716__
+11 1
+.names nmasterxxxxstate3 new_new_n202__ new_new_n717__
+01 1
+.names new_new_n179__ new_new_n717__ new_new_n718__
+00 1
+.names new_new_n718__ new_new_n462__ new_new_n719__
+01 1
+.names nmasterxxxxstate0 new_new_n708__ new_new_n720__
+01 1
+.names new_new_n719__ new_new_n720__ new_new_n721__
+00 1
+.names psinglestep new_new_n398__ new_new_n722__
+00 1
+.names ppccreqcode3 new_new_n722__ new_new_n723__
+00 1
+.names new_new_n363__ new_new_n723__ new_new_n724__
+00 1
+.names new_new_n711__ new_new_n724__ new_new_n725__
+01 1
+.names ppccreq new_new_n725__ new_new_n726__
+11 1
+.names nmasterxxxxstate1 new_new_n214__ new_new_n727__
+01 1
+.names new_new_n726__ new_new_n727__ new_new_n728__
+01 1
+.names new_new_n728__ new_new_n721__ new_new_n729__
+01 1
+.names prqsti new_new_n729__ new_new_n730__
+00 1
+.names new_new_n716__ new_new_n710__ new_new_n731__
+01 1
+.names new_new_n730__ new_new_n731__ new_new_n732__
+01 1
+.names new_new_n561__ new_new_n732__ new_new_n733__
+01 1
+.names psbcresetpcc new_new_n733__ new_new_n734__
+00 1
+.names new_new_n577__ pvsacki new_new_n735__
+01 1
+.names new_new_n208__ new_new_n406__ new_new_n736__
+00 1
+.names new_new_n735__ new_new_n736__ new_new_n737__
+01 1
+.names new_new_n737__ packl new_new_n738__
+01 1
+.names new_new_n407__ new_new_n738__ new_new_n739__
+00 1
+.names plastrqsti new_new_n739__ new_new_n740__
+00 1
+.names packl new_new_n407__ new_new_n741__
+01 1
+.names new_new_n740__ new_new_n741__ new_new_n742__
+00 1
+.names pstarti new_new_n208__ new_new_n743__
+01 1
+.names new_new_n439__ new_new_n743__ new_new_n744__
+00 1
+.names packl new_new_n744__ new_new_n745__
+00 1
+.names new_new_n417__ new_new_n206_1__ new_new_n746__
+01 1
+.names new_new_n514__ new_new_n745__ new_new_n747__
+00 1
+.names new_new_n207__ new_new_n747__ new_new_n748__
+01 1
+.names new_new_n746__ new_new_n748__ new_new_n749__
+01 1
+.names new_new_n749__ nmasterxxxxstate3 new_new_n750__
+01 1
+.names new_new_n750__ new_new_n742__ new_new_n751__
+01 1
+.names new_new_n751__ new_new_n181__ new_new_n752__
+01 1
+.names new_new_n734__ new_new_n752__ n1517
+00 0
+.names ptm1i new_new_n239__ new_new_n754__
+01 1
+.names new_new_n237__ new_new_n754__ n1520
+00 0
+.names new_new_n204__ new_new_n459__ new_new_n756__
+11 1
+.names ppccconfirm new_new_n756__ new_new_n757__
+11 1
+.names new_new_n757__ pgranti new_new_n758__
+01 1
+.names new_new_n758__ new_new_n284__ new_new_n759__
+01 1
+.names pstarti new_new_n458__ new_new_n760__
+01 1
+.names new_new_n759__ new_new_n760__ new_new_n761__
+00 1
+.names psbcresetpcc new_new_n761__ new_new_n762__
+11 1
+.names pstarti pvsacki new_new_n763__
+01 1
+.names new_new_n513__ new_new_n763__ new_new_n764__
+00 1
+.names new_new_n764__ new_new_n708__ new_new_n765__
+01 1
+.names nmasterxxxxstate3 new_new_n746__ new_new_n766__
+11 1
+.names new_new_n765__ new_new_n766__ new_new_n767__
+00 1
+.names new_new_n180__ new_new_n767__ new_new_n768__
+01 1
+.names new_new_n678__ new_new_n768__ new_new_n769__
+11 1
+.names new_new_n433__ new_new_n769__ new_new_n770__
+01 1
+.names new_new_n770__ new_new_n181__ new_new_n771__
+01 1
+.names new_new_n364__ new_new_n510__ new_new_n772__
+11 1
+.names new_new_n771__ new_new_n772__ new_new_n773__
+00 1
+.names pmasterxxxxen_pdbufo new_new_n762__ new_new_n774__
+00 1
+.names new_new_n773__ new_new_n774__ n1523
+11 0
+.names preseti new_new_n593__ new_new_n776__
+00 1
+.names nresetxxxxstate2 new_new_n776__ new_new_n777__
+00 1
+.names ppccsawreset new_new_n777__ new_new_n778__
+00 1
+.names presetxxxxreset new_new_n778__ n1526
+00 0
+.names ppccreqcode0 ppccreqcode2 new_new_n780__
+01 1
+.names ppccreqcode2 ppccreqcode0 new_new_n781__
+01 1
+.names new_new_n780__ new_new_n781__ new_new_n782__
+00 1
+.names new_new_n367__ new_new_n782__ n1529
+01 1
+.names new_new_n594__ preseti new_new_n784__
+01 1
+.names presetxxxxreset new_new_n784__ n1532
+00 0
+.names preseti nslavexxxxstate0 new_new_n786__
+00 1
+.names nslavexxxxstate2 new_new_n358__ new_new_n787__
+01 1
+.names new_new_n263__ new_new_n787__ new_new_n788__
+11 1
+.names new_new_n786__ new_new_n788__ new_new_n789__
+11 1
+.names new_new_n547__ new_new_n789__ new_new_n790__
+00 1
+.names n1553 new_new_n369__ new_new_n791__
+00 1
+.names new_new_n790__ new_new_n791__ n1535
+11 0
+.names nvirmachxxxxstate0 nvirmachxxxxstate1 new_new_n793__
+00 1
+.names nv_receive_begin new_new_n793__ new_new_n794__
+11 1
+.names pvacki nvirmachxxxxstate0 new_new_n795__
+01 1
+.names nvirmachxxxxstate1 new_new_n795__ new_new_n796__
+11 1
+.names new_new_n794__ new_new_n796__ new_new_n797__
+00 1
+.names psbcresetpcc new_new_n797__ new_new_n798__
+00 1
+.names new_new_n373__ new_new_n798__ new_new_n799__
+00 1
+.names nvirmachxxxxstate1 nv_transmit_begin new_new_n800__
+00 1
+.names new_new_n800__ new_new_n376__ new_new_n801__
+01 1
+.names ppccack new_new_n801__ new_new_n802__
+11 1
+.names new_new_n802__ new_new_n799__ n1538
+01 0
+.names new_new_n194__ new_new_n219__ new_new_n804__
+00 1
+.names new_new_n804__ new_new_n221_1__ new_new_n805__
+01 1
+.names pwdcntxxxxstate3 pwdcntxxxxstate2 new_new_n806__
+00 1
+.names nwdcntxxxxstate0 new_new_n193__ new_new_n807__
+11 1
+.names new_new_n806__ new_new_n807__ new_new_n808__
+11 1
+.names psbcresetpcc nreset_wd_cnt new_new_n809__
+01 1
+.names pwdcntxxxxstate1 new_new_n809__ new_new_n810__
+01 1
+.names nset_ex_wd_cnt1 new_new_n810__ new_new_n811__
+11 1
+.names new_new_n808__ new_new_n811__ n1550
+00 0
+.names new_new_n805__ n1550 n1541
+00 0
+.names ppccack new_new_n801__ new_new_n814__
+01 1
+.names new_new_n798__ new_new_n814__ n1544
+00 0
+.names ptm0i pstarti new_new_n816__
+00 1
+.names new_new_n816__ pmasterxxxxen_pdbufo new_new_n817__
+01 1
+.names new_new_n794__ new_new_n796__ new_new_n818__
+11 1
+.names new_new_n818__ nv_transmit_begin new_new_n819__
+01 1
+.names psbcresetpcc new_new_n819__ new_new_n820__
+00 1
+.names pvtm0i new_new_n820__ new_new_n821__
+11 1
+.names nv_receive_begin new_new_n248__ new_new_n822__
+01 1
+.names new_new_n245__ new_new_n822__ new_new_n823__
+11 1
+.names nwd_cnt_test new_new_n823__ new_new_n824__
+01 1
+.names pphysrecxxxxstate0 new_new_n824__ new_new_n825__
+01 1
+.names new_new_n817__ new_new_n821__ new_new_n826__
+00 1
+.names new_new_n373__ new_new_n825__ new_new_n827__
+00 1
+.names new_new_n826__ new_new_n827__ n1547
+11 0
+.names nnubusxxxxstate1 new_new_n566__ new_new_n829__
+11 1
+.names new_new_n234__ new_new_n829__ new_new_n830__
+00 1
+.names new_new_n388__ new_new_n477__ new_new_n831__
+11 1
+.names new_new_n830__ new_new_n831__ n1562
+01 1
+.names new_new_n648__ new_new_n786__ n1565
+00 1
+.names new_new_n544__ new_new_n371__ new_new_n834__
+01 1
+.names new_new_n686__ new_new_n834__ n1571
+01 0
+.names pwdcntxxxxwd_cnt0 pwdcntxxxxnextstate3
+1 1
+.names pwdcntxxxxwd_cnt1 pwdcntxxxxnextstate2
+1 1
+.names pwdcntxxxxwd_cnt2 pwdcntxxxxnextstate1
+1 1
+.names pmasterxxxxen_pdbufo pmasterxxxxl_dbufo_if_tm0
+1 1
+.names pmasterxxxxl_pdbufi pmasterxxxxen_pdbufi
+1 1
+.names pslavexxxxsnoopaddrfromproc pslavexxxxsnoopvtag_w
+1 1
+.names pslavexxxxsnoopaddrfromproc n1574
+1 1
+.end

@@ -1,0 +1,1387 @@
+# Benchmark "sbc" written by ABC on Thu Oct  8 20:27:48 2020
+.model sbc
+.inputs clock ACKl BUS_Inactive GRANTi LastRQSTi SBCResetPCC PCCReq \
+ PCCReqCode0 PCCReqCode1 PCCReqCode2 PCCReqCode3 PCCConfirm RQSTi \
+ SingleStep STARTi TM0i TM1i VACKl VTM0i VSACKi ACKi RESETi \
+ SlotSpace_Id_Match PCCSawReset CoherencyState1i CoherencyState2i \
+ NuBusActive PCCAck PCCsync STARTo Tag_Match TM1l VTM0l VTM1l PCCAckCode \
+ VACKi physrecXXXXstate0 physrecXXXXstate1 wdcntXXXXstate1 wdcntXXXXstate2 \
+ wdcntXXXXstate3
+.outputs physrecXXXXNextState0 physrecXXXXNextState1 wdcntXXXXNextState1 \
+ wdcntXXXXNextState2 wdcntXXXXNextState3 masterXXXXArb_active \
+ masterXXXXEn_ABufo masterXXXXEn_PDBufi masterXXXXL_PDBufi \
+ masterXXXXEn_VDBufi masterXXXXEn_PDBufo masterXXXXL_DBufo_if_TM0 \
+ masterXXXXRQSTo masterXXXXSBC_WriteCache nubusXXXXNuBusActive \
+ nubusXXXXL_PABufi resetXXXXSBCResetPCC resetXXXXReset slaveXXXXL_VABufi \
+ slaveXXXXSBCReq slaveXXXXSBCReqCode0 slaveXXXXSBCReqCode1 \
+ slaveXXXXSBCReqCode2 slaveXXXXSnoopAddrFromProc slaveXXXXSnoopVTag_W \
+ slaveXXXXSnoopState_W slaveXXXXGenerateNextState slaveXXXXSnoopVTagState_R \
+ virmachXXXXEn_VDBufo virmachXXXXSBCsetDirty virmachXXXXSBCCacheRelease \
+ virmachXXXXSBCConfigure wdcntXXXXwd_cnt0 wdcntXXXXwd_cnt1 wdcntXXXXwd_cnt2 \
+ encodemuxXXXXMX_AD_8 nextstateXXXXCoherencyState2o orXXXXACKo \
+ orXXXXEn_CNTL orXXXXRESETo orXXXXTM0o orXXXXTM1o orXXXXEn_START \
+ orXXXXSBCAck orXXXXSBCAckCodelatch orXXXXSBCAckCode0 orXXXXSBCAckCode1 \
+ orXXXXSBCAckCode2 orXXXXSBCAckCode3 orXXXXSTARTo orXXXXEn_VCNTL \
+ orXXXXVSACKo orXXXXVACKo orXXXXVTM0o orXXXXVTM1o orXXXXL_DBufo
+
+.latch      n1497 masterXXXXstate0  0
+.latch      n1500 masterXXXXstate1  0
+.latch      n1503 masterXXXXstate2  0
+.latch      n1506 masterXXXXstate3  0
+.latch      n1509 nubusXXXXstate0  0
+.latch      n1512 nubusXXXXstate1  0
+.latch      n1515 slaveXXXXstate0  0
+.latch      n1518 slaveXXXXstate1  0
+.latch      n1521 slaveXXXXstate2  0
+.latch      n1524 resetXXXXstate0  0
+.latch      n1527 resetXXXXstate1  0
+.latch      n1530 resetXXXXstate2  0
+.latch      n1533 virmachXXXXstate0  0
+.latch      n1536 virmachXXXXstate1  0
+.latch      n1539 wdcntXXXXstate0  0
+.latch      n1542  Gen_Reset  0
+.latch      n1545   Intr_req  0
+.latch      n1548  Intr_done  0
+.latch      n1551  UpdateReq  0
+.latch      n1554 UpdateDone  0
+.latch      n1557 Reset_wd_cnt  0
+.latch      n1560 Set_ex_wd_cnt1  0
+.latch      n1563 Incr_wd_cnt  0
+.latch      n1566 wd_cnt_test  0
+.latch      n1569 P_receive_begin  0
+.latch      n1572 P_receive_cancel  0
+.latch      n1575 V_receive_begin  0
+.latch      n1578 V_transmit_begin  0
+
+.names SBCResetPCC ACKi new_new_n181__
+00 1
+.names TM0i physrecXXXXstate1 new_new_n182__
+11 1
+.names wd_cnt_test new_new_n182__ new_new_n183__
+11 1
+.names physrecXXXXstate1 P_receive_cancel new_new_n184__
+11 1
+.names physrecXXXXstate0 new_new_n184__ new_new_n185__
+00 1
+.names new_new_n183__ new_new_n185__ new_new_n186__
+01 1
+.names new_new_n186__ new_new_n181__ physrecXXXXNextState0
+01 1
+.names physrecXXXXstate0 physrecXXXXstate1 new_new_n188__
+11 1
+.names SBCResetPCC P_receive_begin new_new_n189__
+01 1
+.names new_new_n188__ new_new_n189__ new_new_n190__
+11 1
+.names physrecXXXXstate0 P_receive_cancel new_new_n191__
+01 1
+.names new_new_n191__ physrecXXXXstate1 new_new_n192__
+01 1
+.names new_new_n183__ new_new_n192__ new_new_n193__
+00 1
+.names new_new_n193__ new_new_n181__ new_new_n194_1__
+01 1
+.names new_new_n190__ new_new_n194_1__ physrecXXXXNextState1
+00 0
+.names SBCResetPCC Reset_wd_cnt new_new_n196__
+11 1
+.names wdcntXXXXstate1 new_new_n196__ new_new_n197__
+11 1
+.names wdcntXXXXstate2 new_new_n196__ new_new_n198__
+11 1
+.names wdcntXXXXstate3 Incr_wd_cnt new_new_n199_1__
+11 1
+.names new_new_n198__ new_new_n199_1__ new_new_n200__
+11 1
+.names new_new_n197__ new_new_n200__ wdcntXXXXNextState1
+00 0
+.names wdcntXXXXstate1 new_new_n199_1__ new_new_n202__
+01 1
+.names new_new_n202__ new_new_n198__ new_new_n203__
+01 1
+.names wdcntXXXXstate3 new_new_n196__ new_new_n204_1__
+11 1
+.names Incr_wd_cnt new_new_n204_1__ new_new_n205__
+11 1
+.names wdcntXXXXstate2 new_new_n205__ new_new_n206__
+01 1
+.names new_new_n203__ new_new_n206__ wdcntXXXXNextState2
+00 0
+.names wdcntXXXXstate1 wdcntXXXXstate2 new_new_n208__
+11 1
+.names new_new_n208__ Incr_wd_cnt new_new_n209_1__
+01 1
+.names new_new_n209_1__ new_new_n204_1__ new_new_n210__
+01 1
+.names Incr_wd_cnt new_new_n196__ new_new_n211__
+11 1
+.names wdcntXXXXstate3 wdcntXXXXstate0 new_new_n212__
+11 1
+.names new_new_n211__ new_new_n212__ new_new_n213__
+11 1
+.names new_new_n210__ new_new_n213__ wdcntXXXXNextState3
+00 0
+.names masterXXXXstate1 masterXXXXstate3 new_new_n215__
+11 1
+.names SingleStep masterXXXXstate3 new_new_n216__
+01 1
+.names PCCReqCode3 PCCReq new_new_n217__
+01 1
+.names new_new_n216__ new_new_n217__ new_new_n218__
+01 1
+.names masterXXXXstate1 new_new_n218__ new_new_n219_1__
+00 1
+.names RQSTi new_new_n219_1__ new_new_n220__
+00 1
+.names new_new_n215__ new_new_n220__ new_new_n221__
+00 1
+.names masterXXXXstate0 masterXXXXstate2 new_new_n222__
+00 1
+.names new_new_n221__ new_new_n222__ new_new_n223__
+01 1
+.names masterXXXXstate1 masterXXXXstate2 new_new_n224_1__
+11 1
+.names masterXXXXstate3 new_new_n224_1__ new_new_n225__
+01 1
+.names GRANTi new_new_n225__ new_new_n226__
+11 1
+.names masterXXXXstate1 masterXXXXstate2 new_new_n227__
+00 1
+.names masterXXXXstate0 new_new_n227__ new_new_n228__
+11 1
+.names masterXXXXstate3 new_new_n228__ new_new_n229_1__
+01 1
+.names STARTi new_new_n229_1__ new_new_n230__
+11 1
+.names new_new_n223__ new_new_n226__ new_new_n231__
+00 1
+.names new_new_n230__ new_new_n231__ new_new_n232__
+01 1
+.names SBCResetPCC new_new_n232__ masterXXXXArb_active
+00 1
+.names masterXXXXstate0 masterXXXXstate3 new_new_n234_1__
+01 1
+.names VSACKi masterXXXXstate2 new_new_n235__
+01 1
+.names masterXXXXstate3 masterXXXXstate1 new_new_n236__
+01 1
+.names GRANTi new_new_n236__ new_new_n237__
+11 1
+.names BUS_Inactive new_new_n235__ new_new_n238__
+11 1
+.names new_new_n237__ new_new_n238__ new_new_n239_1__
+11 1
+.names PCCConfirm new_new_n239_1__ new_new_n240__
+11 1
+.names RQSTi new_new_n227__ new_new_n241__
+01 1
+.names new_new_n240__ new_new_n241__ new_new_n242__
+11 1
+.names new_new_n234_1__ new_new_n242__ new_new_n243__
+00 1
+.names PCCReqCode1 PCCReqCode2 new_new_n244_1__
+11 1
+.names new_new_n244_1__ new_new_n217__ new_new_n245__
+01 1
+.names SingleStep new_new_n245__ new_new_n246__
+01 1
+.names SBCResetPCC new_new_n243__ new_new_n247__
+00 1
+.names new_new_n246__ new_new_n247__ masterXXXXEn_ABufo
+11 1
+.names STARTi VSACKi new_new_n249_1__
+00 1
+.names STARTi VSACKi new_new_n250__
+11 1
+.names new_new_n249_1__ new_new_n250__ new_new_n251__
+00 1
+.names ACKl masterXXXXstate2 new_new_n252__
+01 1
+.names new_new_n251__ new_new_n252__ new_new_n253__
+01 1
+.names VSACKi VTM0i new_new_n254_1__
+01 1
+.names masterXXXXstate2 new_new_n254_1__ new_new_n255__
+00 1
+.names masterXXXXstate1 new_new_n255__ new_new_n256__
+00 1
+.names ACKl new_new_n256__ new_new_n257__
+00 1
+.names new_new_n253__ new_new_n257__ new_new_n258__
+00 1
+.names SBCResetPCC masterXXXXstate0 new_new_n259_1__
+01 1
+.names masterXXXXstate3 new_new_n259_1__ new_new_n260__
+11 1
+.names new_new_n258__ new_new_n260__ masterXXXXEn_PDBufi
+01 1
+.names STARTi masterXXXXstate2 new_new_n262__
+01 1
+.names VTM0i VSACKi new_new_n263__
+11 1
+.names new_new_n262__ new_new_n263__ new_new_n264_1__
+11 1
+.names new_new_n260__ new_new_n264_1__ n1572
+11 1
+.names new_new_n236__ VACKl new_new_n266__
+01 1
+.names n1572 new_new_n266__ new_new_n267__
+11 1
+.names new_new_n259_1__ new_new_n267__ masterXXXXEn_VDBufi
+00 0
+.names masterXXXXstate3 new_new_n252__ new_new_n269_1__
+01 1
+.names new_new_n259_1__ new_new_n269_1__ masterXXXXEn_PDBufo
+11 1
+.names SingleStep VSACKi new_new_n271__
+00 1
+.names BUS_Inactive new_new_n271__ new_new_n272__
+11 1
+.names GRANTi new_new_n272__ new_new_n273__
+11 1
+.names new_new_n273__ new_new_n225__ new_new_n274_1__
+01 1
+.names new_new_n223__ new_new_n229_1__ new_new_n275__
+00 1
+.names new_new_n274_1__ new_new_n275__ new_new_n276__
+01 1
+.names SBCResetPCC new_new_n276__ masterXXXXRQSTo
+00 1
+.names VSACKi STARTi new_new_n278__
+01 1
+.names new_new_n278__ new_new_n252__ new_new_n279_1__
+01 1
+.names new_new_n260__ new_new_n279_1__ new_new_n280__
+00 1
+.names masterXXXXEn_VDBufi new_new_n280__ masterXXXXSBC_WriteCache
+11 0
+.names ACKi RESETi new_new_n282__
+00 1
+.names nubusXXXXstate0 STARTi new_new_n283__
+01 1
+.names new_new_n282__ new_new_n283__ new_new_n284_1__
+11 1
+.names nubusXXXXstate1 Intr_done new_new_n285__
+00 1
+.names new_new_n284_1__ new_new_n285__ new_new_n286__
+11 1
+.names nubusXXXXstate1 nubusXXXXstate0 new_new_n287__
+01 1
+.names Intr_done nubusXXXXstate1 new_new_n288__
+01 1
+.names new_new_n287__ new_new_n288__ new_new_n289_1__
+00 1
+.names STARTi new_new_n289_1__ new_new_n290__
+00 1
+.names new_new_n282__ new_new_n290__ new_new_n291__
+11 1
+.names new_new_n286__ new_new_n291__ nubusXXXXNuBusActive
+00 0
+.names STARTi nubusXXXXstate1 new_new_n293__
+01 1
+.names nubusXXXXstate0 new_new_n293__ new_new_n294_1__
+11 1
+.names nubusXXXXstate1 new_new_n283__ new_new_n295__
+01 1
+.names new_new_n294_1__ new_new_n295__ new_new_n296__
+00 1
+.names new_new_n296__ ACKi new_new_n297__
+01 1
+.names ACKi nubusXXXXstate1 new_new_n298__
+00 1
+.names STARTi nubusXXXXstate0 new_new_n299_1__
+00 1
+.names new_new_n298__ new_new_n299_1__ new_new_n300__
+11 1
+.names new_new_n297__ new_new_n300__ new_new_n301__
+00 1
+.names Intr_done new_new_n301__ new_new_n302__
+11 1
+.names RESETi new_new_n302__ nubusXXXXL_PABufi
+11 0
+.names PCCSawReset resetXXXXstate1 new_new_n304_1__
+01 1
+.names RESETi new_new_n304_1__ new_new_n305__
+00 1
+.names resetXXXXstate0 resetXXXXstate2 new_new_n306__
+00 1
+.names new_new_n305__ new_new_n306__ resetXXXXSBCResetPCC
+11 0
+.names RESETi resetXXXXstate2 resetXXXXReset
+11 1
+.names slaveXXXXstate2 STARTi new_new_n309_1__
+01 1
+.names slaveXXXXstate1 new_new_n309_1__ new_new_n310__
+01 1
+.names slaveXXXXstate1 slaveXXXXstate2 new_new_n311__
+11 1
+.names SlotSpace_Id_Match Intr_req new_new_n312__
+00 1
+.names slaveXXXXstate2 new_new_n312__ new_new_n313__
+00 1
+.names new_new_n310__ new_new_n311__ new_new_n314_1__
+00 1
+.names new_new_n313__ new_new_n314_1__ new_new_n315__
+01 1
+.names new_new_n315__ ACKi new_new_n316__
+01 1
+.names slaveXXXXstate0 new_new_n316__ new_new_n317__
+01 1
+.names slaveXXXXstate0 slaveXXXXstate1 new_new_n318__
+00 1
+.names STARTi ACKi new_new_n319_1__
+00 1
+.names slaveXXXXstate2 new_new_n318__ new_new_n320__
+01 1
+.names new_new_n319_1__ new_new_n320__ new_new_n321__
+11 1
+.names slaveXXXXstate0 new_new_n319_1__ new_new_n322__
+11 1
+.names STARTi ACKi new_new_n323__
+11 1
+.names new_new_n322__ new_new_n323__ new_new_n324_1__
+00 1
+.names STARTi NuBusActive new_new_n325__
+01 1
+.names ACKi new_new_n325__ new_new_n326__
+11 1
+.names NuBusActive new_new_n326__ new_new_n327__
+01 1
+.names new_new_n327__ new_new_n324_1__ new_new_n328__
+01 1
+.names VSACKi slaveXXXXstate1 new_new_n329_1__
+01 1
+.names new_new_n328__ slaveXXXXstate2 new_new_n330__
+01 1
+.names Intr_req new_new_n330__ new_new_n331__
+01 1
+.names new_new_n329_1__ new_new_n331__ new_new_n332__
+11 1
+.names RESETi new_new_n317__ new_new_n333__
+00 1
+.names new_new_n321__ new_new_n332__ new_new_n334__
+00 1
+.names new_new_n333__ new_new_n334__ slaveXXXXL_VABufi
+11 0
+.names TM1l CoherencyState2i new_new_n336__
+01 1
+.names RESETi slaveXXXXstate0 new_new_n337__
+01 1
+.names slaveXXXXstate1 VTM0l new_new_n338__
+01 1
+.names Tag_Match new_new_n337__ new_new_n339__
+11 1
+.names new_new_n338__ new_new_n339__ new_new_n340__
+11 1
+.names slaveXXXXstate2 new_new_n340__ new_new_n341__
+11 1
+.names new_new_n336__ new_new_n341__ n1578
+11 1
+.names CoherencyState2i CoherencyState1i new_new_n343__
+01 1
+.names TM1l VTM1l new_new_n344__
+00 1
+.names new_new_n343__ new_new_n344__ new_new_n345__
+01 1
+.names new_new_n343__ new_new_n345__ new_new_n346__
+00 1
+.names new_new_n346__ new_new_n341__ new_new_n347__
+01 1
+.names n1578 new_new_n347__ slaveXXXXGenerateNextState
+00 0
+.names slaveXXXXstate0 Intr_req new_new_n349__
+11 1
+.names new_new_n329_1__ new_new_n349__ new_new_n350__
+11 1
+.names new_new_n325__ new_new_n350__ new_new_n351__
+11 1
+.names PCCsync new_new_n312__ new_new_n352__
+00 1
+.names new_new_n351__ new_new_n352__ new_new_n353__
+11 1
+.names new_new_n318__ new_new_n353__ new_new_n354__
+00 1
+.names new_new_n354__ slaveXXXXstate2 new_new_n355__
+01 1
+.names new_new_n282__ new_new_n355__ slaveXXXXSBCReqCode2
+11 1
+.names slaveXXXXGenerateNextState slaveXXXXSBCReqCode2 slaveXXXXSBCReq
+00 0
+.names TM1l new_new_n341__ new_new_n358__
+11 1
+.names new_new_n343__ new_new_n358__ new_new_n359__
+11 1
+.names VTM1l n1578 new_new_n360__
+11 1
+.names new_new_n359__ new_new_n360__ slaveXXXXSBCReqCode0
+00 0
+.names new_new_n341__ new_new_n345__ new_new_n362__
+11 1
+.names new_new_n359__ new_new_n362__ slaveXXXXSBCReqCode1
+00 0
+.names ACKi slaveXXXXstate0 new_new_n364__
+00 1
+.names STARTo VTM0l new_new_n365__
+11 1
+.names new_new_n365__ STARTi new_new_n366__
+01 1
+.names slaveXXXXstate1 slaveXXXXstate2 new_new_n367__
+00 1
+.names new_new_n366__ new_new_n367__ new_new_n368__
+01 1
+.names new_new_n311__ new_new_n368__ new_new_n369__
+00 1
+.names UpdateReq new_new_n364__ new_new_n370__
+11 1
+.names new_new_n369__ new_new_n370__ new_new_n371__
+01 1
+.names RESETi new_new_n371__ slaveXXXXSnoopAddrFromProc
+01 1
+.names slaveXXXXGenerateNextState slaveXXXXSnoopAddrFromProc \
+ slaveXXXXSnoopState_W
+00 0
+.names ACKi STARTi new_new_n374__
+01 1
+.names STARTo new_new_n374__ new_new_n375__
+01 1
+.names VTM0l new_new_n375__ new_new_n376__
+11 1
+.names RESETi new_new_n376__ new_new_n377__
+01 1
+.names new_new_n337__ new_new_n377__ new_new_n378__
+00 1
+.names new_new_n378__ new_new_n367__ slaveXXXXSnoopVTagState_R
+01 1
+.names SBCResetPCC virmachXXXXstate0 new_new_n380__
+01 1
+.names virmachXXXXstate1 new_new_n380__ virmachXXXXEn_VDBufo
+01 1
+.names VACKi virmachXXXXstate1 new_new_n382__
+11 1
+.names VTM0i new_new_n382__ new_new_n383__
+11 1
+.names new_new_n380__ new_new_n383__ virmachXXXXSBCsetDirty
+11 1
+.names wd_cnt_test virmachXXXXEn_VDBufo virmachXXXXSBCCacheRelease
+11 1
+.names SBCResetPCC virmachXXXXstate0 new_new_n386__
+00 1
+.names V_receive_begin V_transmit_begin new_new_n387__
+01 1
+.names virmachXXXXstate1 new_new_n387__ new_new_n388__
+00 1
+.names new_new_n388__ new_new_n386__ new_new_n389__
+01 1
+.names PCCAck new_new_n389__ new_new_n390__
+00 1
+.names virmachXXXXEn_VDBufo new_new_n390__ virmachXXXXSBCConfigure
+00 0
+.names PCCReqCode1 PCCReqCode0 new_new_n392__
+01 1
+.names PCCReqCode2 new_new_n392__ new_new_n393__
+00 1
+.names PCCReqCode3 new_new_n393__ encodemuxXXXXMX_AD_8
+01 1
+.names VTM1l new_new_n336__ nextstateXXXXCoherencyState2o
+01 1
+.names RESETi nubusXXXXstate0 new_new_n396__
+01 1
+.names Intr_done new_new_n298__ new_new_n397__
+11 1
+.names new_new_n396__ new_new_n397__ new_new_n398__
+11 1
+.names STARTi new_new_n398__ new_new_n399__
+01 1
+.names masterXXXXstate3 new_new_n227__ new_new_n400__
+11 1
+.names new_new_n259_1__ new_new_n271__ new_new_n401__
+11 1
+.names new_new_n400__ new_new_n401__ new_new_n402__
+11 1
+.names PCCConfirm new_new_n217__ new_new_n403__
+11 1
+.names new_new_n244_1__ new_new_n403__ new_new_n404__
+01 1
+.names SingleStep new_new_n239_1__ new_new_n405__
+01 1
+.names new_new_n404__ new_new_n405__ new_new_n406__
+01 1
+.names new_new_n406__ SBCResetPCC new_new_n407__
+01 1
+.names new_new_n402__ new_new_n407__ new_new_n408__
+11 1
+.names new_new_n399__ new_new_n408__ orXXXXACKo
+01 0
+.names nubusXXXXstate0 SlotSpace_Id_Match new_new_n410__
+01 1
+.names new_new_n288__ new_new_n410__ new_new_n411__
+00 1
+.names new_new_n287__ new_new_n411__ new_new_n412__
+00 1
+.names new_new_n412__ new_new_n319_1__ new_new_n413__
+01 1
+.names RESETi new_new_n413__ new_new_n414__
+01 1
+.names masterXXXXstate2 new_new_n234_1__ new_new_n415__
+11 1
+.names ACKl masterXXXXstate0 new_new_n416__
+11 1
+.names masterXXXXstate1 new_new_n262__ new_new_n417__
+00 1
+.names LastRQSTi new_new_n417__ new_new_n418__
+00 1
+.names new_new_n416__ new_new_n418__ new_new_n419__
+11 1
+.names new_new_n415__ new_new_n419__ new_new_n420__
+00 1
+.names BUS_Inactive new_new_n226__ new_new_n421__
+00 1
+.names PCCReqCode2 new_new_n392__ new_new_n422__
+01 1
+.names PCCReq PCCReqCode3 new_new_n423__
+11 1
+.names masterXXXXstate0 new_new_n423__ new_new_n424__
+01 1
+.names new_new_n422__ new_new_n424__ new_new_n425__
+11 1
+.names new_new_n425__ new_new_n400__ new_new_n426__
+01 1
+.names new_new_n421__ new_new_n420__ new_new_n427__
+01 1
+.names new_new_n426__ new_new_n427__ new_new_n428__
+01 1
+.names SBCResetPCC new_new_n428__ new_new_n429__
+00 1
+.names new_new_n414__ new_new_n429__ orXXXXEn_CNTL
+00 0
+.names PCCReq new_new_n227__ new_new_n431__
+11 1
+.names masterXXXXstate0 new_new_n431__ new_new_n432__
+01 1
+.names PCCReqCode3 new_new_n432__ new_new_n433__
+11 1
+.names SBCResetPCC new_new_n433__ new_new_n434__
+01 1
+.names SBCResetPCC ACKi new_new_n435__
+01 1
+.names TM1i P_receive_cancel new_new_n436__
+00 1
+.names TM0i P_receive_cancel new_new_n437__
+00 1
+.names new_new_n437__ wd_cnt_test new_new_n438__
+01 1
+.names new_new_n436__ new_new_n438__ new_new_n439__
+01 1
+.names physrecXXXXstate1 new_new_n435__ new_new_n440__
+11 1
+.names new_new_n439__ new_new_n440__ new_new_n441__
+01 1
+.names physrecXXXXstate0 new_new_n441__ new_new_n442__
+01 1
+.names PCCReqCode1 PCCReqCode2 new_new_n443__
+00 1
+.names PCCReqCode0 new_new_n443__ new_new_n444__
+11 1
+.names new_new_n442__ new_new_n444__ new_new_n445__
+11 1
+.names new_new_n434__ new_new_n445__ n1542
+00 0
+.names RESETi Intr_done new_new_n447__
+00 1
+.names ACKi new_new_n447__ new_new_n448__
+11 1
+.names new_new_n299_1__ new_new_n448__ new_new_n449__
+11 1
+.names nubusXXXXstate1 new_new_n449__ new_new_n450__
+01 1
+.names new_new_n288__ new_new_n298__ new_new_n451__
+00 1
+.names new_new_n451__ STARTi new_new_n452__
+01 1
+.names new_new_n396__ new_new_n452__ new_new_n453__
+11 1
+.names n1542 new_new_n450__ new_new_n454__
+00 1
+.names new_new_n453__ new_new_n454__ orXXXXRESETo
+01 0
+.names new_new_n399__ new_new_n402__ orXXXXTM0o
+00 0
+.names SBCResetPCC SingleStep new_new_n457__
+00 1
+.names new_new_n243__ new_new_n457__ new_new_n458__
+01 1
+.names new_new_n217__ new_new_n458__ new_new_n459__
+11 1
+.names PCCReqCode1 new_new_n459__ new_new_n460__
+01 1
+.names PCCReqCode2 new_new_n460__ new_new_n461__
+11 1
+.names PCCReqCode2 PCCReqCode1 new_new_n462__
+01 1
+.names new_new_n459__ new_new_n462__ new_new_n463__
+00 1
+.names PCCReqCode0 new_new_n463__ new_new_n464__
+00 1
+.names orXXXXTM0o new_new_n464__ new_new_n465__
+11 1
+.names new_new_n461__ new_new_n465__ orXXXXTM1o
+01 0
+.names new_new_n188__ new_new_n181__ new_new_n467__
+01 1
+.names masterXXXXEn_PDBufo new_new_n467__ new_new_n468__
+00 1
+.names P_receive_begin new_new_n188__ new_new_n469__
+11 1
+.names TM1i new_new_n182__ new_new_n470__
+11 1
+.names new_new_n184__ new_new_n470__ new_new_n471__
+00 1
+.names new_new_n471__ wd_cnt_test new_new_n472__
+01 1
+.names physrecXXXXstate0 new_new_n472__ new_new_n473__
+00 1
+.names LastRQSTi new_new_n473__ new_new_n474__
+00 1
+.names new_new_n474__ new_new_n428__ new_new_n475__
+01 1
+.names new_new_n469__ new_new_n475__ new_new_n476__
+01 1
+.names SBCResetPCC new_new_n476__ new_new_n477__
+00 1
+.names new_new_n477__ new_new_n468__ orXXXXEn_START
+01 0
+.names VACKl masterXXXXstate1 new_new_n479__
+11 1
+.names new_new_n262__ new_new_n479__ new_new_n480__
+00 1
+.names VSACKi new_new_n480__ new_new_n481__
+00 1
+.names new_new_n416__ new_new_n481__ new_new_n482__
+11 1
+.names PCCReqCode1 new_new_n433__ new_new_n483__
+11 1
+.names RQSTi SingleStep new_new_n484__
+00 1
+.names new_new_n244_1__ new_new_n484__ new_new_n485__
+00 1
+.names masterXXXXstate3 new_new_n432__ new_new_n486__
+11 1
+.names new_new_n485__ new_new_n486__ new_new_n487__
+11 1
+.names new_new_n483__ new_new_n487__ new_new_n488__
+00 1
+.names PCCReqCode0 new_new_n433__ new_new_n489__
+11 1
+.names PCCReqCode2 new_new_n433__ new_new_n490__
+11 1
+.names new_new_n482__ new_new_n488__ new_new_n491__
+01 1
+.names new_new_n489__ new_new_n491__ new_new_n492__
+01 1
+.names new_new_n490__ new_new_n492__ new_new_n493__
+01 1
+.names SBCResetPCC new_new_n493__ new_new_n494__
+00 1
+.names SBCResetPCC masterXXXXstate0 new_new_n495__
+00 1
+.names masterXXXXstate1 new_new_n495__ new_new_n496__
+01 1
+.names masterXXXXstate2 UpdateDone new_new_n497__
+11 1
+.names new_new_n496__ new_new_n497__ new_new_n498__
+11 1
+.names RESETi resetXXXXstate2 new_new_n499__
+01 1
+.names masterXXXXstate3 new_new_n262__ new_new_n500__
+01 1
+.names new_new_n215__ new_new_n500__ new_new_n501__
+00 1
+.names new_new_n501__ new_new_n416__ new_new_n502__
+01 1
+.names SBCResetPCC new_new_n502__ new_new_n503__
+01 1
+.names new_new_n498__ new_new_n499__ new_new_n504__
+00 1
+.names new_new_n503__ new_new_n504__ new_new_n505__
+01 1
+.names new_new_n442__ new_new_n494__ new_new_n506__
+00 1
+.names new_new_n408__ new_new_n505__ new_new_n507__
+11 1
+.names new_new_n506__ new_new_n507__ orXXXXSBCAck
+11 0
+.names new_new_n188__ new_new_n435__ new_new_n509__
+01 1
+.names masterXXXXstate3 new_new_n490__ new_new_n510__
+11 1
+.names new_new_n510__ new_new_n488__ new_new_n511__
+01 1
+.names new_new_n406__ new_new_n489__ new_new_n512__
+00 1
+.names new_new_n511__ new_new_n512__ new_new_n513__
+11 1
+.names SBCResetPCC new_new_n513__ new_new_n514__
+00 1
+.names new_new_n509__ new_new_n514__ new_new_n515__
+00 1
+.names new_new_n402__ new_new_n505__ new_new_n516__
+01 1
+.names new_new_n515__ new_new_n516__ orXXXXSBCAckCodelatch
+11 0
+.names new_new_n442__ new_new_n514__ orXXXXSBCAckCode0
+00 0
+.names TM0i TM1i new_new_n519__
+01 1
+.names TM1i TM0i new_new_n520__
+01 1
+.names P_receive_cancel new_new_n520__ new_new_n521__
+01 1
+.names new_new_n519__ wd_cnt_test new_new_n522__
+01 1
+.names new_new_n521__ new_new_n522__ new_new_n523__
+01 1
+.names physrecXXXXstate0 new_new_n523__ new_new_n524__
+01 1
+.names new_new_n524__ physrecXXXXstate1 new_new_n525__
+01 1
+.names TM0i new_new_n185__ new_new_n526__
+00 1
+.names new_new_n525__ new_new_n526__ new_new_n527__
+00 1
+.names new_new_n527__ new_new_n435__ new_new_n528__
+01 1
+.names TM0i new_new_n503__ new_new_n529__
+01 1
+.names new_new_n528__ new_new_n529__ orXXXXSBCAckCode1
+00 0
+.names new_new_n503__ new_new_n519__ new_new_n531__
+11 1
+.names new_new_n185__ new_new_n520__ new_new_n532__
+01 1
+.names physrecXXXXstate0 new_new_n438__ new_new_n533__
+01 1
+.names new_new_n533__ physrecXXXXstate1 new_new_n534__
+01 1
+.names new_new_n188__ new_new_n519__ new_new_n535__
+01 1
+.names new_new_n534__ new_new_n535__ new_new_n536__
+00 1
+.names new_new_n532__ new_new_n536__ new_new_n537__
+01 1
+.names new_new_n537__ new_new_n435__ new_new_n538__
+01 1
+.names new_new_n531__ new_new_n538__ new_new_n539__
+00 1
+.names resetXXXXstate1 new_new_n499__ new_new_n540__
+01 1
+.names new_new_n502__ new_new_n520__ new_new_n541__
+11 1
+.names PCCReqCode0 new_new_n490__ new_new_n542__
+11 1
+.names new_new_n245__ PCCConfirm new_new_n543__
+01 1
+.names new_new_n405__ new_new_n543__ new_new_n544__
+11 1
+.names new_new_n541__ new_new_n511__ new_new_n545__
+01 1
+.names new_new_n542__ new_new_n545__ new_new_n546__
+01 1
+.names new_new_n544__ new_new_n546__ new_new_n547__
+01 1
+.names SBCResetPCC new_new_n547__ new_new_n548__
+00 1
+.names new_new_n540__ new_new_n548__ new_new_n549__
+00 1
+.names new_new_n539__ new_new_n549__ orXXXXSBCAckCode2
+11 0
+.names n1542 new_new_n499__ orXXXXSBCAckCode3
+00 0
+.names new_new_n244_1__ new_new_n486__ new_new_n552__
+01 1
+.names RQSTi new_new_n552__ new_new_n553__
+01 1
+.names PCCReqCode3 new_new_n553__ new_new_n554__
+01 1
+.names new_new_n239_1__ new_new_n554__ new_new_n555__
+00 1
+.names new_new_n555__ new_new_n457__ orXXXXSTARTo
+01 1
+.names n1578 virmachXXXXEn_VDBufo new_new_n557__
+00 1
+.names new_new_n227__ new_new_n250__ new_new_n558__
+11 1
+.names new_new_n252__ new_new_n558__ new_new_n559__
+00 1
+.names new_new_n559__ new_new_n260__ new_new_n560__
+01 1
+.names new_new_n560__ new_new_n557__ new_new_n561__
+01 1
+.names RQSTi new_new_n400__ new_new_n562__
+01 1
+.names new_new_n240__ new_new_n562__ new_new_n563__
+00 1
+.names SBCResetPCC new_new_n563__ new_new_n564__
+00 1
+.names new_new_n246__ new_new_n564__ new_new_n565__
+11 1
+.names new_new_n389__ new_new_n561__ new_new_n566__
+01 1
+.names new_new_n565__ new_new_n566__ orXXXXEn_VCNTL
+01 0
+.names PCCAck new_new_n337__ new_new_n568__
+01 1
+.names slaveXXXXstate2 new_new_n568__ new_new_n569__
+01 1
+.names new_new_n336__ new_new_n340__ new_new_n570__
+00 1
+.names new_new_n346__ new_new_n570__ new_new_n571__
+00 1
+.names new_new_n569__ new_new_n571__ new_new_n572__
+00 1
+.names PCCReqCode2 new_new_n459__ new_new_n573__
+01 1
+.names new_new_n573__ PCCReqCode0 n1569
+01 1
+.names PCCReqCode0 PCCReqCode2 new_new_n575__
+11 1
+.names new_new_n460__ new_new_n575__ new_new_n576__
+00 1
+.names n1569 new_new_n576__ new_new_n577__
+11 1
+.names wd_cnt_test virmachXXXXEn_VDBufo new_new_n578__
+01 1
+.names new_new_n389__ new_new_n577__ new_new_n579__
+01 1
+.names new_new_n578__ new_new_n579__ new_new_n580__
+01 1
+.names slaveXXXXSnoopVTagState_R new_new_n580__ new_new_n581__
+01 1
+.names new_new_n572__ new_new_n581__ orXXXXVSACKo
+11 0
+.names virmachXXXXSBCCacheRelease new_new_n402__ orXXXXVACKo
+00 0
+.names PCCAckCode virmachXXXXEn_VDBufo new_new_n584__
+01 1
+.names n1578 new_new_n584__ new_new_n585__
+00 1
+.names new_new_n578__ new_new_n577__ new_new_n586__
+01 1
+.names new_new_n585__ new_new_n586__ orXXXXVTM0o
+11 0
+.names PCCReqCode1 n1569 orXXXXVTM1o
+11 1
+.names PCCReqCode0 PCCReqCode1 new_new_n589__
+00 1
+.names new_new_n459__ new_new_n589__ new_new_n590__
+00 1
+.names PCCReqCode2 new_new_n590__ new_new_n591__
+00 1
+.names new_new_n464__ new_new_n591__ new_new_n592__
+00 1
+.names new_new_n390__ new_new_n578__ new_new_n593__
+00 1
+.names new_new_n592__ new_new_n593__ orXXXXL_DBufo
+11 0
+.names new_new_n457__ new_new_n554__ new_new_n595__
+11 1
+.names ACKl masterXXXXstate1 new_new_n596__
+01 1
+.names VSACKi new_new_n236__ new_new_n597__
+11 1
+.names new_new_n596__ new_new_n597__ new_new_n598__
+00 1
+.names new_new_n271__ new_new_n227__ new_new_n599__
+01 1
+.names masterXXXXstate3 new_new_n599__ new_new_n600__
+11 1
+.names STARTi VSACKi new_new_n601__
+01 1
+.names new_new_n254_1__ new_new_n601__ new_new_n602__
+00 1
+.names masterXXXXstate2 masterXXXXstate3 new_new_n603__
+11 1
+.names new_new_n602__ new_new_n603__ new_new_n604__
+01 1
+.names new_new_n600__ new_new_n604__ new_new_n605__
+00 1
+.names new_new_n266__ new_new_n279_1__ new_new_n606__
+00 1
+.names new_new_n598__ new_new_n606__ new_new_n607__
+11 1
+.names new_new_n605__ new_new_n607__ new_new_n608__
+11 1
+.names new_new_n608__ new_new_n259_1__ new_new_n609__
+01 1
+.names new_new_n595__ new_new_n609__ new_new_n610__
+00 1
+.names STARTi new_new_n229_1__ new_new_n611__
+01 1
+.names PCCConfirm new_new_n245__ new_new_n612__
+11 1
+.names new_new_n272__ new_new_n612__ new_new_n613__
+11 1
+.names new_new_n613__ GRANTi new_new_n614__
+01 1
+.names new_new_n614__ new_new_n225__ new_new_n615__
+01 1
+.names new_new_n611__ new_new_n615__ new_new_n616__
+00 1
+.names SBCResetPCC new_new_n616__ new_new_n617__
+11 1
+.names masterXXXXEn_PDBufo new_new_n610__ new_new_n618__
+01 1
+.names new_new_n617__ new_new_n618__ n1497
+01 0
+.names new_new_n598__ new_new_n259_1__ new_new_n620__
+01 1
+.names BUS_Inactive new_new_n404__ new_new_n621__
+11 1
+.names new_new_n444__ new_new_n621__ new_new_n622__
+01 1
+.names SingleStep new_new_n622__ new_new_n623__
+01 1
+.names new_new_n623__ masterXXXXstate2 new_new_n624__
+01 1
+.names VSACKi new_new_n624__ new_new_n625__
+00 1
+.names new_new_n625__ new_new_n237__ new_new_n626__
+01 1
+.names RQSTi new_new_n444__ new_new_n627__
+00 1
+.names new_new_n627__ new_new_n217__ new_new_n628__
+01 1
+.names new_new_n222__ new_new_n219_1__ new_new_n629__
+01 1
+.names new_new_n629__ new_new_n628__ new_new_n630__
+01 1
+.names new_new_n230__ new_new_n626__ new_new_n631__
+00 1
+.names new_new_n630__ new_new_n631__ new_new_n632__
+01 1
+.names SBCResetPCC new_new_n632__ new_new_n633__
+00 1
+.names masterXXXXEn_VDBufi new_new_n633__ new_new_n634__
+00 1
+.names new_new_n620__ new_new_n634__ n1500
+01 0
+.names new_new_n253__ masterXXXXEn_PDBufo new_new_n636__
+11 1
+.names new_new_n259_1__ new_new_n636__ new_new_n637__
+00 1
+.names new_new_n255__ new_new_n260__ new_new_n638__
+00 1
+.names masterXXXXstate2 new_new_n423__ new_new_n639__
+01 1
+.names new_new_n443__ new_new_n639__ new_new_n640__
+11 1
+.names PCCReqCode0 new_new_n640__ new_new_n641__
+01 1
+.names masterXXXXstate2 new_new_n641__ new_new_n642__
+11 1
+.names new_new_n642__ UpdateDone new_new_n643__
+01 1
+.names new_new_n643__ new_new_n496__ new_new_n644__
+01 1
+.names new_new_n272__ new_new_n392__ new_new_n645__
+11 1
+.names new_new_n403__ new_new_n645__ new_new_n646__
+11 1
+.names new_new_n646__ masterXXXXstate2 new_new_n647__
+01 1
+.names new_new_n237__ new_new_n647__ new_new_n648__
+11 1
+.names new_new_n462__ new_new_n589__ new_new_n649__
+00 1
+.names new_new_n649__ new_new_n217__ new_new_n650__
+01 1
+.names new_new_n484__ new_new_n650__ new_new_n651__
+11 1
+.names masterXXXXstate1 new_new_n651__ new_new_n652__
+00 1
+.names masterXXXXstate2 new_new_n652__ new_new_n653__
+00 1
+.names new_new_n234_1__ new_new_n653__ new_new_n654__
+11 1
+.names new_new_n648__ new_new_n654__ new_new_n655__
+00 1
+.names SBCResetPCC new_new_n655__ new_new_n656__
+00 1
+.names new_new_n638__ new_new_n644__ new_new_n657__
+00 1
+.names new_new_n656__ new_new_n657__ new_new_n658__
+01 1
+.names new_new_n637__ new_new_n658__ n1503
+11 0
+.names STARTi new_new_n235__ new_new_n660__
+01 1
+.names new_new_n250__ new_new_n660__ new_new_n661__
+00 1
+.names ACKl new_new_n661__ new_new_n662__
+00 1
+.names new_new_n255__ new_new_n599__ new_new_n663__
+00 1
+.names new_new_n241__ new_new_n663__ new_new_n664__
+01 1
+.names new_new_n662__ new_new_n664__ new_new_n665__
+01 1
+.names new_new_n665__ masterXXXXstate3 new_new_n666__
+01 1
+.names ACKl new_new_n215__ new_new_n667__
+01 1
+.names new_new_n479__ VSACKi new_new_n668__
+01 1
+.names new_new_n235__ new_new_n668__ new_new_n669__
+00 1
+.names new_new_n500__ new_new_n669__ new_new_n670__
+01 1
+.names new_new_n670__ ACKl new_new_n671__
+01 1
+.names new_new_n215__ new_new_n671__ new_new_n672__
+00 1
+.names LastRQSTi new_new_n672__ new_new_n673__
+00 1
+.names new_new_n667__ new_new_n673__ new_new_n674__
+00 1
+.names new_new_n666__ new_new_n674__ new_new_n675__
+01 1
+.names new_new_n675__ new_new_n259_1__ new_new_n676__
+01 1
+.names PCCReqCode0 PCCReqCode1 new_new_n677__
+01 1
+.names new_new_n443__ new_new_n575__ new_new_n678__
+00 1
+.names new_new_n677__ new_new_n678__ new_new_n679__
+01 1
+.names new_new_n403__ new_new_n679__ new_new_n680__
+11 1
+.names new_new_n680__ new_new_n273__ new_new_n681__
+01 1
+.names new_new_n224_1__ new_new_n681__ new_new_n682__
+11 1
+.names SingleStep new_new_n443__ new_new_n683__
+00 1
+.names PCCReqCode3 new_new_n683__ new_new_n684__
+00 1
+.names new_new_n575__ PCCReq new_new_n685__
+01 1
+.names new_new_n677__ new_new_n685__ new_new_n686__
+01 1
+.names new_new_n684__ new_new_n686__ new_new_n687__
+01 1
+.names masterXXXXstate1 new_new_n687__ new_new_n688__
+00 1
+.names new_new_n234_1__ new_new_n688__ new_new_n689__
+11 1
+.names masterXXXXstate0 new_new_n603__ new_new_n690__
+01 1
+.names masterXXXXstate3 new_new_n217__ new_new_n691__
+01 1
+.names new_new_n236__ new_new_n691__ new_new_n692__
+00 1
+.names new_new_n692__ new_new_n222__ new_new_n693__
+01 1
+.names new_new_n690__ new_new_n693__ new_new_n694__
+00 1
+.names new_new_n689__ new_new_n694__ new_new_n695__
+01 1
+.names RQSTi new_new_n695__ new_new_n696__
+00 1
+.names masterXXXXstate1 new_new_n603__ new_new_n697__
+11 1
+.names masterXXXXstate1 new_new_n234_1__ new_new_n698__
+01 1
+.names new_new_n422__ new_new_n639__ new_new_n699__
+01 1
+.names new_new_n698__ new_new_n699__ new_new_n700__
+11 1
+.names new_new_n697__ new_new_n700__ new_new_n701__
+00 1
+.names new_new_n230__ new_new_n682__ new_new_n702__
+00 1
+.names new_new_n696__ new_new_n702__ new_new_n703__
+01 1
+.names new_new_n701__ new_new_n703__ new_new_n704__
+11 1
+.names SBCResetPCC new_new_n704__ new_new_n705__
+00 1
+.names new_new_n676__ new_new_n705__ n1506
+00 0
+.names TM1i new_new_n284_1__ new_new_n707__
+01 1
+.names new_new_n291__ new_new_n707__ n1509
+00 0
+.names SlotSpace_Id_Match new_new_n293__ new_new_n709__
+01 1
+.names new_new_n709__ new_new_n296__ new_new_n710__
+01 1
+.names new_new_n447__ new_new_n710__ new_new_n711__
+01 1
+.names ACKi new_new_n711__ new_new_n712__
+01 1
+.names new_new_n399__ new_new_n712__ n1512
+00 0
+.names VSACKi slaveXXXXstate1 new_new_n714__
+11 1
+.names CoherencyState2i TM1l new_new_n715__
+11 1
+.names CoherencyState1i new_new_n715__ new_new_n716__
+11 1
+.names new_new_n716__ new_new_n338__ new_new_n717__
+01 1
+.names new_new_n344__ CoherencyState1i new_new_n718__
+01 1
+.names CoherencyState2i new_new_n718__ new_new_n719__
+00 1
+.names new_new_n719__ Tag_Match new_new_n720__
+01 1
+.names slaveXXXXstate1 new_new_n720__ new_new_n721__
+00 1
+.names new_new_n717__ new_new_n721__ new_new_n722__
+00 1
+.names new_new_n714__ new_new_n722__ new_new_n723__
+01 1
+.names slaveXXXXstate2 new_new_n723__ new_new_n724__
+11 1
+.names new_new_n724__ new_new_n337__ new_new_n725__
+01 1
+.names new_new_n282__ new_new_n309_1__ new_new_n726__
+11 1
+.names new_new_n338__ new_new_n726__ new_new_n727__
+11 1
+.names new_new_n725__ new_new_n727__ n1515
+00 0
+.names slaveXXXXstate2 new_new_n337__ new_new_n729__
+11 1
+.names new_new_n722__ new_new_n729__ new_new_n730__
+01 1
+.names Intr_req NuBusActive new_new_n731__
+01 1
+.names ACKi new_new_n731__ new_new_n732__
+01 1
+.names VSACKi slaveXXXXstate0 new_new_n733__
+11 1
+.names new_new_n364__ new_new_n732__ new_new_n734__
+00 1
+.names new_new_n733__ new_new_n734__ new_new_n735__
+01 1
+.names slaveXXXXstate2 new_new_n735__ new_new_n736__
+00 1
+.names RESETi new_new_n736__ new_new_n737__
+00 1
+.names new_new_n282__ new_new_n325__ new_new_n738__
+11 1
+.names new_new_n737__ new_new_n738__ new_new_n739__
+00 1
+.names new_new_n739__ new_new_n730__ new_new_n740__
+01 1
+.names slaveXXXXstate1 new_new_n740__ new_new_n741__
+00 1
+.names new_new_n312__ PCCsync new_new_n742__
+01 1
+.names new_new_n742__ slaveXXXXstate2 new_new_n743__
+01 1
+.names VTM0l new_new_n365__ new_new_n744__
+01 1
+.names new_new_n744__ TM1l new_new_n745__
+01 1
+.names new_new_n745__ new_new_n309_1__ new_new_n746__
+01 1
+.names new_new_n743__ new_new_n746__ new_new_n747__
+00 1
+.names new_new_n364__ new_new_n747__ new_new_n748__
+01 1
+.names RESETi new_new_n748__ new_new_n749__
+01 1
+.names new_new_n749__ new_new_n741__ n1518
+01 0
+.names PCCsync new_new_n367__ new_new_n751__
+01 1
+.names new_new_n311__ new_new_n751__ new_new_n752__
+00 1
+.names new_new_n752__ STARTi new_new_n753__
+01 1
+.names new_new_n282__ new_new_n753__ new_new_n754__
+11 1
+.names new_new_n720__ slaveXXXXstate2 new_new_n755__
+01 1
+.names PCCsync slaveXXXXstate2 new_new_n756__
+00 1
+.names new_new_n755__ new_new_n756__ new_new_n757__
+00 1
+.names new_new_n757__ new_new_n337__ new_new_n758__
+01 1
+.names slaveXXXXstate1 new_new_n758__ new_new_n759__
+01 1
+.names new_new_n754__ new_new_n759__ new_new_n760__
+00 1
+.names PCCAck slaveXXXXstate1 new_new_n761__
+11 1
+.names slaveXXXXstate2 new_new_n761__ new_new_n762__
+01 1
+.names new_new_n352__ slaveXXXXstate2 new_new_n763__
+01 1
+.names STARTo VTM0l new_new_n764__
+01 1
+.names new_new_n764__ STARTi new_new_n765__
+01 1
+.names new_new_n367__ new_new_n765__ new_new_n766__
+11 1
+.names new_new_n763__ new_new_n766__ new_new_n767__
+00 1
+.names new_new_n767__ new_new_n364__ new_new_n768__
+01 1
+.names new_new_n735__ new_new_n311__ new_new_n769__
+01 1
+.names new_new_n768__ new_new_n769__ new_new_n770__
+00 1
+.names new_new_n762__ new_new_n770__ new_new_n771__
+01 1
+.names RESETi new_new_n771__ new_new_n772__
+00 1
+.names new_new_n772__ new_new_n760__ n1521
+01 0
+.names resetXXXXstate0 resetXXXXstate1 new_new_n774__
+00 1
+.names Gen_Reset new_new_n774__ new_new_n775__
+11 1
+.names RESETi new_new_n775__ new_new_n776__
+11 1
+.names resetXXXXstate2 new_new_n776__ n1524
+01 1
+.names RESETi new_new_n774__ new_new_n778__
+00 1
+.names resetXXXXstate2 new_new_n778__ new_new_n779__
+00 1
+.names PCCSawReset new_new_n779__ new_new_n780__
+00 1
+.names resetXXXXReset new_new_n780__ n1527
+00 0
+.names new_new_n775__ RESETi new_new_n782__
+01 1
+.names resetXXXXReset new_new_n782__ n1530
+00 0
+.names virmachXXXXstate1 V_transmit_begin new_new_n784__
+00 1
+.names new_new_n784__ new_new_n386__ new_new_n785__
+01 1
+.names PCCAck new_new_n785__ new_new_n786__
+11 1
+.names virmachXXXXstate0 virmachXXXXstate1 new_new_n787__
+11 1
+.names VACKi new_new_n787__ new_new_n788__
+01 1
+.names virmachXXXXstate0 V_receive_begin new_new_n789__
+01 1
+.names virmachXXXXstate1 new_new_n789__ new_new_n790__
+01 1
+.names new_new_n788__ new_new_n790__ new_new_n791__
+00 1
+.names SBCResetPCC new_new_n791__ new_new_n792__
+00 1
+.names new_new_n578__ new_new_n792__ new_new_n793__
+00 1
+.names new_new_n786__ new_new_n793__ n1533
+01 0
+.names PCCAck new_new_n785__ new_new_n795__
+01 1
+.names new_new_n792__ new_new_n795__ n1536
+00 0
+.names Reset_wd_cnt Set_ex_wd_cnt1 new_new_n797__
+11 1
+.names wdcntXXXXstate1 new_new_n797__ new_new_n798__
+01 1
+.names SBCResetPCC new_new_n798__ new_new_n799__
+01 1
+.names wdcntXXXXstate0 new_new_n196__ new_new_n800__
+11 1
+.names wdcntXXXXstate2 wdcntXXXXstate3 new_new_n801__
+00 1
+.names new_new_n800__ new_new_n801__ new_new_n802__
+11 1
+.names new_new_n799__ new_new_n802__ n1539
+00 0
+.names nubusXXXXstate1 new_new_n410__ new_new_n804__
+11 1
+.names new_new_n287__ new_new_n804__ new_new_n805__
+00 1
+.names new_new_n805__ new_new_n319_1__ new_new_n806__
+01 1
+.names new_new_n447__ new_new_n806__ n1545
+11 1
+.names RESETi slaveXXXXstate0 new_new_n808__
+00 1
+.names new_new_n762__ new_new_n808__ n1548
+00 1
+.names new_new_n463__ new_new_n644__ new_new_n810__
+00 1
+.names new_new_n577__ new_new_n810__ n1551
+11 0
+.names new_new_n375__ new_new_n808__ new_new_n812__
+11 1
+.names new_new_n338__ new_new_n812__ new_new_n813__
+11 1
+.names slaveXXXXstate2 new_new_n813__ new_new_n814__
+01 1
+.names n1572 new_new_n814__ new_new_n815__
+00 1
+.names new_new_n573__ new_new_n590__ new_new_n816__
+00 1
+.names new_new_n815__ new_new_n816__ n1557
+11 0
+.names PCCReqCode2 PCCReqCode0 new_new_n818__
+01 1
+.names PCCReqCode0 PCCReqCode2 new_new_n819__
+01 1
+.names new_new_n818__ new_new_n819__ new_new_n820__
+00 1
+.names new_new_n460__ new_new_n820__ n1560
+01 1
+.names new_new_n181__ new_new_n182__ new_new_n822__
+11 1
+.names P_receive_cancel new_new_n822__ new_new_n823__
+01 1
+.names physrecXXXXstate0 wd_cnt_test new_new_n824__
+00 1
+.names new_new_n823__ new_new_n824__ new_new_n825__
+11 1
+.names new_new_n788__ new_new_n790__ new_new_n826__
+11 1
+.names new_new_n826__ V_transmit_begin new_new_n827__
+01 1
+.names new_new_n827__ VTM0i new_new_n828__
+01 1
+.names SBCResetPCC new_new_n828__ new_new_n829__
+01 1
+.names STARTi TM0i new_new_n830__
+00 1
+.names new_new_n830__ masterXXXXEn_PDBufo new_new_n831__
+01 1
+.names new_new_n825__ new_new_n829__ new_new_n832__
+00 1
+.names new_new_n578__ new_new_n831__ new_new_n833__
+00 1
+.names new_new_n832__ new_new_n833__ n1563
+11 0
+.names new_new_n204_1__ new_new_n211__ new_new_n835__
+00 1
+.names new_new_n835__ new_new_n208__ new_new_n836__
+01 1
+.names n1539 new_new_n836__ n1566
+00 0
+.names masterXXXXEn_PDBufi masterXXXXL_PDBufi
+1 1
+.names masterXXXXEn_PDBufo masterXXXXL_DBufo_if_TM0
+1 1
+.names slaveXXXXSnoopAddrFromProc slaveXXXXSnoopVTag_W
+1 1
+.names wdcntXXXXNextState3 wdcntXXXXwd_cnt0
+1 1
+.names wdcntXXXXNextState2 wdcntXXXXwd_cnt1
+1 1
+.names wdcntXXXXNextState1 wdcntXXXXwd_cnt2
+1 1
+.names slaveXXXXSnoopAddrFromProc n1554
+1 1
+.names n1572 n1575
+1 1
+.end

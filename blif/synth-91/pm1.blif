@@ -1,0 +1,105 @@
+# Benchmark "pm1" written by ABC on Thu Oct  8 20:27:45 2020
+.model pm1
+.inputs a b c d e g h i j k l m n o p q
+.outputs r s t u v w x y z a0 b0 c0 d0
+.names m n new_new_n30__
+00 1
+.names b new_new_n30__ r
+01 0
+.names m n s
+01 0
+.names j k new_new_n33__
+11 1
+.names i new_new_n33__ new_new_n34__
+11 1
+.names g h new_new_n35__
+11 1
+.names new_new_n34__ new_new_n35__ new_new_n36__
+11 1
+.names m n new_new_n37__
+11 1
+.names new_new_n36__ new_new_n37__ t
+11 0
+.names i j new_new_n39__
+11 1
+.names g new_new_n39__ new_new_n40__
+11 1
+.names h new_new_n40__ new_new_n41__
+11 1
+.names new_new_n41__ n new_new_n42__
+01 1
+.names k m new_new_n43__
+11 1
+.names new_new_n42__ new_new_n43__ u
+11 0
+.names d e new_new_n45__
+11 1
+.names b k new_new_n46__
+11 1
+.names s new_new_n45__ new_new_n47__
+11 1
+.names c new_new_n47__ new_new_n48__
+11 1
+.names new_new_n48__ new_new_n46__ x
+01 1
+.names k n new_new_n50__
+11 1
+.names e new_new_n50__ new_new_n51__
+11 1
+.names c new_new_n51__ new_new_n52__
+11 1
+.names d new_new_n52__ new_new_n53__
+11 1
+.names new_new_n53__ m new_new_n54__
+01 1
+.names l a new_new_n55__
+01 1
+.names new_new_n54__ new_new_n55__ z
+11 0
+.names l s new_new_n57__
+01 1
+.names a new_new_n57__ new_new_n58__
+11 1
+.names n m new_new_n59__
+01 1
+.names new_new_n59__ new_new_n58__ a0
+01 1
+.names c new_new_n45__ new_new_n61__
+11 1
+.names new_new_n61__ a new_new_n62__
+01 1
+.names k new_new_n62__ new_new_n63__
+11 1
+.names l new_new_n63__ new_new_n64__
+01 1
+.names new_new_n37__ new_new_n64__ b0
+11 1
+.names new_new_n61__ k new_new_n66__
+01 1
+.names n new_new_n66__ new_new_n67__
+11 1
+.names b n new_new_n68__
+01 1
+.names l new_new_n68__ new_new_n69__
+00 1
+.names a new_new_n69__ new_new_n70__
+11 1
+.names new_new_n67__ b new_new_n71__
+01 1
+.names new_new_n71__ new_new_n70__ new_new_n72__
+01 1
+.names m new_new_n72__ c0
+11 1
+.names k l new_new_n74__
+00 1
+.names a new_new_n74__ new_new_n75__
+11 1
+.names new_new_n37__ new_new_n75__ d0
+11 1
+.names p v
+0 1
+.names o w
+0 1
+.names q y
+0 1
+.end

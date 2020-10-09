@@ -1,0 +1,237 @@
+# Benchmark "s298.bench" written by ABC on Thu Oct  8 20:27:46 2020
+.model s298.bench
+.inputs clock G0 G1 G2
+.outputs G117 G132 G66 G118 G133 G67
+
+.latch       n245        G10  0
+.latch       n248        G11  0
+.latch       n251        G12  0
+.latch       n254        G13  0
+.latch       n257        G14  0
+.latch       n260        G15  0
+.latch       n263        G16  0
+.latch       n266        G17  0
+.latch       n269        G18  0
+.latch       n272        G19  0
+.latch       n275        G20  0
+.latch       n278        G21  0
+.latch       n281        G22  0
+.latch       n284        G23  0
+
+.names G0 G10 n245
+00 1
+.names G12 G10 new_new_n53__
+01 1
+.names G13 new_new_n53__ new_new_n54__
+11 1
+.names G10 G11 new_new_n55_1__
+11 1
+.names G10 G11 new_new_n56__
+00 1
+.names new_new_n54__ new_new_n55_1__ new_new_n57__
+00 1
+.names new_new_n56__ new_new_n57__ new_new_n58__
+01 1
+.names G0 new_new_n58__ n248
+01 1
+.names G12 new_new_n55_1__ new_new_n60_1__
+11 1
+.names G10 G12 new_new_n61__
+00 1
+.names G11 G12 new_new_n62__
+00 1
+.names new_new_n60_1__ new_new_n61__ new_new_n63__
+00 1
+.names new_new_n62__ new_new_n63__ new_new_n64__
+01 1
+.names G0 new_new_n64__ n251
+01 1
+.names G11 G12 new_new_n66__
+11 1
+.names G10 new_new_n66__ new_new_n67__
+11 1
+.names G13 new_new_n67__ new_new_n68__
+00 1
+.names G12 G13 new_new_n69__
+11 1
+.names new_new_n55_1__ new_new_n69__ new_new_n70_1__
+11 1
+.names G11 G10 new_new_n71__
+01 1
+.names G12 new_new_n71__ new_new_n72__
+01 1
+.names new_new_n70_1__ new_new_n72__ new_new_n73__
+00 1
+.names G0 new_new_n73__ new_new_n74__
+01 1
+.names new_new_n68__ new_new_n74__ n254
+01 1
+.names G13 G14 new_new_n76__
+11 1
+.names G10 new_new_n62__ new_new_n77__
+11 1
+.names new_new_n76__ new_new_n77__ new_new_n78__
+11 1
+.names G12 G13 new_new_n79__
+01 1
+.names new_new_n71__ new_new_n79__ new_new_n80_1__
+11 1
+.names G14 G23 new_new_n81__
+00 1
+.names new_new_n80_1__ new_new_n81__ new_new_n82__
+01 1
+.names G0 G14 new_new_n83__
+00 1
+.names G0 G23 new_new_n84__
+00 1
+.names new_new_n83__ new_new_n84__ new_new_n85_1__
+00 1
+.names new_new_n78__ new_new_n82__ new_new_n86__
+00 1
+.names new_new_n85_1__ new_new_n86__ n257
+01 1
+.names G14 G13 new_new_n88__
+01 1
+.names G12 G11 new_new_n89__
+01 1
+.names G22 new_new_n89__ new_new_n90__
+01 1
+.names new_new_n88__ new_new_n90__ new_new_n91__
+11 1
+.names G22 new_new_n88__ new_new_n92__
+11 1
+.names new_new_n62__ new_new_n92__ new_new_n93__
+11 1
+.names G15 new_new_n93__ new_new_n94__
+00 1
+.names new_new_n91__ new_new_n94__ new_new_n95__
+00 1
+.names G0 new_new_n95__ n260
+01 1
+.names G16 G14 new_new_n97__
+01 1
+.names G13 G14 new_new_n98__
+00 1
+.names G12 G13 new_new_n99__
+00 1
+.names new_new_n97__ new_new_n98__ new_new_n100__
+00 1
+.names new_new_n99__ new_new_n100__ new_new_n101__
+01 1
+.names new_new_n95__ new_new_n101__ n263
+01 1
+.names G17 G13 new_new_n103__
+01 1
+.names G13 G14 new_new_n104__
+01 1
+.names new_new_n62__ new_new_n104__ new_new_n105__
+11 1
+.names G14 new_new_n66__ new_new_n106__
+01 1
+.names G12 G14 new_new_n107__
+11 1
+.names G17 new_new_n107__ new_new_n108__
+01 1
+.names new_new_n105__ new_new_n106__ new_new_n109__
+00 1
+.names new_new_n95__ new_new_n108__ new_new_n110__
+00 1
+.names new_new_n109__ new_new_n110__ new_new_n111__
+11 1
+.names new_new_n88__ new_new_n103__ new_new_n112__
+00 1
+.names new_new_n111__ new_new_n112__ n266
+11 1
+.names G18 G14 new_new_n114__
+01 1
+.names G12 new_new_n114__ new_new_n115__
+11 1
+.names G18 G13 new_new_n116__
+01 1
+.names new_new_n105__ new_new_n116__ new_new_n117__
+00 1
+.names new_new_n88__ new_new_n95__ new_new_n118__
+00 1
+.names new_new_n117__ new_new_n118__ new_new_n119__
+11 1
+.names new_new_n115__ new_new_n119__ n269
+01 1
+.names G19 new_new_n107__ new_new_n121__
+11 1
+.names G14 new_new_n62__ new_new_n122__
+11 1
+.names new_new_n121__ new_new_n122__ new_new_n123__
+00 1
+.names G13 new_new_n95__ new_new_n124__
+00 1
+.names new_new_n123__ new_new_n124__ new_new_n125__
+11 1
+.names new_new_n95__ G13 new_new_n126__
+01 1
+.names G19 G14 new_new_n127__
+01 1
+.names new_new_n126__ new_new_n127__ new_new_n128__
+11 1
+.names G10 new_new_n95__ new_new_n129__
+11 1
+.names new_new_n128__ new_new_n129__ new_new_n130__
+00 1
+.names new_new_n125__ new_new_n130__ n272
+01 1
+.names G13 new_new_n89__ new_new_n132__
+01 1
+.names G20 G12 new_new_n133__
+01 1
+.names G20 G13 new_new_n134__
+01 1
+.names new_new_n132__ new_new_n133__ new_new_n135__
+00 1
+.names new_new_n134__ G14 new_new_n136__
+01 1
+.names new_new_n135__ new_new_n136__ new_new_n137__
+11 1
+.names new_new_n95__ new_new_n137__ new_new_n138__
+00 1
+.names new_new_n129__ new_new_n138__ n275
+00 1
+.names G21 G14 new_new_n140__
+01 1
+.names G11 G14 new_new_n141__
+00 1
+.names new_new_n88__ new_new_n141__ new_new_n142__
+00 1
+.names new_new_n95__ new_new_n99__ new_new_n143__
+00 1
+.names new_new_n142__ new_new_n143__ new_new_n144__
+11 1
+.names new_new_n140__ new_new_n144__ n278
+01 1
+.names G2 G22 new_new_n146__
+00 1
+.names G2 G22 new_new_n147__
+11 1
+.names new_new_n146__ new_new_n147__ new_new_n148__
+00 1
+.names G0 new_new_n148__ n281
+01 1
+.names G1 G23 new_new_n150__
+00 1
+.names G1 G23 new_new_n151__
+11 1
+.names new_new_n150__ new_new_n151__ new_new_n152__
+00 1
+.names G0 new_new_n152__ n284
+01 1
+.names G18 G117
+1 1
+.names G20 G132
+1 1
+.names G16 G66
+1 1
+.names G19 G118
+1 1
+.names G21 G133
+1 1
+.names G17 G67
+1 1
+.end
