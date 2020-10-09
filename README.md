@@ -1,8 +1,6 @@
 # benchmarks_nml
 Benchmarks
 
-##TODO
+## referencias dos benchmarks
 
-referencias dos benchmarks
-
- - [Collection of Digital Design Benchmarks]{https://ddd.fit.cvut.cz/prj/Benchmarks/}
+ - [Collection of Digital Design Benchmarks](https://ddd.fit.cvut.cz/prj/Benchmarks/})
