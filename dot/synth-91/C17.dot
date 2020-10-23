@@ -24,7 +24,7 @@ edge [dir = back];
   title1 [shape=plaintext,
           fontsize=20,
           fontname = "Times-Roman",
-          label="Network structure visualized by ABC\nBenchmark \"C17.iscas\". Time was Thu Oct  8 20:27:35 2020. "
+          label="Network structure visualized by ABC\nBenchmark \"C17.iscas\". Time was Fri Oct 23 14:13:28 2020. "
          ];
 }
 
@@ -48,22 +48,22 @@ edge [dir = back];
 {
   rank = same;
   Level3;
-  Node11 [label = "11\n", shape = ellipse];
-  Node13 [label = "13\n", shape = ellipse];
+  Node11 [label = "11\n00 0", shape = ellipse];
+  Node13 [label = "13\n00 0", shape = ellipse];
 }
 
 {
   rank = same;
   Level2;
-  Node10 [label = "10\n", shape = ellipse];
-  Node12 [label = "12\n", shape = ellipse];
+  Node10 [label = "10\n01 1", shape = ellipse];
+  Node12 [label = "12\n01 1", shape = ellipse];
 }
 
 {
   rank = same;
   Level1;
-  Node8 [label = "8\n", shape = ellipse];
-  Node9 [label = "9\n", shape = ellipse];
+  Node8 [label = "8\n11 1", shape = ellipse];
+  Node9 [label = "9\n11 1", shape = ellipse];
 }
 
 {
@@ -86,12 +86,12 @@ Node8 -> Node1 [style = solid];
 Node8 -> Node3 [style = solid];
 Node9 -> Node3 [style = solid];
 Node9 -> Node4 [style = solid];
-Node10 -> Node2 [style = solid];
 Node10 -> Node9 [style = solid];
+Node10 -> Node2 [style = solid];
 Node11 -> Node8 [style = solid];
 Node11 -> Node10 [style = solid];
-Node12 -> Node5 [style = solid];
 Node12 -> Node9 [style = solid];
+Node12 -> Node5 [style = solid];
 Node13 -> Node10 [style = solid];
 Node13 -> Node12 [style = solid];
 }
